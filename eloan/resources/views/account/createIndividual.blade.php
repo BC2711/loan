@@ -20,8 +20,7 @@
         <div class="card text-white success" id="card">
             <div class="card-body">
                 <h4 class="card-title text-white"> </h4>
-                {{-- <div class="mx-n4 px-4 mx-lg-n6 px-lg-10 bg-white pt-7 border-y border-300"> --}}
-                {{-- <div class="row align-items-end justify-content-between pb-5 g-3"> --}}
+               
                 <form action="" method="post" autocomplete="off">
                     <div class="row">
 
@@ -179,19 +178,15 @@
                         </div>
 
                     </div>
-                    <div class="form-buttons-w text-center">
-
-                        {{-- <a class="btn btn-sm headeingColor  btnSize" href="/individual"> Back</a> --}}
+                    <div class="form-buttons-w text-center">                        
                         <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" name="add"
                             href="/individual">Back </a>
-                        {{-- <button class="btn btn-sm headeingColor  btnSize" value="add" >
-                                Submit</button> --}}
+                      
                         <button class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" name="add"
                             type="submit">Submit </button>
                     </div>
                 </form>
-                {{-- </div> --}}
-                {{-- </div> --}}
+              
             </div>
         </div>
     </div>

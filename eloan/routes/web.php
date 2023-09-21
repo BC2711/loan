@@ -39,3 +39,12 @@ Route::get('/createIndividual', function () {
     return view('account.createIndividual');
 });
 
+Route::get('/permission', function () {
+    return view('management.permission');
+});
+
+Route::get('/systemUser', function () {
+    return view('management.createsystemuser');
+});
+
+
