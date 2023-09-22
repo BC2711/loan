@@ -10823,7 +10823,15 @@
                                                 </a>
                                                 <ul class="dropdown-menu"> --}}
                                                     <li>
-                                                        <a class="dropdown-item" href="apps/e-commerce/admin/add-product.html">
+                                                        <a class="dropdown-item" href="/agents">
+                                                            <div class="dropdown-item-wrapper">
+                                                                <span class="me-2 uil"></span>
+                                                                Agents
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="/agentemployee">
                                                             <div class="dropdown-item-wrapper">
                                                                 <span class="me-2 uil"></span>
                                                                 Agent Employees
@@ -10831,7 +10839,7 @@
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a class="dropdown-item" href="apps/e-commerce/admin/products.html">
+                                                        <a class="dropdown-item" href="/agentoutlets">
                                                             <div class="dropdown-item-wrapper">
                                                                 <span class="me-2 uil"></span>
                                                                 Agent Outlets
@@ -10839,7 +10847,7 @@
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a class="dropdown-item" href="apps/e-commerce/admin/customers.html">
+                                                        <a class="dropdown-item" href="merchants">
                                                             <div class="dropdown-item-wrapper">
                                                                 <span class="me-2 uil"></span>
                                                                 Merchants
@@ -10847,7 +10855,7 @@
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a class="dropdown-item" href="apps/e-commerce/admin/customer-details.html">
+                                                        <a class="dropdown-item" href="merchantemployees">
                                                             <div class="dropdown-item-wrapper">
                                                                 <span class="me-2 uil"></span>
                                                                 Merchant Employees
@@ -10855,7 +10863,7 @@
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a class="dropdown-item" href="apps/e-commerce/admin/orders.html">
+                                                        <a class="dropdown-item" href="merchantoutlet">
                                                             <div class="dropdown-item-wrapper">
                                                                 <span class="me-2 uil"></span>
                                                                 Merchant Outlet
@@ -10996,7 +11004,7 @@
                                                 </a>
                                             </li>
                                             <li>
-                                                <a class="dropdown-item" href="apps/crm/deal-details.html">
+                                                <a class="dropdown-item" href="/merchant">
                                                     <div class="dropdown-item-wrapper">
                                                         <span class="me-2 uil"></span>
                                                         Merchant KYC information
@@ -11004,7 +11012,7 @@
                                                 </a>
                                             </li>
                                             <li>
-                                                <a class="dropdown-item" href="apps/crm/leads.html">
+                                                <a class="dropdown-item" href="vendor">
                                                     <div class="dropdown-item-wrapper">
                                                         <span class="me-2 uil"></span>
                                                         Vendor
@@ -11018,7 +11026,7 @@
                                         </ul>
                                     </li>
                                     <li class="dropdown">
-                                        <a class="dropdown-item dropdown-toggle" id="project-management" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                                        <a class="dropdown-item dropdown-toggle" id="project-management" href="/request">
                                            
                                             <div class="dropdown-item-wrapper">
                                                 <span class="uil fs-0 uil-angle-right lh-1 dropdown-indicator-icon"></span>
@@ -11220,7 +11228,7 @@
                                                 </div>
                                                 <div class="col-12 col-sm-6 col-md-4">                                                   
                                                     <a class="dropdown-link" href="modules/components/accordion.html">Commission fees & chargers</a>
-                                                    <a class="dropdown-link" href="modules/components/avatar.html">Avatar</a>
+                                                    <a class="dropdown-link" href="/employee">Employees</a>
                                                     <a class="dropdown-link" href="modules/components/alerts.html">Alerts</a>
                                                     <a class="dropdown-link" href="modules/components/badge.html">Badge</a>                                                   
                                                 </div>

@@ -3,15 +3,15 @@
     <nav class="mb-2" aria-label="breadcrumb">
         <ol class="breadcrumb mb-0">
             <li class="breadcrumb-item"><a href="/home">Home</a></li>
-            <li class="breadcrumb-item active">Account Holder KYC</li>
-            <li class="breadcrumb-item active">Agent KYC</li>
+            <li class="breadcrumb-item active">Account Holder </li>
+            <li class="breadcrumb-item active">Agents </li>
         </ol>
     </nav>
 
     <div class="col-sm-6 col-md-9 col-lg-12 m-4">
         <div class="card text-white success" id="card">
             <div class="card-body">
-                <h4 class="card-title text-dark">Agent KYC </h4>
+                <h4 class="card-title text-dark">Agents </h4>
             </div>
         </div>
     </div>
@@ -37,8 +37,8 @@
                                     </div>
                                 </div>
                                 <div class="col-auto">
-                                    <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2"
-                                        href="/createagent">Add New Agent KYC</a>
+                                    <button class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2"
+                                        type="button">Add  Agent </button>
 
                                     <button class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 action-btn"
                                         type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true"
@@ -64,13 +64,17 @@
                         <table class="table fs--1 mb-0 border-top border-200">
                             <thead>
                                 <tr>
+                                <tr>
+                                    <th class="sort white-space-nowrap" scope="col" data-sort=" Name">#</th>
+                                    <th class="sort white-space-nowrap" scope="col" data-sort=" Name"> Date Created</th>
                                     <th class="sort white-space-nowrap" scope="col" data-sort=" Name">Agent Name</th>
+                                    <th class="sort white-space-nowrap" scope="col" data-sort=" Name">Agent Code</th>
                                     <th class="sort" scope="col" data-sort="Contact ">Contact Name</th>
                                     <th class="sort" scope="col" data-sort="Number">Contact Number</th>
-                                    <th class="sort" scope="col" data-sort="Maker">Maker</th>
-                                    <th class="sort" scope="col" data-sort="Time">Time Lapse</th>
-                                    <th class="sort" scope="col" data-sort="Checker ">Checker </th>
-                                    <th class="sort" scope="col" data-sort="Status">Status</th>                                   
+                                    <th class="sort" scope="col" data-sort="Maker">Deposit Balance</th>
+                                    <th class="sort" scope="col" data-sort="Time"> Region</th>
+                                    <th class="sort" scope="col" data-sort="Checker ">Status </th>
+                                    <th class="sort" scope="col" data-sort="Status">Outlets</th>                                   
                                     <th class="sort" scope="col" data-sort="Action">Action</th>
                                     <th class="sort" scope="col"></th>
                                 </tr>
@@ -102,6 +106,15 @@
                                     <td class=" white-space-nowrap Status">
                                         Just now
                                     </td>
+                                    <td class=" white-space-nowrap Status">
+                                        Just now
+                                    </td>
+                                    <td class=" white-space-nowrap Status">
+                                        Just now
+                                    </td>
+                                    <td class=" white-space-nowrap Status">
+                                        Just now
+                                    </td>
 
                                 </tr>
                                 <tr class="hover-actions-trigger btn-reveal-trigger position-static">
@@ -130,7 +143,15 @@
                                     <td class=" white-space-nowrap Status">
                                         Just now
                                     </td>
-
+                                    <td class=" white-space-nowrap Status">
+                                        Just now
+                                    </td>
+                                    <td class=" white-space-nowrap Status">
+                                        Just now
+                                    </td>
+                                    <td class=" white-space-nowrap Status">
+                                        Just now
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
