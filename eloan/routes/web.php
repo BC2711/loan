@@ -122,4 +122,48 @@ Route::get('/createemployee', function () {
  * End of Mangement
  */
 
+/***
+ * Reports
+ */
+Route::get('/agentcommission', function () {
+    return view('reports.agentcommission');
+});
+
+Route::get('/loanstatus', function () {
+    return view('reports.loanstatus');
+});
+
+Route::get('/audit', function () {
+    return view('reports.audit');
+});
+Route::get('/collection', function () {
+    return view('reports.collection');
+});
+Route::get('/compliance', function () {
+    return view('reports.compliance');
+});
+Route::get('/custom', function () {
+    return view('reports.custom');
+});
+Route::get('/customer', function () {
+    return view('reports.customer');
+});
+Route::get('/financial', function () {
+    return view('reports.financial');
+});
+Route::get('/forcasting', function () {
+    return view('reports.forcasting');
+});
+Route::get('/loanoriginator', function () {
+    return view('reports.loanoriginator');
+});
+Route::get('/operation', function () {
+    return view('reports.operation');
+});
+Route::get('/payment', function () {
+    return view('reports.payment');
+});
+Route::get('/risk', function () {
+    return view('reports.risk');
+});
 

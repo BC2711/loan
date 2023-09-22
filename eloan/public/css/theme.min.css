@@ -31073,7 +31073,13 @@ html:not(.navbar-vertical-collapsed) .navbar-vertical.navbar-expand-xs .navbar-v
         -ms-transform: none;
         transform: none
     }
+#query{
+    min-width: 180px;
+}
 
+#reports{
+    min-width:400px
+}
     .navbar-horizontal .navbar-top.navbar-expand-lg .navbar-nav-top .dropdown .dropdown-menu.dropdown-menu-card,.dual-nav .navbar-top.navbar-expand-lg .navbar-nav-top .dropdown .dropdown-menu.dropdown-menu-card,.navbar-combo .navbar-top.navbar-expand-lg .navbar-nav-top .dropdown .dropdown-menu.dropdown-menu-card {
         min-width: 550px;
         left: 50%;
