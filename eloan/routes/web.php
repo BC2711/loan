@@ -107,6 +107,18 @@ Route::get('/permission', function () {
     return view('management.permission');
 });
 
+Route::get('/emaillogs', function () {
+    return view('management.emaillogs');
+});
+
+Route::get('/loan', function () {
+    return view('management.loan');
+});
+
+Route::get('/loanscope', function () {
+    return view('management.loanscope');
+});
+
 Route::get('/systemUser', function () {
     return view('management.createsystemuser');
 });

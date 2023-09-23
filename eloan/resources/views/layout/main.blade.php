@@ -12776,6 +12776,9 @@
                                             <a class="dropdown-link" href="/permission"> User Permission</a>
                                             <a class="dropdown-link" href="#"> Stationery</a>
                                             <a class="dropdown-link" href="#"> Settlement </a>
+                                              <a class="dropdown-link" href="/emaillogs"> Email Logs </a>
+                                                <a class="dropdown-link" href="/loan"> Loan </a>
+                                                  <a class="dropdown-link" href="/loanscope"> loanscope </a>
                                         </div>
                                         <div class="col-12 col-sm-6 col-md-4">
                                             <a class="dropdown-link"
