@@ -120,6 +120,10 @@ Route::get('/emaillogs', function () {
     return view('management.emaillogs');
 });
 
+Route::get('/leave', function () {
+    return view('management.leave');
+});
+
 Route::get('/loan', function () {
     return view('management.loan');
 });

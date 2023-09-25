@@ -1,21 +1,11 @@
 @extends('layout.main')
 @section('content')
     <style>
-        /* #card{
-            background-color: #7db37d !important;
-            border-color: #d99724!important;
-        } */
-        /* .form-floating{
-            background-color:orange !important;
-        } */
+        #card1 {
+            border-radius: 0px;
+            width: 150px;
+        }
 
-        /* h5,thead, tbody, tfoot, tr, td, th{
-            border-color: orange!important;
-        } */
-        /* a{
-            padding: 20px!important;
-            height: 20px !important;
-            /* background-color: #7db37d */
 
         #btn:hover {
             background-color: #7db37d !important;
@@ -34,52 +24,58 @@
         <div class="card text-white success" id="card">
             <div class="card-body">
                 <h6 class="card-title text-dark"> Biness Dawkins </h6>
-                <hr/>
+                <hr />
                 <div class="row">
                     <div class="col-sm-1 col-md-1 col-lg-2 m-0">
-                        <div class="card text-white success" id="card" style="background-color: #7db37d">
+                        <div class="card text-white success" style="background-color:#b5abab;"  id="card1">
                             <div class="card-body">
-                                <h6 class="card-title text-dark"> Days of Leave  </h6>
+                                <h6 class="card-title text-dark text-center"> Days of Leave </h6>
+                                <h6 class="text-center">2</h6>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-1 col-md-1 col-lg-2 m-0">
-                        <div class="card text-white success" id="card">
+                        <div class="card text-white success" style="background-color:#b5abab;"  id="card1">
                             <div class="card-body">
-                                <h6 class="card-title text-dark"> Working Days  </h6>
+                                <h6 class="card-title text-dark text-center"> Working Days </h6>
+                                 <h6  class="text-center">262</h6>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-1 col-md-1 col-lg-2 m-0">
-                        <div class="card text-white success" id="card">
+                        <div class="card text-white success" style="background-color:#7070d9;"  id="card1">
                             <div class="card-body">
-                                <h6 class="card-title text-dark"># Sick Days </h6>
+                                <h6 class="card-title text-dark text-center"># Sick Days </h6>
+                                  <h6  class="text-center">1</h6>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-1 col-md-1 col-lg-2 m-0">
-                        <div class="card text-white success" id="card">
+                        <div class="card text-white success" style="background-color:#d9b778;"  id="card1">
                             <div class="card-body">
-                                <h6 class="card-title text-dark">Vecation </h6>
+                                <h6 class="card-title text-dark text-center">Vecation </h6>
+                                  <h6  class="text-center">0</h6>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-1 col-md-1 col-lg-2 ml-1">
-                        <div class="card text-white ">
+                    <div class="col-sm-1 col-md-1 col-lg-2 ml-0">
+                        <div class="card text-white "style="background-color:#9be79b;"  id="card1">
                             <div class="card-body">
-                                <h6 class="card-title text-dark"> Bereavement </h6>
+                                <h6 class="card-title text-dark text-center"> Bereavement </h6>
+                                  <h6  class="text-center">1</h6>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-1 col-md-1 col-lg-2 m-1">
-                        <div class="card text-white success" id="card">
+                    <div class="col-sm-1 col-md-1 col-lg-2 m-0">
+                        <div class="card text-white success" style="background-color:#dddd6b;" id="card1">
                             <div class="card-body">
-                                <h6 class="card-title text-dark"> Accrured  </h6>
+                                <h6 class="card-title text-dark text-center"> Accrured </h6>
+                                  <h6  class="text-center">0</h6>
                             </div>
                         </div>
                     </div>
                 </div>
-               
+
             </div>
         </div>
     </div>
@@ -95,27 +91,28 @@
                             <label for="floatingInput">Year</label>
                         </div>
                     </div> --}}
-                    <h6 class="card-title text-dark"> Time Attendance </h6>
+                        <h6 class="card-title text-dark"> Time Attendance </h6>
                         <div class="col-12 col-md-auto">
                             <div class="row g-0 gy-0">
-                                      {{-- <h6 class="card-title text-dark"> Time Attendance </h6> --}}
+                                {{-- <h6 class="card-title text-dark"> Time Attendance </h6> --}}
                                 <div class="row gx-0 gy-0">
                                     <div class="col-12 col-sm-6 col-md-6">
                                         <div class="col-auto flex-1">
                                             <div class="search-box">
                                                 <form class="position-relative" data-bs-toggle="search"
                                                     data-bs-display="static">
-                                                    <input class="form-control form-control-sm" type="number" minlength="4" maxlength="4" value="2023"
-                                                        placeholder="Year" aria-label="Year" />
+                                                    <input class="form-control form-control-sm" type="number"
+                                                        minlength="4" maxlength="4" value="2023" placeholder="Year"
+                                                        aria-label="Year" />
                                                     <label for="floatingInput">Year</label>
                                                 </form>
                                             </div>
                                         </div>
                                     </div>
-                              
-                                    <div class="col-12 col-sm-6 col-md-6" >
+
+                                    <div class="col-12 col-sm-6 col-md-6">
                                         <div class="col-auto flex-0">
-                                            <div class="search-box text-left" style="margin-left:740px;">
+                                            <div class="search-box text-left" style="margin-left:690px;">
                                                 <form class="position-relative" data-bs-toggle="search"
                                                     data-bs-display="static">
                                                     <input class="form-control search-input search form-control-sm"
