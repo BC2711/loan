@@ -175,7 +175,7 @@
                                 <div class="form-floating mb-3">
                                     <input class="form-control" id="floatingPassword" type="text"
                                         placeholder="Password" />
-                                    <label for="floatingInput"  id="label"><h6>Designation </h6> </label>
+                                    <label for="floatingInput"  id="label"><h6> Contact Designation </h6> </label>
                                 </div>
                                 <div class="form-floating mb-3">
                                     <input class="form-control" id="floatingPassword" type="text"

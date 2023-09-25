@@ -3,32 +3,33 @@
 <style>
        #btt:hover{
         background-color: green!important;
-
+       }
         
-    #card{
+    /* #card{
         background-color: #7db37d !important;
         border-color: #d99724!important;
-    }
+    } */
     /* .form-floating{
         background-color:orange !important;
-    } */
-#label{
+    /* } */
+/* #label{
     font-size: 11px;
     font-weight: 20px;
-}
-     h5,thead, tbody, tfoot, tr, td, th{
+} */
+     /* h5,thead, tbody, tfoot, tr, td, th,td{
         border-color: orange!important;
-    }
+        height: 10px;
+    } */
     #button{
         padding: 20px!important;
         height: 20px !important;
         width:131px;
         /* background-color: #7db37d */
     }
-    #button:hover{
+    /* #button:hover{
         background-color: #7db37d !important;
-    }
-    }
+    } */
+  
 </style>
 <nav class="mb-2" aria-label="breadcrumb">
     <ol class="breadcrumb mb-0">
@@ -86,9 +87,9 @@
                 </div>
                 <div class="table-responsive mx-n1 px-1 scrollbar">
                     <table class="table table-striped fs--1 mb-0 border-top border-200">
-                        <thead  style="background-color: #7db37d; height:80px;">
+                        <thead  style="background-color: #7db37d; height:60px;">
                             <tr style="margin:10px; padding:5px;">                      
-                                <th class="sort white-space-nowrap" scope="col" data-sort=" Name">Name</th>
+                                <th class="sort white-space-nowrap"  style="height:10px !important;" scope="col" data-sort=" Name">Name</th>
                                 <th class="sort" scope="col" data-sort="Surname " >Surname</th>
                                 <th class="sort" scope="col" data-sort="Contact" >Contact Number</th>
                                 <th class="sort" scope="col" data-sort="Email">Email</th>
