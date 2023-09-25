@@ -3,15 +3,15 @@
     <nav class="mb-2" aria-label="breadcrumb">
         <ol class="breadcrumb mb-0">
             <li class="breadcrumb-item"><a href="/home">Home</a></li>
-            <li class="breadcrumb-item active">Client KYC</li>
-            <li class="breadcrumb-item active">Cooperatives </li>
+            <li class="breadcrumb-item active"><a href="/request">Account Request</a></li>
+            <li class="breadcrumb-item active"> Approved | Pending | Declined</li>
         </ol>
     </nav>
 
     <div class="col-sm-6 col-md-9 col-lg-12 m-4">
         <div class="card text-white success" id="card">
             <div class="card-body">
-                <h4 class="card-title text-dark">Cooperatives  </h4>
+                <h4 class="card-title text-dark"> Approved | Pending | Declined </h4>
             </div>
         </div>
     </div>
@@ -37,14 +37,14 @@
                                     </div>
                                 </div>
                                 <div class="col-auto">
-                                    <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2"
-                                        href="/createagent">Create a New Cooperative</a>
+                                    {{-- <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2"
+                                        href="/createagentemployee">Create New Employee</a>
 
                                     <button class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 action-btn"
                                         type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true"
                                         aria-expanded="false" data-bs-reference="parent">
                                         <span class="fas fa-ellipsis-h" data-fa-transform="shrink-2"></span>
-                                    </button>
+                                    </button> --}}
                                     <ul class="dropdown-menu dropdown-menu-end">
                                         <li>
                                             <a class="dropdown-item" href="#">Action</a>
@@ -64,13 +64,14 @@
                         <table class="table fs--1 mb-0 border-top border-200">
                             <thead>
                                 <tr>
-                                    <th class="sort white-space-nowrap" scope="col" data-sort=" Name">Cooperative Name</th>
-                                    <th class="sort" scope="col" data-sort="Contact ">Contact Name</th>
-                                    <th class="sort" scope="col" data-sort="Number">Contact Number</th>
-                                    <th class="sort" scope="col" data-sort="Maker">Business Tpin</th>
-                                    <th class="sort" scope="col" data-sort="Time">Type Of Business</th>
-                                    <th class="sort" scope="col" data-sort="Checker ">Checker </th>
-                                    <th class="sort" scope="col" data-sort="Status">Status</th>                                   
+                                    <th class="sort white-space-nowrap" scope="col" data-sort=" Name">#</th>
+                                    <th class="sort" scope="col" data-sort="Agent ">Agent Name</th>
+                                    <th class="sort" scope="col" data-sort="Outlet">Outlet Name</th>
+                                    <th class="sort" scope="col" data-sort="Code">Outlet Code</th>
+                                    <th class="sort" scope="col" data-sort="Time"> Employee Name</th>
+                                    <th class="sort" scope="col" data-sort="Checker ">Contact Number </th>
+                                    <th class="sort" scope="col" data-sort="Status">Employee Code</th>       
+                                    <th class="sort" scope="col" data-sort="Status">Status</th>                              
                                     <th class="sort" scope="col" data-sort="Action">Action</th>
                                     <th class="sort" scope="col"></th>
                                 </tr>
@@ -79,58 +80,63 @@
                                 <tr class="hover-actions-trigger btn-reveal-trigger position-static">
 
                                     <td class="white-space-nowrap Name">
-                                        food suppliers limired
+                                        Name
                                     </td>
                                     <td class="white-space-nowrap Contact">
-                                        Richard Dawkins
+                                        Date
                                     </td>
                                     <td class=" white-space-nowrap Number">
-                                        3456789054
+                                        Richard Dawkins
                                     </td>
                                     <td class="white-space-nowrap Maker fs--2">
-                                     2001234566
+                                        <span class="fa fa-star text-warning"></span>
                                     </td>
                                     <td class="white-space-nowrap Time">
-                                        partnership
+                                        Sample
                                     </td>
                                     <td class=" text-start ps-5 Checker">
-                                        admin
+                                        Approved
                                     </td>
                                     <td class=" white-space-nowrap Status">
-                                    approved
+                                        Just now
                                     </td>
                                     <td class=" white-space-nowrap Status">
-                                        view
+                                        Just now
+                                    </td>
+                                    <td class=" white-space-nowrap Status">
+                                        Just now
                                     </td>
 
                                 </tr>
                                 <tr class="hover-actions-trigger btn-reveal-trigger position-static">
 
                                     <td class="white-space-nowrap Name">
-                                        food suppliers limired
+                                        Name
                                     </td>
                                     <td class="white-space-nowrap Contact">
-                                        Richard Dawkins
+                                        Date
                                     </td>
                                     <td class=" white-space-nowrap Number">
-                                        3456789054
+                                        Richard Dawkins
                                     </td>
                                     <td class="white-space-nowrap Maker fs--2">
-                                     2001234566
+                                        <span class="fa fa-star text-warning"></span>
                                     </td>
                                     <td class="white-space-nowrap Time">
-                                        partnership
+                                        Sample
                                     </td>
                                     <td class=" text-start ps-5 Checker">
-                                        admin
+                                        Approved
                                     </td>
                                     <td class=" white-space-nowrap Status">
-                                    approved
+                                        Just now
                                     </td>
                                     <td class=" white-space-nowrap Status">
-                                        view
+                                        Just now
                                     </td>
-
+                                    <td class=" white-space-nowrap Status">
+                                        Just now
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>

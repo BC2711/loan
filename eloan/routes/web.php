@@ -90,6 +90,11 @@ Route::get('/agentoutlets', function () {
     return view('account.agentoutlets');
 });
 
+Route::get('/pending', function () {
+    return view('account.pending');
+});
+
+
 
 
 /**
@@ -102,6 +107,10 @@ Route::get('/agentoutlets', function () {
 
  Route::get('/user', function () {
     return view('management.user');
+});
+
+Route::get('/timeattendance', function () {
+    return view('management.timeattendance');
 });
 Route::get('/permission', function () {
     return view('management.permission');

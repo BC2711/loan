@@ -10,6 +10,8 @@
         <title>Phoenix</title>
         <!-- ===============================================-->
         <!--    Favicons-->
+        {{-- https://employee-sandbox.logarithm.co.zw/ - tyrone@skywalkinnovations.co.za
+https://payroll-sandbox.logarithm.co.zw/ - info@skywalkinnovations.co.za --}}
         <!-- ===============================================-->
         <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png">

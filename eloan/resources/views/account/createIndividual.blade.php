@@ -3,15 +3,15 @@
     <nav class="mb-2" aria-label="breadcrumb">
         <ol class="breadcrumb mb-0">
             <li class="breadcrumb-item"><a href="/home">Home</a></li>
-            <li class="breadcrumb-item active">Account Holder KYC</li>
-            <li class="breadcrumb-item active"><a href="/individual">Individual | Sole Trader</a></li>
+            <li class="breadcrumb-item active">Client KYC</li>
+            <li class="breadcrumb-item active"><a href="/individual">Individual</a></li>
             <li class="breadcrumb-item active">Create</li>
         </ol>
     </nav>
     <div class="col-sm-6 col-md-9 col-lg-12 m-4">
         <div class="card text-white success" id="card">
             <div class="card-body">
-                <h4 class="card-title text-dark">Create Individual | Sole Trader </h4>
+                <h4 class="card-title text-dark">Create Individual </h4>
             </div>
         </div>
     </div>
@@ -74,9 +74,8 @@
                                     <label for="floatingPassword">Other Names</label>
                                 </div>
                                 <div class="form-floating mb-3">
-                                    <input class="form-control" id="floatingPassword" type="date"
-                                        placeholder="Password" />
-                                    <label for="floatingPassword">Date of Birth<span class="danger">*</span> </label>
+                                    <input class="form-control" id="date" type="date" placeholder="Password" />
+                                    <label for="date">Date of Birth<span class="danger">*</span> </label>
                                 </div>
 
                                 <div class="form-floating mb-3">
@@ -116,9 +115,8 @@
 
                                 </div>
                                 <div class="form-floating mb-3">
-                                    <input class="form-control" id="floatingPassword" type="text"
-                                        placeholder="Password" />
-                                    <label for="floatingInput">Age <span class="danger">*</span></label>
+                                    <input class="form-control" id="age" type="text" placeholder="Password" />
+                                    <label for="age">Age <span class="danger">*</span></label>
                                 </div>
 
                                 <div class="form-floating mb-3">
@@ -173,4 +171,13 @@
             </div>
         </div>
     </div>
+
+    <script>
+        let date = document.getElementById('date');
+        let age = document.getElementById('age');
+        let limit = 35;
+        date.addEventListener('input', function(e) {
+            age.value = this.value;
+        })
+    </script>
 @endsection

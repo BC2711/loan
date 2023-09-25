@@ -1,17 +1,38 @@
 @extends('layout.main')
 @section('content')
+<style>
+    #card{
+        background-color: #7db37d !important;
+        border-color: #d99724!important;
+    }
+    /* .form-floating{
+        background-color:orange !important;
+    } */
+
+     h5,thead, tbody, tfoot, tr, td, th{
+        border-color: orange!important;
+    }
+    #button{
+        padding: 20px!important;
+        height: 20px !important;
+        /* background-color: #7db37d */
+    }
+    #button:hover{
+        background-color: #7db37d !important;
+    }
+</style>
     <nav class="mb-2" aria-label="breadcrumb">
         <ol class="breadcrumb mb-0">
             <li class="breadcrumb-item"><a href="/home">Home</a></li>
-            <li class="breadcrumb-item active">Account Holder KYC</li>
-            <li class="breadcrumb-item active"><a href="/agent">Agent KYC</a></li>
+            <li class="breadcrumb-item active">Client KYC </li>
+            <li class="breadcrumb-item active"><a href="/agent">Cooperative </a></li>
             <li class="breadcrumb-item active">Create</li>
         </ol>
     </nav>
     <div class="col-sm-6 col-md-9 col-lg-12 m-4">
         <div class="card text-white success" id="card">
             <div class="card-body">
-                <h4 class="card-title text-dark">Create Agent KYC  </h4>
+                <h4 class="card-title text-dark">Create Cooperative  </h4>
             </div>
         </div>
     </div>
@@ -196,10 +217,10 @@
 
                     </div>
                     <div class="form-buttons-w text-center">
-                        <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" name="add"
+                        <a class="btn btn-md btn-phoenix-secondary bg-white hover-bg-100 me-2" id="button" name="add"
                             href="/agent">Back </a>
 
-                        <button class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" name="add"
+                        <button class="btn btn-md btn-phoenix-secondary bg-white hover-bg-100 me-2"  id="button" name="add"
                             type="submit">Submit </button>
                     </div>
                 </form>

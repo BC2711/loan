@@ -11,7 +11,7 @@
   <div class="col-sm-6 col-md-9 col-lg-12 m-4">
     <div class="card text-white success" id="card">
         <div class="card-body">
-            <h4 class="card-title text-dark"> System User  </h4>
+            <h4 class="card-title text-dark"> name   </h4>
         </div>
     </div>
 </div>
@@ -34,11 +34,11 @@
                                 </div>
                             </div>
                             <div class="col-auto">
-                                <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" href="/systemUser">Add new System User</a>
+                                {{-- <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" href="/systemUser">Add new System User</a> --}}
         
-                                <button class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 action-btn" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent">
+                                {{-- <button class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 action-btn" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent">
                                     <span class="fas fa-ellipsis-h" data-fa-transform="shrink-2"></span>
-                                </button>
+                                </button> --}}
                                 <ul class="dropdown-menu dropdown-menu-end">
                                     <li>
                                         <a class="dropdown-item" href="#">Action</a>
@@ -113,6 +113,12 @@
                                 </td>
                                 <td class="white-space-nowrap review">
                                     Sample
+                                </td>   
+                                <td class="white-space-nowrap review">
+                                    Sample
+                                </td>   
+                                <td class="white-space-nowrap review">
+                                    Sample
                                 </td>      
                               
                             </tr>
@@ -154,7 +160,12 @@
                                 <td class="white-space-nowrap review">
                                     Sample
                                 </td>      
-                              
+                                <td class="white-space-nowrap review">
+                                    Sample
+                                </td>   
+                                <td class="white-space-nowrap review">
+                                    Sample
+                                </td>      
                             </tr>
                         </tbody>
                     </table>
