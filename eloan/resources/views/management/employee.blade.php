@@ -1,5 +1,26 @@
 @extends('layout.main')
 @section('content')
+<style>
+/* #card{
+    background-color: #7db37d !important;
+    border-color: #d99724!important;
+} */
+/* .form-floating{
+    background-color:orange !important;
+} */
+
+ /* h5,thead, tbody, tfoot, tr, td, th{
+    border-color: orange!important;
+} */
+/* a{
+    padding: 20px!important;
+    height: 20px !important;
+    /* background-color: #7db37d */
+
+#btn:hover{
+    background-color: #7db37d !important;
+}
+</style>
 <nav class="mb-2" aria-label="breadcrumb">
     <ol class="breadcrumb mb-0">
       <li class="breadcrumb-item"><a href="/home">Home</a></li>
@@ -60,11 +81,15 @@
                             <tr>                      
                                 <th class="sort white-space-nowrap" scope="col" data-sort=" Name">Name</th>
                                 <th class="sort" scope="col" data-sort="Surname " >Surname</th>
+                                <th class="sort" scope="col" data-sort="Address">Tpin</th>
                                 <th class="sort" scope="col" data-sort="Contact" >Contact Number</th>
                                 <th class="sort" scope="col" data-sort="Email">Email</th>
-                                <th class="sort" scope="col" data-sort="Address">Address</th>
+                                <th class="sort" scope="col" data-sort="Address">Physical Address</th>
+                                <th class="sort" scope="col" data-sort="Address">Province</th>
+                                <th class="sort" scope="col" data-sort="Address">District</th>
+                                <th class="sort" scope="col" data-sort="Address">Constituency</th>
                                 <th class="sort" scope="col" data-sort="Status">Status</th>
-                                <th class="sort" scope="col" data-sort="Action">Action</th>
+                                <th class="sort " scope="col" style="text-align: center;" data-sort="Action">Action</th>
                                 <th class="sort" scope="col"></th>
                             </tr>
                         </thead>
@@ -72,50 +97,77 @@
                             <tr class="hover-actions-trigger btn-reveal-trigger position-static">
                                 
                                 <td class="white-space-nowrap Name">                           
-                                      Name                           
+                                      Biness                           
                                 </td>
                                 <td class="white-space-nowrap Surname">
-                                 Date
+                                    Dawkins
                                 </td>
                                 <td class=" white-space-nowrap Contact">                           
-                                       Richard Dawkins                        
+                                      200127686                      
                                 </td>
-                                <td class="white-space-nowrap Email fs--2">                          
-                                    <span class="fa fa-star text-warning"></span>
+                                <td class="white-space-nowrap Email">                          
+                                  0987456744
                                 </td>
                                 <td class="white-space-nowrap Address" >
-                                    Sample
+                                    Mail@gmail.com
                                 </td>
                                 <td class=" text-start ps-5 Province">                          
-                                        Approved
+                                        673 kitwe
                                 </td>
                                 <td class=" white-space-nowrap Role">
-                                    Just now                          
+                                    Copperbelt                  
+                                </td>  
+                                <td class=" white-space-nowrap Role">
+                                  Kitwe                        
+                                </td>  
+                                <td class=" white-space-nowrap Role">
+                                   Kwacha                         
+                                </td>  
+                                <td class=" white-space-nowrap Role">
+                                 Employed                       
+                                </td>  
+                                <td class=" white-space-nowrap Role"  style="text-align: center;">
+                                    <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2"  id="btn"  href="/timeattendance"> Time Attendance</a>
+                                    <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2"  id="btn"  href="/timeattendance"> Leave Application</a>
+                                                            
                                 </td>                              
                             </tr>
                             <tr class="hover-actions-trigger btn-reveal-trigger position-static">
                                 
                                 <td class="white-space-nowrap Name">                           
-                                      Name                           
+                                      Chris                           
                                 </td>
                                 <td class="white-space-nowrap Surname">
-                                 Date
+                                 Banda
                                 </td>
                                 <td class=" white-space-nowrap Contact">                           
-                                       Richard Dawkins                        
+                                     30012345675            
                                 </td>
-                                <td class="white-space-nowrap Email fs--2">                          
-                                    <span class="fa fa-star text-warning"></span>
+                                <td class="white-space-nowrap Email">                          
+                                    0987654323  
                                 </td>
                                 <td class="white-space-nowrap Address" >
-                                    Sample
+                                    chris@gmail.com
                                 </td>
                                 <td class=" text-start ps-5 Province">                          
-                                        Approved
+                                        234 Chelstone
                                 </td>
                                 <td class=" white-space-nowrap Role">
+                                   Lusaka                         
+                                </td>  
+                                <td class=" white-space-nowrap Role">
+                                    Lusaka                       
+                                </td>  
+                                <td class=" white-space-nowrap Role">
                                     Just now                          
-                                </td>                               
+                                </td>  
+                                <td class=" white-space-nowrap Role">
+                                  Discharged                       
+                                </td>  
+                                <td class=" white-space-nowrap Role"  style="text-align: center;">
+                                    <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" id="btn" href="/timeattendance"> Time Attendance </a>
+                                    <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2"  id="btn" href="/timeattendance"> Leave Application</a>                      
+                                </td>                              
                             </tr>
                         </tbody>
                     </table>

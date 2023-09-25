@@ -1,5 +1,36 @@
 @extends('layout.main')
 @section('content')
+<style>
+       #btt:hover{
+        background-color: green!important;
+       }
+        
+    /* #card{
+        background-color: #7db37d !important;
+        border-color: #d99724!important;
+    } */
+    /* .form-floating{
+        background-color:orange !important;
+    /* } */
+/* #label{
+    font-size: 11px;
+    font-weight: 20px;
+} */
+     /* h5,thead, tbody, tfoot, tr, td, th,td{
+        border-color: orange!important;
+        height: 10px;
+    } */
+    #button{
+        padding: 20px!important;
+        height: 20px !important;
+        width:131px;
+        /* background-color: #7db37d */
+    }
+    /* #button:hover{
+        background-color: #7db37d !important;
+    } */
+  
+</style>
 <nav class="mb-2" aria-label="breadcrumb">
     <ol class="breadcrumb mb-0">
       <li class="breadcrumb-item"><a href="/home">Home</a></li>
@@ -18,10 +49,10 @@
 <div class="col-sm-6 col-md-9 col-lg-12 m-4">
     <div class="card text-white success" id="card">
         <div class="card-body">
-            <div data-list='{"valueNames":["Name","Surname","Contact","Address","Role","Username","Auth","Email","Province","Status","Last"],"page":6}'>
+            <div data-list='{"valueNames":["Name","Surname","Contact","Address","Role","Username","Auth","Email","Province","Status","Last"],"page":10}'>
                 <div class="row align-items-end justify-content-between pb-5 g-3">
                     <div class="col-auto">
-                        <h5> Log</h5>
+                        {{-- <h5> Log</h5> --}}
                     </div>
                     <div class="col-12 col-md-auto">
                         <div class="row g-2 gy-3">
@@ -34,7 +65,7 @@
                                 </div>
                             </div>
                             <div class="col-auto">
-                                <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" href="/systemUser">Add new System User</a>
+                                <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" id="btt" href="/systemUser">Add new System User</a>
         
                                 <button class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 action-btn" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent">
                                     <span class="fas fa-ellipsis-h" data-fa-transform="shrink-2"></span>
@@ -55,10 +86,10 @@
                     </div>
                 </div>
                 <div class="table-responsive mx-n1 px-1 scrollbar">
-                    <table class="table fs--1 mb-0 border-top border-200">
-                        <thead>
-                            <tr>                      
-                                <th class="sort white-space-nowrap" scope="col" data-sort=" Name">Name</th>
+                    <table class="table table-striped fs--1 mb-0 border-top border-200">
+                        <thead  style="background-color: #7db37d; height:60px;">
+                            <tr style="margin:10px; padding:5px;">                      
+                                <th class="sort white-space-nowrap"  style="height:10px !important;" scope="col" data-sort=" Name">Name</th>
                                 <th class="sort" scope="col" data-sort="Surname " >Surname</th>
                                 <th class="sort" scope="col" data-sort="Contact" >Contact Number</th>
                                 <th class="sort" scope="col" data-sort="Email">Email</th>
@@ -69,88 +100,557 @@
                                 <th class="sort" scope="col" data-sort="Status">Status</th>
                                 <th class="sort" scope="col" data-sort="Last">Last Login</th>
                                 <th class="sort" scope="col" data-sort="Auth">Auth Status</th>
-                                <th class="sort" scope="col" data-sort="Action">Action</th>
+                                <th class="sort" scope="col" data-sort="Action" style="text-align: center;">Action</th>
                                 <th class="sort" scope="col"></th>
                             </tr>
                         </thead>
                         <tbody class="list" id="table-latest-review-body">
                             <tr class="hover-actions-trigger btn-reveal-trigger position-static">
                                 
-                                <td class="white-space-nowrap Name">                           
-                                      Name                           
-                                </td>
+                                <td class="white-space-nowrap Name"> Victor                          
+                                </td> 
                                 <td class="white-space-nowrap Surname">
-                                 Date
+                                    Kabwe
                                 </td>
                                 <td class=" white-space-nowrap Contact">                           
-                                       Richard Dawkins                        
+                                    8978788767               
                                 </td>
-                                <td class="white-space-nowrap Email fs--2">                          
-                                    <span class="fa fa-star text-warning"></span>
+                                <td class="white-space-nowrap Email">                          
+                                    victor@gmail.com
                                 </td>
                                 <td class="white-space-nowrap Address" >
-                                    Sample
+                                    Malawi
                                 </td>
                                 <td class=" text-start ps-5 Province">                          
-                                        Approved
+                                    Central
                                 </td>
                                 <td class=" white-space-nowrap Role">
-                                    Just now                          
+                                    FINANCE DIRECTOR                   
                                 </td>
                                 <td class="white-space-nowrap Username" >
-                                    Sample
+                                    SPEE10007
                                 </td>
-                                <td class="white-space-nowrap Status" >
-                                    Sample
+                                <td class="white-space-nowrap Status"   style="color: green;">
+                                    Active
                                 </td>
                                 <td class="white-space-nowrap Last" >
-                                    Sample
+                                    2023-08-28 11:47:16
                                 </td>
-                                <td class="white-space-nowrap Auth" >
-                                    Sample
+                                <td class="white-space-nowrap Auth"   style="color: red;" >
+                                    Not Required
                                 </td>
-                                <td class="white-space-nowrap review">
-                                    Sample
+                                <td class="white-space-nowrap review" style="text-align: center;" style="text-align: center;">
+                                    <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" id="btt"   style="color: orange;" href="#">Update</a>
+                                    <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" id="btt"   style="color: green;" href="#"> Password Recovery</a>
+                                    
                                 </td>      
                               
                             </tr>
                             <tr class="hover-actions-trigger btn-reveal-trigger position-static">
                                 
-                                <td class="white-space-nowrap Name">                           
-                                      Name                           
-                                </td>
+                                <td class="white-space-nowrap Name"> Faith                          
+                                </td> 
                                 <td class="white-space-nowrap Surname">
-                                 Date
+                                    Khatoha
                                 </td>
                                 <td class=" white-space-nowrap Contact">                           
-                                       Richard Dawkins                        
+                                    9078675            
                                 </td>
-                                <td class="white-space-nowrap Email fs--2">                          
-                                    <span class="fa fa-star text-warning"></span>
+                                <td class="white-space-nowrap Email">                          
+                                    fail@gmail.COM
                                 </td>
                                 <td class="white-space-nowrap Address" >
-                                    Sample
+                                    Oasis
                                 </td>
                                 <td class=" text-start ps-5 Province">                          
-                                        Approved
+                                    Eastern
                                 </td>
                                 <td class=" white-space-nowrap Role">
-                                    Just now                          
+                                    LEGAL AND COMPLIANCE DIRECTOR              
                                 </td>
                                 <td class="white-space-nowrap Username" >
-                                    Sample
-                                </td>
-                                <td class="white-space-nowrap Status" >
-                                    Sample
+                                    SPEE10006</td>
+                                <td class="white-space-nowrap Status"   style="color: green;" >
+                                    Active
                                 </td>
                                 <td class="white-space-nowrap Last" >
-                                    Sample
+                                    2023-08-28 10:11:59
+                                </td>
+                                <td class="white-space-nowrap Auth"   style="color: red;">
+                                    Not Required
+                                </td>
+                                <td class="white-space-nowrap review" style="text-align: center;" style="text-align: center;">
+                                    <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" id="btt"   style="color: orange;" href="#">Update</a>
+                                    <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" id="btt"   style="color: green;" href="#"> Password Recovery</a>
+                                </td>      
+                              
+                            </tr>
+                            <tr class="hover-actions-trigger btn-reveal-trigger position-static">
+                                
+                                <td class="white-space-nowrap Name">Jacob                           
+                                </td> 
+                                <td class="white-space-nowrap Surname">
+                                    Phiri
+                                </td>
+                                <td class=" white-space-nowrap Contact">                           
+                                    9078675            
+                                </td>
+                                <td class="white-space-nowrap Email">                          
+                                    Phiri@gmail.com
+                                </td>
+                                <td class="white-space-nowrap Address" >
+                                    Copperbelt
+                                </td>
+                                <td class=" text-start ps-5 Province">                          
+                                    Northern
+                                </td>
+                                <td class=" white-space-nowrap Role">
+                                    RISK OFFICER      
+                                </td>
+                                <td class="white-space-nowrap Username" >
+                                    COUN10001</td>
+                                <td class="white-space-nowrap Status"   style="color: green;" >
+                                    Active
+                                </td>
+                                <td class="white-space-nowrap Last" >
+                                    2023-08-28 10:02:16
+                                </td>
+                                <td class="white-space-nowrap Auth" style="color: red;" >
+                                    Not Required
+                                </td>
+                                <td class="white-space-nowrap review" style="text-align: center;">
+                                    <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" style="color: orange;" id="btt" href="#">Update</a>
+                                    <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" style="color: green;" id="btt" href="#"> Password Recovery</a>
+                                </td>      
+                              
+                            </tr>
+                            <tr class="hover-actions-trigger btn-reveal-trigger position-static">
+                                
+                                <td class="white-space-nowrap Name"> Christopher                          
+                                </td> 
+                                <td class="white-space-nowrap Surname">
+                                    Chifwembe
+                                </td>
+                                <td class=" white-space-nowrap Contact">                           
+                                    896750887            
+                                </td>
+                                <td class="white-space-nowrap Email">                          
+                                    chris@gmail.com
+                                </td>
+                                <td class="white-space-nowrap Address" >
+                                    Lusaka, Lusaka
+                                </td>
+                                <td class=" text-start ps-5 Province">                          
+                                    Northern
+                                </td>
+                                <td class=" white-space-nowrap Role">
+                                    SENIOR CREDIT OFFICER     
+                                </td>
+                                <td class="white-space-nowrap Username" >
+                                    ATME10001</td>
+                                <td class="white-space-nowrap Status" style="color: green;" >
+                                    Active
+                                </td>
+                                <td class="white-space-nowrap Last" >
+                                    2023-08-28 09:53:33
+                                </td>
+                                <td class="white-space-nowrap Auth" style="color: red;" >
+                                    Not Required
+                                </td>
+                                <td class="white-space-nowrap review" style="text-align: center;">
+                                    <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" style="color: orange;" id="btt" href="#">Update</a>
+                                    <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" style="color: green;" id="btt" href="#"> Password Recovery</a>
+                                </td>      
+                              
+                            </tr>
+                            <tr class="hover-actions-trigger btn-reveal-trigger position-static">
+                                
+                                <td class="white-space-nowrap Name"> Rocy                          
+                                </td> 
+                                <td class="white-space-nowrap Surname">
+                                    Balengu
+                                </td>
+                                <td class=" white-space-nowrap Contact">                           
+                                    532237626            
+                                </td>
+                                <td class="white-space-nowrap Email">                          
+                                    balengu@gmail.com
+                                </td>
+                                <td class="white-space-nowrap Address" >
+                                    Lusaka, Lusaka
+                                </td>
+                                <td class=" text-start ps-5 Province">                          
+                                    Northern
+                                </td>
+                                <td class=" white-space-nowrap Role">
+                                    CREDIT AND RISK MANAGER          
+                                </td>
+                                <td class="white-space-nowrap Username" >
+                                    BALE10001</td>
+                                <td class="white-space-nowrap Status" style="color: green;" >
+                                    Active
+                                </td>
+                                <td class="white-space-nowrap Last" >
+                                    2023-08-28 10:11:59
+                                </td>
+                                <td class="white-space-nowrap Auth" style="color: red;" >
+                                    Not Required
+                                </td>
+                                <td class="white-space-nowrap review" style="text-align: center;">
+                                    <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" style="color: orange;" id="btt" href="#">Update</a>
+                                    <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" style="color: green;" id="btt" href="#"> Password Recovery</a>
+                                </td>      
+                              
+                            </tr>
+                            <tr class="hover-actions-trigger btn-reveal-trigger position-static">
+                                
+                                <td class="white-space-nowrap Name"> Micheal                          
+                                </td> 
+                                <td class="white-space-nowrap Surname">
+                                    Khuntena
+                                </td>
+                                <td class=" white-space-nowrap Contact">                           
+                                    782378433            
+                                </td>
+                                <td class="white-space-nowrap Email">                          
+                                    micheal@gmail.com
+                                </td>
+                                <td class="white-space-nowrap Address" >
+                                    Lusaka, Lusaka
+                                </td>
+                                <td class=" text-start ps-5 Province">                          
+                                    Eastern
+                                </td>
+                                <td class=" white-space-nowrap Role">
+                                    DIRECTOR CREDIT AND RISK            
+                                </td>
+                                <td class="white-space-nowrap Username" >
+                                    SPEE10005</td>
+                                <td class="white-space-nowrap Status" style="color: green;">
+                                    Active
+                                </td>
+                                <td class="white-space-nowrap Last" >
+                                    2023-08-28 10:11:59
+                                </td>
+                                <td class="white-space-nowrap Auth" style="color: red;" >
+                                    Not Required
+                                </td>
+                                <td class="white-space-nowrap review" style="text-align: center;">
+                                    <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" style="color: orange;" id="btt" href="#">Update</a>
+                                    <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" style="color: green;" id="btt" href="#"> Password Recovery</a>
+                                </td>      
+                              
+                            </tr>
+                            <tr class="hover-actions-trigger btn-reveal-trigger position-static">
+                                
+                                <td class="white-space-nowrap Name"> BINESS                          
+                                </td> 
+                                <td class="white-space-nowrap Surname">
+                                    Chama
+                                </td>
+                                <td class=" white-space-nowrap Contact">                           
+                                    123456763            
+                                </td>
+                                <td class="white-space-nowrap Email">                          
+                                    chama@gmail.com
+                                </td>
+                                <td class="white-space-nowrap Address" >
+                                    Lusaka
+                                </td>
+                                <td class=" text-start ps-5 Province">                          
+                                    Central
+                                </td>
+                                <td class=" white-space-nowrap Role">
+                                    PROVINCIAL FINANCE AND ADMIN            
+                                </td>
+                                <td class="white-space-nowrap Username" >
+                                    FOOD10001</td>
+                                <td class="white-space-nowrap Status"style="color: green;">
+                                    Active
+                                </td>
+                                <td class="white-space-nowrap Last" >
+                                    2023-08-28 10:11:59
+                                </td>
+                                <td class="white-space-nowrap Auth" style="color: red;" >
+                                    Not Required
+                                </td>
+                                <td class="white-space-nowrap review" style="text-align: center;">
+                                    <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" style="color: orange;" id="btt" href="#">Update</a>
+                                    <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" style="color: green;" id="btt" href="#"> Password Recovery</a>
+                                </td>      
+                              
+                            </tr>
+                            <tr class="hover-actions-trigger btn-reveal-trigger position-static">
+                                
+                                <td class="white-space-nowrap Name"> Victor                          
+                                </td> 
+                                <td class="white-space-nowrap Surname">
+                                    Kabwe
+                                </td>
+                                <td class=" white-space-nowrap Contact">                           
+                                    8978788767               
+                                </td>
+                                <td class="white-space-nowrap Email">                          
+                                    victor@gmail.com
+                                </td>
+                                <td class="white-space-nowrap Address" >
+                                    Malawi
+                                </td>
+                                <td class=" text-start ps-5 Province">                          
+                                    Central
+                                </td>
+                                <td class=" white-space-nowrap Role">
+                                    FINANCE DIRECTOR                   
+                                </td>
+                                <td class="white-space-nowrap Username" >
+                                    SPEE10007
+                                </td>
+                                <td class="white-space-nowrap Status" style="color: green;">
+                                    Active
+                                </td>
+                                <td class="white-space-nowrap Last" >
+                                    2023-08-28 11:47:16
+                                </td>
+                                <td class="white-space-nowrap Auth"style="color: red;" >
+                                    Not Required
+                                </td>
+                                <td class="white-space-nowrap review" style="text-align: center;">
+                                    <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" style="color: orange;" id="btt" href="#">Update</a>
+                                    <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" style="color: green;" id="btt" href="#"> Password Recovery</a>
+                                </td>      
+                              
+                            </tr>
+                            <tr class="hover-actions-trigger btn-reveal-trigger position-static">
+                                
+                                <td class="white-space-nowrap Name"> Faith                          
+                                </td> 
+                                <td class="white-space-nowrap Surname">
+                                    Khatoha
+                                </td>
+                                <td class=" white-space-nowrap Contact">                           
+                                    9078675            
+                                </td>
+                                <td class="white-space-nowrap Email">                          
+                                    faith@gmail.COM
+                                </td>
+                                <td class="white-space-nowrap Address" >
+                                    Oasis
+                                </td>
+                                <td class=" text-start ps-5 Province">                          
+                                    Eastern
+                                </td>
+                                <td class=" white-space-nowrap Role">
+                                    LEGAL AND COMPLIANCE DIRECTOR              
+                                </td>
+                                <td class="white-space-nowrap Username" >
+                                    SPEE10006</td>
+                                <td class="white-space-nowrap Status" style="color: green;" >
+                                    Active
+                                </td>
+                                <td class="white-space-nowrap Last" >
+                                    2023-08-28 10:11:59
+                                </td>
+                                <td class="white-space-nowrap Auth" style="color: red;" >
+                                    Not Required
+                                </td>
+                                <td class="white-space-nowrap review" style="text-align: center;">
+                                    <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2"  style="color: orange;" id="btt" href="#">Update</a>
+                                    <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2"  style="color: green;" id="btt" href="#"> Password Recovery</a>
+                                </td>      
+                              
+                            </tr>
+                            <tr class="hover-actions-trigger btn-reveal-trigger position-static">
+                                
+                                <td class="white-space-nowrap Name"> Felix                          
+                                </td> 
+                                <td class="white-space-nowrap Surname">
+                                    Mwape
+                                </td>
+                                <td class=" white-space-nowrap Contact">                           
+                                    9078675            
+                                </td>
+                                <td class="white-space-nowrap Email">                          
+                                    Mwape@gmail.com
+                                </td>
+                                <td class="white-space-nowrap Address" >
+                                    chelstone
+                                </td>
+                                <td class=" text-start ps-5 Province">                          
+                                   Southern
+                                </td>
+                                <td class=" white-space-nowrap Role">
+                                    RISK OFFICER      
+                                </td>
+                                <td class="white-space-nowrap Username" >
+                                    COUN10001</td>
+                                <td class="white-space-nowrap Status"  style="color: green;">
+                                    Active
+                                </td>
+                                <td class="white-space-nowrap Last" >
+                                    2023-08-28 10:02:16
+                                </td>
+                                <td class="white-space-nowrap Auth"  style="color: red;">
+                                    Not Required
+                                </td>
+                                <td class="white-space-nowrap review" style="text-align: center;">
+                                    <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" style="color: orange;" id="btt" href="#">Update</a>
+                                    <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" style="color: green;" id="btt" href="#"> Password Recovery</a>
+                                </td>      
+                              
+                            </tr>
+                            <tr class="hover-actions-trigger btn-reveal-trigger position-static">
+                                
+                                <td class="white-space-nowrap Name"> Christopher                          
+                                </td> 
+                                <td class="white-space-nowrap Surname">
+                                    Chifwembe
+                                </td>
+                                <td class=" white-space-nowrap Contact">                           
+                                    896750887            
+                                </td>
+                                <td class="white-space-nowrap Email">                          
+                                    chris@gmail.com
+                                </td>
+                                <td class="white-space-nowrap Address" >
+                                    Lusaka, Lusaka
+                                </td>
+                                <td class=" text-start ps-5 Province">                          
+                                    Northern
+                                </td>
+                                <td class=" white-space-nowrap Role">
+                                    SENIOR CREDIT OFFICER     
+                                </td>
+                                <td class="white-space-nowrap Username" >
+                                    ATME10001</td>
+                                <td class="white-space-nowrap Status" style="color: green;" >
+                                    Active
+                                </td>
+                                <td class="white-space-nowrap Last" >
+                                    2023-08-28 09:53:33
+                                </td>
+                                <td class="white-space-nowrap Auth"  style="color: red;">
+                                    Not Required
+                                </td>
+                                <td class="white-space-nowrap review" style="text-align: center;">
+                                    <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" style="color: orange;" id="btt" href="#">Update</a>
+                                    <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2"  style="color: green;" id="btt" href="#"> Password Recovery</a>
+                                </td>      
+                              
+                            </tr>
+                            <tr class="hover-actions-trigger btn-reveal-trigger position-static">
+                                
+                                <td class="white-space-nowrap Name"> Rocy                          
+                                </td> 
+                                <td class="white-space-nowrap Surname">
+                                    Balengu
+                                </td>
+                                <td class=" white-space-nowrap Contact">                           
+                                    532237626            
+                                </td>
+                                <td class="white-space-nowrap Email">                          
+                                    balengu@gmail.com
+                                </td>
+                                <td class="white-space-nowrap Address" >
+                                    Lusaka, Lusaka
+                                </td>
+                                <td class=" text-start ps-5 Province">                          
+                                    Northern
+                                </td>
+                                <td class=" white-space-nowrap Role">
+                                    CREDIT AND RISK MANAGER          
+                                </td>
+                                <td class="white-space-nowrap Username" >
+                                    BALE10001</td>
+                                <td class="white-space-nowrap Status" >
+                                    Active
+                                </td>
+                                <td class="white-space-nowrap Last" >
+                                    2023-08-28 10:11:59
                                 </td>
                                 <td class="white-space-nowrap Auth" >
-                                    Sample
+                                    Not Required
                                 </td>
-                                <td class="white-space-nowrap review">
-                                    Sample
+                                <td class="white-space-nowrap review" style="text-align: center;">
+                                    <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" id="btt" href="#">Update</a>
+                                    <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" id="btt" href="#"> Password Recovery</a>
+                                </td>      
+                              
+                            </tr>
+                            <tr class="hover-actions-trigger btn-reveal-trigger position-static">
+                                
+                                <td class="white-space-nowrap Name"> Micheal                          
+                                </td> 
+                                <td class="white-space-nowrap Surname">
+                                    Khuntena
+                                </td>
+                                <td class=" white-space-nowrap Contact">                           
+                                    782378433            
+                                </td>
+                                <td class="white-space-nowrap Email">                          
+                                    micheal@gmail.com
+                                </td>
+                                <td class="white-space-nowrap Address" >
+                                    Lusaka, Lusaka
+                                </td>
+                                <td class=" text-start ps-5 Province">                          
+                                    Eastern
+                                </td>
+                                <td class=" white-space-nowrap Role">
+                                    DIRECTOR CREDIT AND RISK            
+                                </td>
+                                <td class="white-space-nowrap Username" >
+                                    SPEE10005</td>
+                                <td class="white-space-nowrap Status" style="color: green;" >
+                                    Active
+                                </td>
+                                <td class="white-space-nowrap Last" >
+                                    2023-08-28 10:11:59
+                                </td>
+                                <td class="white-space-nowrap Auth"  style="color: red;">
+                                    Not Required
+                                </td>
+                                <td class="white-space-nowrap review" style="text-align: center;">
+                                    <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2"  style="color: orange;" id="btt" href="#">Update</a>
+                                    <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" style="color: green;" id="btt" href="#"> Password Recovery</a>
+                                </td>      
+                              
+                            </tr>
+                            <tr class="hover-actions-trigger btn-reveal-trigger position-static">
+                                
+                                <td class="white-space-nowrap Name"> Biness                          
+                                </td> 
+                                <td class="white-space-nowrap Surname">
+                                    Chama
+                                </td>
+                                <td class=" white-space-nowrap Contact">                           
+                                    123456763            
+                                </td>
+                                <td class="white-space-nowrap Email">                          
+                                    chama@gmail.com
+                                </td>
+                                <td class="white-space-nowrap Address" >
+                                    Lusaka
+                                </td>
+                                <td class=" text-start ps-5 Province">                          
+                                    Central
+                                </td>
+                                <td class=" white-space-nowrap Role">
+                                    PROVINCIAL FINANCE AND ADMIN            
+                                </td>
+                                <td class="white-space-nowrap Username" >
+                                    FOOD10001</td>
+                                <td class="white-space-nowrap Status" style="color: green;" >
+                                    Active
+                                </td>
+                                <td class="white-space-nowrap Last" >
+                                    2023-08-28 10:11:59
+                                </td>
+                                <td class="white-space-nowrap Auth" style="color: red;" >
+                                    Not Required
+                                </td>
+                                <td class="white-space-nowrap review" style="text-align: center;">
+                                    <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2"  style="color: orange;" id="btt" href="#">Update</a>
+                                    <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2"  style="color: green;" id="btt" href="#"> Password Recovery</a>
                                 </td>      
                               
                             </tr>
