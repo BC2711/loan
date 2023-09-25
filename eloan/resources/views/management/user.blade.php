@@ -4,31 +4,15 @@
        #btt:hover{
         background-color: green!important;
        }
-        
-    /* #card{
-        background-color: #7db37d !important;
-        border-color: #d99724!important;
-    } */
-    /* .form-floating{
-        background-color:orange !important;
-    /* } */
-/* #label{
-    font-size: 11px;
-    font-weight: 20px;
-} */
-     /* h5,thead, tbody, tfoot, tr, td, th,td{
-        border-color: orange!important;
-        height: 10px;
-    } */
+        .tdtd{
+            height: 20px !important;
+        }
+    
     #button{
         padding: 20px!important;
         height: 20px !important;
-        width:131px;
-        /* background-color: #7db37d */
+        width:131px;       
     }
-    /* #button:hover{
-        background-color: #7db37d !important;
-    } */
   
 </style>
 <nav class="mb-2" aria-label="breadcrumb">
@@ -89,7 +73,7 @@
                     <table class="table table-striped fs--1 mb-0 border-top border-200">
                         <thead  style="background-color: #7db37d; height:60px;">
                             <tr style="margin:10px; padding:5px;">                      
-                                <th class="sort white-space-nowrap"  style="height:10px !important;" scope="col" data-sort=" Name">Name</th>
+                                <th class="sort white-space-nowrap tdtd"  style="height:10px !important;" scope="col" data-sort=" Name">Name</th>
                                 <th class="sort" scope="col" data-sort="Surname " >Surname</th>
                                 <th class="sort" scope="col" data-sort="Contact" >Contact Number</th>
                                 <th class="sort" scope="col" data-sort="Email">Email</th>
@@ -107,39 +91,39 @@
                         <tbody class="list" id="table-latest-review-body">
                             <tr class="hover-actions-trigger btn-reveal-trigger position-static">
                                 
-                                <td class="white-space-nowrap Name"> Victor                          
+                                <td class="white-space-nowrap  tdtd Name"> Victor                          
                                 </td> 
-                                <td class="white-space-nowrap Surname">
+                                <td class="white-space-nowrap  tdtd Surname">
                                     Kabwe
                                 </td>
-                                <td class=" white-space-nowrap Contact">                           
+                                <td class=" white-space-nowrap  tdtd Contact">                           
                                     8978788767               
                                 </td>
-                                <td class="white-space-nowrap Email">                          
+                                <td class="white-space-nowrap tdtd  Email">                          
                                     victor@gmail.com
                                 </td>
-                                <td class="white-space-nowrap Address" >
+                                <td class="white-space-nowrap  tdtd Address" >
                                     Malawi
                                 </td>
-                                <td class=" text-start ps-5 Province">                          
+                                <td class=" white-space-nowrap tdtd   Province">                          
                                     Central
                                 </td>
-                                <td class=" white-space-nowrap Role">
+                                <td class=" white-space-nowrap  tdtd Role">
                                     FINANCE DIRECTOR                   
                                 </td>
-                                <td class="white-space-nowrap Username" >
+                                <td class="white-space-nowrap tdtd  Username" >
                                     SPEE10007
                                 </td>
-                                <td class="white-space-nowrap Status"   style="color: green;">
+                                <td class="white-space-nowrap  tdtd Status"   style="color: green;">
                                     Active
                                 </td>
-                                <td class="white-space-nowrap Last" >
+                                <td class="white-space-nowrap tdtd  Last" >
                                     2023-08-28 11:47:16
                                 </td>
-                                <td class="white-space-nowrap Auth"   style="color: red;" >
+                                <td class="white-space-nowrap  tdtd Auth"   style="color: red;" >
                                     Not Required
                                 </td>
-                                <td class="white-space-nowrap review" style="text-align: center;" style="text-align: center;">
+                                <td class="white-space-nowrap tdtd  review" style="text-align: center;" style="text-align: center;">
                                     <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" id="btt"   style="color: orange;" href="#">Update</a>
                                     <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" id="btt"   style="color: green;" href="#"> Password Recovery</a>
                                     
@@ -148,38 +132,38 @@
                             </tr>
                             <tr class="hover-actions-trigger btn-reveal-trigger position-static">
                                 
-                                <td class="white-space-nowrap Name"> Faith                          
+                                <td class="white-space-nowrap  tdtd Name"> Faith                          
                                 </td> 
-                                <td class="white-space-nowrap Surname">
+                                <td class="white-space-nowrap tdtd  Surname">
                                     Khatoha
                                 </td>
-                                <td class=" white-space-nowrap Contact">                           
+                                <td class=" white-space-nowrap  tdtd Contact">                           
                                     9078675            
                                 </td>
-                                <td class="white-space-nowrap Email">                          
+                                <td class="white-space-nowrap tdtd  Email">                          
                                     fail@gmail.COM
                                 </td>
-                                <td class="white-space-nowrap Address" >
+                                <td class="white-space-nowrap  tdtd Address" >
                                     Oasis
                                 </td>
-                                <td class=" text-start ps-5 Province">                          
+                                <td class=" white-space-nowrap  tdtd Province">                          
                                     Eastern
                                 </td>
-                                <td class=" white-space-nowrap Role">
+                                <td class=" white-space-nowrap tdtd  Role">
                                     LEGAL AND COMPLIANCE DIRECTOR              
                                 </td>
-                                <td class="white-space-nowrap Username" >
+                                <td class="white-space-nowrap tdtd  Username" >
                                     SPEE10006</td>
-                                <td class="white-space-nowrap Status"   style="color: green;" >
+                                <td class="white-space-nowrap tdtd  Status"   style="color: green;" >
                                     Active
                                 </td>
-                                <td class="white-space-nowrap Last" >
+                                <td class="white-space-nowrap  tdtd Last" >
                                     2023-08-28 10:11:59
                                 </td>
-                                <td class="white-space-nowrap Auth"   style="color: red;">
+                                <td class="white-space-nowrap tdtd  Auth"   style="color: red;">
                                     Not Required
                                 </td>
-                                <td class="white-space-nowrap review" style="text-align: center;" style="text-align: center;">
+                                <td class="white-space-nowrap  tdtd review" style="text-align: center;" style="text-align: center;">
                                     <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" id="btt"   style="color: orange;" href="#">Update</a>
                                     <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" id="btt"   style="color: green;" href="#"> Password Recovery</a>
                                 </td>      
@@ -187,38 +171,38 @@
                             </tr>
                             <tr class="hover-actions-trigger btn-reveal-trigger position-static">
                                 
-                                <td class="white-space-nowrap Name">Jacob                           
+                                <td class="white-space-nowrap tdtd  Name">Jacob                           
                                 </td> 
-                                <td class="white-space-nowrap Surname">
+                                <td class="white-space-nowrap  tdtd Surname">
                                     Phiri
                                 </td>
-                                <td class=" white-space-nowrap Contact">                           
+                                <td class=" white-space-nowrap tdtd  Contact">                           
                                     9078675            
                                 </td>
-                                <td class="white-space-nowrap Email">                          
+                                <td class="white-space-nowrap  tdtd Email">                          
                                     Phiri@gmail.com
                                 </td>
-                                <td class="white-space-nowrap Address" >
+                                <td class="white-space-nowrap tdtd  Address" >
                                     Copperbelt
                                 </td>
-                                <td class=" text-start ps-5 Province">                          
+                                <td class="white-space-nowrap  tdtd Province">                          
                                     Northern
                                 </td>
-                                <td class=" white-space-nowrap Role">
+                                <td class=" white-space-nowrap  tdtd Role">
                                     RISK OFFICER      
                                 </td>
-                                <td class="white-space-nowrap Username" >
+                                <td class="white-space-nowrap tdtd  Username" >
                                     COUN10001</td>
-                                <td class="white-space-nowrap Status"   style="color: green;" >
+                                <td class="white-space-nowrap  tdtd Status"   style="color: green;" >
                                     Active
                                 </td>
-                                <td class="white-space-nowrap Last" >
+                                <td class="white-space-nowrap tdtd  Last" >
                                     2023-08-28 10:02:16
                                 </td>
-                                <td class="white-space-nowrap Auth" style="color: red;" >
+                                <td class="white-space-nowrap  tdtd Auth" style="color: red;" >
                                     Not Required
                                 </td>
-                                <td class="white-space-nowrap review" style="text-align: center;">
+                                <td class="white-space-nowrap tdtd  review" style="text-align: center;">
                                     <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" style="color: orange;" id="btt" href="#">Update</a>
                                     <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" style="color: green;" id="btt" href="#"> Password Recovery</a>
                                 </td>      
@@ -226,38 +210,38 @@
                             </tr>
                             <tr class="hover-actions-trigger btn-reveal-trigger position-static">
                                 
-                                <td class="white-space-nowrap Name"> Christopher                          
+                                <td class="white-space-nowrap  Name"> Christopher                          
                                 </td> 
-                                <td class="white-space-nowrap Surname">
+                                <td class="white-space-nowrap tdtd Surname">
                                     Chifwembe
                                 </td>
-                                <td class=" white-space-nowrap Contact">                           
+                                <td class=" white-space-nowrap tdtd Contact">                           
                                     896750887            
                                 </td>
-                                <td class="white-space-nowrap Email">                          
+                                <td class="white-space-nowrap tdtd Email">                          
                                     chris@gmail.com
                                 </td>
-                                <td class="white-space-nowrap Address" >
+                                <td class="white-space-nowrap tdtd Address" >
                                     Lusaka, Lusaka
                                 </td>
                                 <td class=" text-start ps-5 Province">                          
                                     Northern
                                 </td>
-                                <td class=" white-space-nowrap Role">
+                                <td class=" white-space-nowrap tdtd Role">
                                     SENIOR CREDIT OFFICER     
                                 </td>
-                                <td class="white-space-nowrap Username" >
+                                <td class="white-space-nowrap tdtd Username" >
                                     ATME10001</td>
-                                <td class="white-space-nowrap Status" style="color: green;" >
+                                <td class="white-space-nowrap tdtd Status" style="color: green;" >
                                     Active
                                 </td>
-                                <td class="white-space-nowrap Last" >
+                                <td class="white-space-nowrap tdtd Last" >
                                     2023-08-28 09:53:33
                                 </td>
-                                <td class="white-space-nowrap Auth" style="color: red;" >
+                                <td class="white-space-nowrap tdtd Auth" style="color: red;" >
                                     Not Required
                                 </td>
-                                <td class="white-space-nowrap review" style="text-align: center;">
+                                <td class="white-space-nowrap tdtd review" style="text-align: center;">
                                     <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" style="color: orange;" id="btt" href="#">Update</a>
                                     <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" style="color: green;" id="btt" href="#"> Password Recovery</a>
                                 </td>      
@@ -265,38 +249,38 @@
                             </tr>
                             <tr class="hover-actions-trigger btn-reveal-trigger position-static">
                                 
-                                <td class="white-space-nowrap Name"> Rocy                          
+                                <td class="white-space-nowrap tdtd Name"> Rocy                          
                                 </td> 
-                                <td class="white-space-nowrap Surname">
+                                <td class="white-space-nowrap tdtd Surname">
                                     Balengu
                                 </td>
-                                <td class=" white-space-nowrap Contact">                           
+                                <td class=" white-space-nowrap tdtd Contact">                           
                                     532237626            
                                 </td>
-                                <td class="white-space-nowrap Email">                          
+                                <td class="white-space-nowrap tdtd Email">                          
                                     balengu@gmail.com
                                 </td>
-                                <td class="white-space-nowrap Address" >
+                                <td class="white-space-nowrap tdtd Address" >
                                     Lusaka, Lusaka
                                 </td>
                                 <td class=" text-start ps-5 Province">                          
                                     Northern
                                 </td>
-                                <td class=" white-space-nowrap Role">
+                                <td class=" white-space-nowrap tdtd Role">
                                     CREDIT AND RISK MANAGER          
                                 </td>
-                                <td class="white-space-nowrap Username" >
+                                <td class="white-space-nowrap tdtd Username" >
                                     BALE10001</td>
-                                <td class="white-space-nowrap Status" style="color: green;" >
+                                <td class="white-space-nowrap tdtd Status" style="color: green;" >
                                     Active
                                 </td>
-                                <td class="white-space-nowrap Last" >
+                                <td class="white-space-nowrap tdtd Last" >
                                     2023-08-28 10:11:59
                                 </td>
-                                <td class="white-space-nowrap Auth" style="color: red;" >
+                                <td class="white-space-nowrap tdtd Auth" style="color: red;" >
                                     Not Required
                                 </td>
-                                <td class="white-space-nowrap review" style="text-align: center;">
+                                <td class="white-space-nowrap tdtd review" style="text-align: center;">
                                     <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" style="color: orange;" id="btt" href="#">Update</a>
                                     <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" style="color: green;" id="btt" href="#"> Password Recovery</a>
                                 </td>      
@@ -304,38 +288,38 @@
                             </tr>
                             <tr class="hover-actions-trigger btn-reveal-trigger position-static">
                                 
-                                <td class="white-space-nowrap Name"> Micheal                          
+                                <td class="white-space-nowrap tdtd Name"> Micheal                          
                                 </td> 
-                                <td class="white-space-nowrap Surname">
+                                <td class="white-space-nowrap tdtd Surname">
                                     Khuntena
                                 </td>
-                                <td class=" white-space-nowrap Contact">                           
+                                <td class=" white-space-nowrap tdtd Contact">                           
                                     782378433            
                                 </td>
-                                <td class="white-space-nowrap Email">                          
+                                <td class="white-space-nowrap tdtd Email">                          
                                     micheal@gmail.com
                                 </td>
-                                <td class="white-space-nowrap Address" >
+                                <td class="white-space-nowrap tdtd Address" >
                                     Lusaka, Lusaka
                                 </td>
                                 <td class=" text-start ps-5 Province">                          
                                     Eastern
                                 </td>
-                                <td class=" white-space-nowrap Role">
+                                <td class=" white-space-nowrap tdtd Role">
                                     DIRECTOR CREDIT AND RISK            
                                 </td>
-                                <td class="white-space-nowrap Username" >
+                                <td class="white-space-nowrap tdtd Username" >
                                     SPEE10005</td>
-                                <td class="white-space-nowrap Status" style="color: green;">
+                                <td class="white-space-nowrap tdtd Status" style="color: green;">
                                     Active
                                 </td>
-                                <td class="white-space-nowrap Last" >
+                                <td class="white-space-nowrap tdtd Last" >
                                     2023-08-28 10:11:59
                                 </td>
-                                <td class="white-space-nowrap Auth" style="color: red;" >
+                                <td class="white-space-nowrap tdtd Auth" style="color: red;" >
                                     Not Required
                                 </td>
-                                <td class="white-space-nowrap review" style="text-align: center;">
+                                <td class="white-space-nowrap tdtd review" style="text-align: center;">
                                     <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" style="color: orange;" id="btt" href="#">Update</a>
                                     <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" style="color: green;" id="btt" href="#"> Password Recovery</a>
                                 </td>      
@@ -343,38 +327,38 @@
                             </tr>
                             <tr class="hover-actions-trigger btn-reveal-trigger position-static">
                                 
-                                <td class="white-space-nowrap Name"> BINESS                          
+                                <td class="white-space-nowrap tdtd Name"> BINESS                          
                                 </td> 
-                                <td class="white-space-nowrap Surname">
+                                <td class="white-space-nowrap tdtd Surname">
                                     Chama
                                 </td>
-                                <td class=" white-space-nowrap Contact">                           
+                                <td class=" white-space-nowrap tdtd Contact">                           
                                     123456763            
                                 </td>
-                                <td class="white-space-nowrap Email">                          
+                                <td class="white-space-nowrap tdtd Email">                          
                                     chama@gmail.com
                                 </td>
-                                <td class="white-space-nowrap Address" >
+                                <td class="white-space-nowrap tdtd Address" >
                                     Lusaka
                                 </td>
                                 <td class=" text-start ps-5 Province">                          
                                     Central
                                 </td>
-                                <td class=" white-space-nowrap Role">
+                                <td class=" white-space-nowrap tdtd Role">
                                     PROVINCIAL FINANCE AND ADMIN            
                                 </td>
-                                <td class="white-space-nowrap Username" >
+                                <td class="white-space-nowrap tdtd Username" >
                                     FOOD10001</td>
-                                <td class="white-space-nowrap Status"style="color: green;">
+                                <td class="white-space-nowrap tdtd Status"style="color: green;">
                                     Active
                                 </td>
-                                <td class="white-space-nowrap Last" >
+                                <td class="white-space-nowrap tdtd Last" >
                                     2023-08-28 10:11:59
                                 </td>
-                                <td class="white-space-nowrap Auth" style="color: red;" >
+                                <td class="white-space-nowrap tdtd Auth" style="color: red;" >
                                     Not Required
                                 </td>
-                                <td class="white-space-nowrap review" style="text-align: center;">
+                                <td class="white-space-nowrap tdtd review" style="text-align: center;">
                                     <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" style="color: orange;" id="btt" href="#">Update</a>
                                     <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" style="color: green;" id="btt" href="#"> Password Recovery</a>
                                 </td>      
@@ -382,39 +366,39 @@
                             </tr>
                             <tr class="hover-actions-trigger btn-reveal-trigger position-static">
                                 
-                                <td class="white-space-nowrap Name"> Victor                          
+                                <td class="white-space-nowrap tdtd Name"> Victor                          
                                 </td> 
-                                <td class="white-space-nowrap Surname">
+                                <td class="white-space-nowrap tdtd Surname">
                                     Kabwe
                                 </td>
-                                <td class=" white-space-nowrap Contact">                           
+                                <td class=" white-space-nowrap tdtd Contact">                           
                                     8978788767               
                                 </td>
-                                <td class="white-space-nowrap Email">                          
+                                <td class="white-space-nowrap tdtd Email">                          
                                     victor@gmail.com
                                 </td>
-                                <td class="white-space-nowrap Address" >
+                                <td class="white-space-nowrap tdtd Address" >
                                     Malawi
                                 </td>
                                 <td class=" text-start ps-5 Province">                          
                                     Central
                                 </td>
-                                <td class=" white-space-nowrap Role">
+                                <td class=" white-space-nowrap tdtd Role">
                                     FINANCE DIRECTOR                   
                                 </td>
-                                <td class="white-space-nowrap Username" >
+                                <td class="white-space-nowrap tdtd Username" >
                                     SPEE10007
                                 </td>
-                                <td class="white-space-nowrap Status" style="color: green;">
+                                <td class="white-space-nowrap tdtd Status" style="color: green;">
                                     Active
                                 </td>
-                                <td class="white-space-nowrap Last" >
+                                <td class="white-space-nowrap tdtd Last" >
                                     2023-08-28 11:47:16
                                 </td>
-                                <td class="white-space-nowrap Auth"style="color: red;" >
+                                <td class="white-space-nowrap tdtd Auth"style="color: red;" >
                                     Not Required
                                 </td>
-                                <td class="white-space-nowrap review" style="text-align: center;">
+                                <td class="white-space-nowrap tdtd review" style="text-align: center;">
                                     <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" style="color: orange;" id="btt" href="#">Update</a>
                                     <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" style="color: green;" id="btt" href="#"> Password Recovery</a>
                                 </td>      
@@ -422,38 +406,38 @@
                             </tr>
                             <tr class="hover-actions-trigger btn-reveal-trigger position-static">
                                 
-                                <td class="white-space-nowrap Name"> Faith                          
+                                <td class="white-space-nowrap tdtd Name"> Faith                          
                                 </td> 
-                                <td class="white-space-nowrap Surname">
+                                <td class="white-space-nowrap tdtd Surname">
                                     Khatoha
                                 </td>
-                                <td class=" white-space-nowrap Contact">                           
+                                <td class=" white-space-nowrap tdtd Contact">                           
                                     9078675            
                                 </td>
-                                <td class="white-space-nowrap Email">                          
+                                <td class="white-space-nowrap tdtd Email">                          
                                     faith@gmail.COM
                                 </td>
-                                <td class="white-space-nowrap Address" >
+                                <td class="white-space-nowrap tdtd Address" >
                                     Oasis
                                 </td>
                                 <td class=" text-start ps-5 Province">                          
                                     Eastern
                                 </td>
-                                <td class=" white-space-nowrap Role">
+                                <td class=" white-space-nowrap tdtd Role">
                                     LEGAL AND COMPLIANCE DIRECTOR              
                                 </td>
-                                <td class="white-space-nowrap Username" >
+                                <td class="white-space-nowrap tdtd Username" >
                                     SPEE10006</td>
-                                <td class="white-space-nowrap Status" style="color: green;" >
+                                <td class="white-space-nowrap tdtd Status" style="color: green;" >
                                     Active
                                 </td>
-                                <td class="white-space-nowrap Last" >
+                                <td class="white-space-nowrap tdtd Last" >
                                     2023-08-28 10:11:59
                                 </td>
-                                <td class="white-space-nowrap Auth" style="color: red;" >
+                                <td class="white-space-nowrap tdtd Auth" style="color: red;" >
                                     Not Required
                                 </td>
-                                <td class="white-space-nowrap review" style="text-align: center;">
+                                <td class="white-space-nowrap tdtd review" style="text-align: center;">
                                     <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2"  style="color: orange;" id="btt" href="#">Update</a>
                                     <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2"  style="color: green;" id="btt" href="#"> Password Recovery</a>
                                 </td>      
@@ -461,38 +445,38 @@
                             </tr>
                             <tr class="hover-actions-trigger btn-reveal-trigger position-static">
                                 
-                                <td class="white-space-nowrap Name"> Felix                          
+                                <td class="white-space-nowrap tdtd Name"> Felix                          
                                 </td> 
-                                <td class="white-space-nowrap Surname">
+                                <td class="white-space-nowrap tdtd Surname">
                                     Mwape
                                 </td>
-                                <td class=" white-space-nowrap Contact">                           
+                                <td class=" white-space-nowrap tdtd Contact">                           
                                     9078675            
                                 </td>
-                                <td class="white-space-nowrap Email">                          
+                                <td class="white-space-nowrap tdtd Email">                          
                                     Mwape@gmail.com
                                 </td>
-                                <td class="white-space-nowrap Address" >
+                                <td class="white-space-nowrap tdtd Address" >
                                     chelstone
                                 </td>
                                 <td class=" text-start ps-5 Province">                          
                                    Southern
                                 </td>
-                                <td class=" white-space-nowrap Role">
+                                <td class=" white-space-nowrap tdtd Role">
                                     RISK OFFICER      
                                 </td>
-                                <td class="white-space-nowrap Username" >
+                                <td class="white-space-nowrap tdtd Username" >
                                     COUN10001</td>
-                                <td class="white-space-nowrap Status"  style="color: green;">
+                                <td class="white-space-nowrap tdtd Status"  style="color: green;">
                                     Active
                                 </td>
-                                <td class="white-space-nowrap Last" >
+                                <td class="white-space-nowrap tdtd Last" >
                                     2023-08-28 10:02:16
                                 </td>
-                                <td class="white-space-nowrap Auth"  style="color: red;">
+                                <td class="white-space-nowrap tdtd Auth"  style="color: red;">
                                     Not Required
                                 </td>
-                                <td class="white-space-nowrap review" style="text-align: center;">
+                                <td class="white-space-nowrap tdtd review" style="text-align: center;">
                                     <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" style="color: orange;" id="btt" href="#">Update</a>
                                     <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" style="color: green;" id="btt" href="#"> Password Recovery</a>
                                 </td>      
@@ -500,38 +484,38 @@
                             </tr>
                             <tr class="hover-actions-trigger btn-reveal-trigger position-static">
                                 
-                                <td class="white-space-nowrap Name"> Christopher                          
+                                <td class="white-space-nowrap tdtd Name"> Christopher                          
                                 </td> 
-                                <td class="white-space-nowrap Surname">
+                                <td class="white-space-nowrap tdtd Surname">
                                     Chifwembe
                                 </td>
-                                <td class=" white-space-nowrap Contact">                           
+                                <td class=" white-space-nowrap tdtd Contact">                           
                                     896750887            
                                 </td>
-                                <td class="white-space-nowrap Email">                          
+                                <td class="white-space-nowrap tdtd Email">                          
                                     chris@gmail.com
                                 </td>
-                                <td class="white-space-nowrap Address" >
+                                <td class="white-space-nowrap tdtd Address" >
                                     Lusaka, Lusaka
                                 </td>
                                 <td class=" text-start ps-5 Province">                          
                                     Northern
                                 </td>
-                                <td class=" white-space-nowrap Role">
+                                <td class=" white-space-nowrap tdtd Role">
                                     SENIOR CREDIT OFFICER     
                                 </td>
-                                <td class="white-space-nowrap Username" >
+                                <td class="white-space-nowrap tdtd Username" >
                                     ATME10001</td>
-                                <td class="white-space-nowrap Status" style="color: green;" >
+                                <td class="white-space-nowrap tdtd Status" style="color: green;" >
                                     Active
                                 </td>
-                                <td class="white-space-nowrap Last" >
+                                <td class="white-space-nowrap tdtd Last" >
                                     2023-08-28 09:53:33
                                 </td>
-                                <td class="white-space-nowrap Auth"  style="color: red;">
+                                <td class="white-space-nowrap tdtd Auth"  style="color: red;">
                                     Not Required
                                 </td>
-                                <td class="white-space-nowrap review" style="text-align: center;">
+                                <td class="white-space-nowrap tdtd review" style="text-align: center;">
                                     <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" style="color: orange;" id="btt" href="#">Update</a>
                                     <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2"  style="color: green;" id="btt" href="#"> Password Recovery</a>
                                 </td>      
@@ -539,38 +523,38 @@
                             </tr>
                             <tr class="hover-actions-trigger btn-reveal-trigger position-static">
                                 
-                                <td class="white-space-nowrap Name"> Rocy                          
+                                <td class="white-space-nowrap tdtd Name"> Rocy                          
                                 </td> 
-                                <td class="white-space-nowrap Surname">
+                                <td class="white-space-nowrap tdtd Surname">
                                     Balengu
                                 </td>
-                                <td class=" white-space-nowrap Contact">                           
+                                <td class=" white-space-nowrap tdtd Contact">                           
                                     532237626            
                                 </td>
-                                <td class="white-space-nowrap Email">                          
+                                <td class="white-space-nowrap tdtd Email">                          
                                     balengu@gmail.com
                                 </td>
-                                <td class="white-space-nowrap Address" >
+                                <td class="white-space-nowrap tdtd Address" >
                                     Lusaka, Lusaka
                                 </td>
                                 <td class=" text-start ps-5 Province">                          
                                     Northern
                                 </td>
-                                <td class=" white-space-nowrap Role">
+                                <td class=" white-space-nowrap tdtd Role">
                                     CREDIT AND RISK MANAGER          
                                 </td>
-                                <td class="white-space-nowrap Username" >
+                                <td class="white-space-nowrap tdtd Username" >
                                     BALE10001</td>
-                                <td class="white-space-nowrap Status" >
+                                <td class="white-space-nowrap tdtd Status" >
                                     Active
                                 </td>
-                                <td class="white-space-nowrap Last" >
+                                <td class="white-space-nowrap tdtd Last" >
                                     2023-08-28 10:11:59
                                 </td>
-                                <td class="white-space-nowrap Auth" >
+                                <td class="white-space-nowrap tdtd Auth" >
                                     Not Required
                                 </td>
-                                <td class="white-space-nowrap review" style="text-align: center;">
+                                <td class="white-space-nowrap tdtd review" style="text-align: center;">
                                     <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" id="btt" href="#">Update</a>
                                     <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" id="btt" href="#"> Password Recovery</a>
                                 </td>      
@@ -578,38 +562,38 @@
                             </tr>
                             <tr class="hover-actions-trigger btn-reveal-trigger position-static">
                                 
-                                <td class="white-space-nowrap Name"> Micheal                          
+                                <td class="white-space-nowrap tdtd Name"> Micheal                          
                                 </td> 
-                                <td class="white-space-nowrap Surname">
+                                <td class="white-space-nowrap tdtd Surname">
                                     Khuntena
                                 </td>
-                                <td class=" white-space-nowrap Contact">                           
+                                <td class=" white-space-nowrap tdtd Contact">                           
                                     782378433            
                                 </td>
-                                <td class="white-space-nowrap Email">                          
+                                <td class="white-space-nowrap tdtd Email">                          
                                     micheal@gmail.com
                                 </td>
-                                <td class="white-space-nowrap Address" >
+                                <td class="white-space-nowrap tdtd Address" >
                                     Lusaka, Lusaka
                                 </td>
                                 <td class=" text-start ps-5 Province">                          
                                     Eastern
                                 </td>
-                                <td class=" white-space-nowrap Role">
+                                <td class=" white-space-nowrap tdtd Role">
                                     DIRECTOR CREDIT AND RISK            
                                 </td>
-                                <td class="white-space-nowrap Username" >
+                                <td class="white-space-nowrap tdtd Username" >
                                     SPEE10005</td>
-                                <td class="white-space-nowrap Status" style="color: green;" >
+                                <td class="white-space-nowrap tdtd Status" style="color: green;" >
                                     Active
                                 </td>
-                                <td class="white-space-nowrap Last" >
+                                <td class="white-space-nowrap tdtd Last" >
                                     2023-08-28 10:11:59
                                 </td>
-                                <td class="white-space-nowrap Auth"  style="color: red;">
+                                <td class="white-space-nowrap tdtd Auth"  style="color: red;">
                                     Not Required
                                 </td>
-                                <td class="white-space-nowrap review" style="text-align: center;">
+                                <td class="white-space-nowrap tdtd review" style="text-align: center;">
                                     <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2"  style="color: orange;" id="btt" href="#">Update</a>
                                     <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" style="color: green;" id="btt" href="#"> Password Recovery</a>
                                 </td>      
@@ -617,38 +601,38 @@
                             </tr>
                             <tr class="hover-actions-trigger btn-reveal-trigger position-static">
                                 
-                                <td class="white-space-nowrap Name"> Biness                          
+                                <td class="white-space-nowrap tdtd Name"> Biness                          
                                 </td> 
-                                <td class="white-space-nowrap Surname">
+                                <td class="white-space-nowrap tdtd Surname">
                                     Chama
                                 </td>
-                                <td class=" white-space-nowrap Contact">                           
+                                <td class=" white-space-nowrap tdtd Contact">                           
                                     123456763            
                                 </td>
-                                <td class="white-space-nowrap Email">                          
+                                <td class="white-space-nowrap tdtd Email">                          
                                     chama@gmail.com
                                 </td>
-                                <td class="white-space-nowrap Address" >
+                                <td class="white-space-nowrap tdtd Address" >
                                     Lusaka
                                 </td>
                                 <td class=" text-start ps-5 Province">                          
                                     Central
                                 </td>
-                                <td class=" white-space-nowrap Role">
+                                <td class=" white-space-nowrap tdtd Role">
                                     PROVINCIAL FINANCE AND ADMIN            
                                 </td>
-                                <td class="white-space-nowrap Username" >
+                                <td class="white-space-nowrap tdtd Username" >
                                     FOOD10001</td>
-                                <td class="white-space-nowrap Status" style="color: green;" >
+                                <td class="white-space-nowrap tdtd Status" style="color: green;" >
                                     Active
                                 </td>
-                                <td class="white-space-nowrap Last" >
+                                <td class="white-space-nowrap tdtd Last" >
                                     2023-08-28 10:11:59
                                 </td>
-                                <td class="white-space-nowrap Auth" style="color: red;" >
+                                <td class="white-space-nowrap tdtd Auth" style="color: red;" >
                                     Not Required
                                 </td>
-                                <td class="white-space-nowrap review" style="text-align: center;">
+                                <td class="white-space-nowrap tdtd review" style="text-align: center;">
                                     <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2"  style="color: orange;" id="btt" href="#">Update</a>
                                     <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2"  style="color: green;" id="btt" href="#"> Password Recovery</a>
                                 </td>      
