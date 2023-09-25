@@ -13532,7 +13532,7 @@
                     </span>
                 </div>
             </div>
-            {{-- <small class="text-uppercase text-700 fw-bold py-2 pe-2 ps-1 rounded-end">customize</small> --}}
+            <small class="text-uppercase text-700 fw-bold py-2 pe-2 ps-1 rounded-end">customize</small>
         </div>
     </a>
     <!-- ===============================================-->
