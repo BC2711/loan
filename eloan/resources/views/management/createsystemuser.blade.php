@@ -1,5 +1,26 @@
 @extends('layout.main')
 @section('content')
+<style>
+    #card{
+        background-color: #7db37d !important;
+        border-color: #d99724!important;
+    }
+    /* .form-floating{
+        background-color:orange !important;
+    } */
+
+     h5,thead, tbody, tfoot, tr, td, th{
+        border-color: orange!important;
+    }
+    #button{
+        padding: 20px!important;
+        height: 20px !important;
+        /* background-color: #7db37d */
+    }
+    #button:hover{
+        background-color: #7db37d !important;
+    }
+</style>
     <nav class="mb-2" aria-label="breadcrumb">
         <ol class="breadcrumb mb-0">
             <li class="breadcrumb-item"><a href="/home">Home</a></li>

@@ -12,6 +12,9 @@
      h5,thead, tbody, tfoot, tr, td, th{
         border-color: orange!important;
     }
+    .form-check-label{
+        color:green;
+    }
 </style>
     <nav class="mb-2" aria-label="breadcrumb">
         <ol class="breadcrumb mb-0">
@@ -415,7 +418,7 @@
                                            
                                             <thead>
                                                 <tr>
-                                                    <th class="sort border-top ps-3" data-sort="name">Rports</th>
+                                                    <th class="sort border-top ps-3" data-sort="name"> Reports</th>
                                                 </tr>
                                             </thead>
                                             <tbody class="list">
