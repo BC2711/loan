@@ -9,7 +9,7 @@
     </nav>
 
     <div class="col-sm-6 col-md-9 col-lg-12 m-4">
-        <div class="card text-white success" id="card">
+        <div class="card text-white success leave" id="card">
             <div class="card-body">
                 <h4 class="card-title text-dark"> Approved | Pending | Declined </h4>
             </div>
@@ -62,7 +62,7 @@
                     </div>
                     <div class="table-responsive mx-n1 px-1 scrollbar">
                         <table class="table fs--1 mb-0 border-top border-200">
-                            <thead>
+                            <thead id="leave">
                                 <tr>
                                     <th class="sort white-space-nowrap" scope="col" data-sort=" Name">#</th>
                                     <th class="sort" scope="col" data-sort="Agent ">Agent Name</th>

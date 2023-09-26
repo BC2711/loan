@@ -61,6 +61,37 @@
     #btn:hover{
     background-color: #7db37d !important;
 }
+.tdtd{
+            font-weight: bold !important;
+            font-size: 14px;
+        }
+        .head{
+            font-weight: bolder !important;
+            font-size: 20px;
+        }
+/* #card{
+    border-color: #7db37d;
+} */
+        /* h5,
+        thead,
+        tbody,
+        tfoot,
+        tr,
+        td,
+        th {
+            border-color: #7db37d !important;
+        } */
+
+.leave{
+    background-color: #7db37d;
+}
+
+#leave{
+    background-color: #7db37d;
+}
+#btn:hover{
+    background-color: #7db37d !important;
+}
 </style>
 
 <body>

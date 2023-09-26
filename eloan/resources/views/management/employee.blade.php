@@ -1,22 +1,30 @@
 @extends('layout.main')
 @section('content')
 <style>
-/* #card{
-    background-color: #7db37d !important;
-    border-color: #d99724!important;
-} */
-/* .form-floating{
-    background-color:orange !important;
-} */
+  .tdtd{
+            font-weight: bold !important;
+            font-size: 14px;
+        }
+        .head{
+            font-weight: bolder !important;
+            font-size: 20px;
+        }
+#card{
+    border-color: #7db37d;
+}
+        h5,
+        thead,
+        tbody,
+        tfoot,
+        tr,
+        td,
+        th {
+            border-color: #7db37d !important;
+        }
 
- /* h5,thead, tbody, tfoot, tr, td, th{
-    border-color: orange!important;
-} */
-/* a{
-    padding: 20px!important;
-    height: 20px !important;
-    /* background-color: #7db37d */
-
+.leave{
+    background-color: #7db37d;
+}
 #btn:hover{
     background-color: #7db37d !important;
 }
@@ -30,7 +38,7 @@
   </nav>
   
   <div class="col-sm-6 col-md-9 col-lg-12 m-4">
-    <div class="card text-white success" id="card">
+    <div class="card text-white success leave" id="card">
         <div class="card-body">
             <h4 class="card-title text-dark">  Employees  </h4>
         </div>
@@ -77,64 +85,64 @@
                 </div>
                 <div class="table-responsive mx-n1 px-1 scrollbar">
                     <table class="table fs--1 mb-0 border-top border-200">
-                        <thead>
+                        <thead style="background-color: #7db37d">
                             <tr>                      
-                                <th class="sort white-space-nowrap" scope="col" data-sort=" Name">Name</th>
-                                <th class="sort" scope="col" data-sort="Surname " >Surname</th>
-                                <th class="sort" scope="col" data-sort="Surname " >Employee Id</th>
-                                <th class="sort" scope="col" data-sort="Surname " >Department</th>
-                                <th class="sort" scope="col" data-sort="Address">Tpin</th>
-                                <th class="sort" scope="col" data-sort="Contact" >Contact Number</th>
-                                <th class="sort" scope="col" data-sort="Email">Email</th>
-                                <th class="sort" scope="col" data-sort="Address">Physical Address</th>
-                                <th class="sort" scope="col" data-sort="Address">Province</th>
-                                <th class="sort" scope="col" data-sort="Address">District</th>
-                                <th class="sort" scope="col" data-sort="Address">Constituency</th>
-                                <th class="sort" scope="col" data-sort="Status">Status</th>
-                                <th class="sort " scope="col" style="text-align: center;" data-sort="Action">Action</th>
-                                <th class="sort" scope="col"></th>
+                                <th class="sort white-space-nowrap head" scope="col" data-sort=" Name">Name</th>
+                                <th class="sort head" scope="col" data-sort="Surname " >Surname</th>
+                                <th class="sort head" scope="col" data-sort="Surname " >Employee Id</th>
+                                <th class="sort head" scope="col" data-sort="Surname " >Department</th>
+                                <th class="sort head" scope="col" data-sort="Address">Tpin</th>
+                                <th class="sort head" scope="col" data-sort="Contact" >Contact Number</th>
+                                <th class="sort head" scope="col" data-sort="Email">Email</th>
+                                <th class="sort head" scope="col" data-sort="Address">Physical Address</th>
+                                <th class="sort head" scope="col" data-sort="Address">Province</th>
+                                <th class="sort head" scope="col" data-sort="Address">District</th>
+                                <th class="sort head" scope="col" data-sort="Address">Constituency</th>
+                                <th class="sort head" scope="col" data-sort="Status">Status</th>
+                                <th class="sort head " scope="col" style="text-align: center;" data-sort="Action">Action</th>
+                        
                             </tr>
                         </thead>
                         <tbody class="list" id="table-latest-review-body">
                             <tr class="hover-actions-trigger btn-reveal-trigger position-static">
                                 
-                                <td class="white-space-nowrap Name">                           
+                                <td class="white-space-nowrap tdtd Name">                           
                                       Biness                           
                                 </td>
-                                <td class="white-space-nowrap Surname">
+                                <td class="white-space-nowrap tdtd Surname">
                                     Dawkins
                                 </td>
-                                <td class=" white-space-nowrap Contact">                           
+                                <td class=" white-space-nowrap tdtd Contact">                           
                                       200127686                      
                                 </td>
-                                <td class="white-space-nowrap Email">                          
+                                <td class="white-space-nowrap tdtd Email">                          
                                   0987456744
                                 </td>
-                                <td class="white-space-nowrap Address" >
+                                <td class="white-space-nowrap tdtd Address" >
                                     Mail@gmail.com
                                 </td>
-                                <td class=" text-start ps-5 Province">                          
+                                <td class=" white-space-nowrap tdtd  Province">                          
                                         673 kitwe
                                 </td>
-                                <td class=" white-space-nowrap Role">
+                                <td class=" white-space-nowrap tdtd Role">
                                     Copperbelt                  
                                 </td>  
-                                <td class=" white-space-nowrap Role">
+                                <td class=" white-space-nowrap tdtd Role">
                                   Kitwe                        
                                 </td>  
-                                <td class=" white-space-nowrap Role">
+                                <td class=" white-space-nowrap tdtd Role">
                                    Kwacha                         
                                 </td>  
-                                <td class=" white-space-nowrap Role">
+                                <td class=" white-space-nowrap tdtd Role">
                                  Employed                       
                                 </td>  
-                                <td class=" white-space-nowrap Role">
+                                <td class=" white-space-nowrap tdtd Role">
                                     Kwacha                         
                                  </td>  
-                                 <td class=" white-space-nowrap Role">
+                                 <td class=" white-space-nowrap tdtd Role">
                                   Employed                       
                                  </td>  
-                                <td class=" white-space-nowrap Role"  style="text-align: center;">
+                                <td class=" white-space-nowrap tdtd Role"  style="text-align: center;">
                                     <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2"  id="btn"  href="/timeattendance"> Time Attendance</a>
                                     <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2"  id="btn"  href="/leave"> Leave Application</a>
                                                             
@@ -142,43 +150,43 @@
                             </tr>
                             <tr class="hover-actions-trigger btn-reveal-trigger position-static">
                                 
-                                <td class="white-space-nowrap Name">                           
+                                <td class="white-space-nowrap tdtd  Name">                           
                                       Chris                           
                                 </td>
-                                <td class="white-space-nowrap Surname">
+                                <td class="white-space-nowrap tdtd  Surname">
                                  Banda
                                 </td>
-                                <td class=" white-space-nowrap Contact">                           
+                                <td class=" white-space-nowrap tdtd  Contact">                           
                                      30012345675            
                                 </td>
-                                <td class="white-space-nowrap Email">                          
+                                <td class="white-space-nowrap tdtd  Email">                          
                                     0987654323  
                                 </td>
-                                <td class="white-space-nowrap Address" >
+                                <td class="white-space-nowrap tdtd  Address" >
                                     chris@gmail.com
                                 </td>
-                                <td class=" text-start ps-5 Province">                          
+                                <td class=" white-space-nowrap tdtd  Province">                          
                                         234 Chelstone
                                 </td>
-                                <td class=" white-space-nowrap Role">
+                                <td class=" white-space-nowrap tdtd  Role">
                                    Lusaka                         
                                 </td>  
-                                <td class=" white-space-nowrap Role">
+                                <td class=" white-space-nowrap tdtd  Role">
                                     Lusaka                       
                                 </td>  
-                                <td class=" white-space-nowrap Role">
+                                <td class=" white-space-nowrap tdtd  Role">
                                     Just now                          
                                 </td>  
-                                <td class=" white-space-nowrap Role">
+                                <td class=" white-space-nowrap tdtd  Role">
                                   Discharged                       
                                 </td> 
-                                <td class=" white-space-nowrap Role">
+                                <td class=" white-space-nowrap tdtd  Role">
                                     Just now                          
                                 </td>  
-                                <td class=" white-space-nowrap Role">
+                                <td class=" white-space-nowrap tdtd  Role">
                                   Discharged                       
                                 </td>  
-                                <td class=" white-space-nowrap Role"  style="text-align: center;">
+                                <td class=" white-space-nowrap tdtd  Role"  style="text-align: center;">
                                     <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" id="btn" href="/timeattendance"> Time Attendance </a>
                                     <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2"  id="btn" href="/leave"> Leave Application</a>                      
                                 </td>                              

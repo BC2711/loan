@@ -9,7 +9,7 @@
     </nav>
 
     <div class="col-sm-6 col-md-9 col-lg-12 m-4">
-        <div class="card text-white success"  id="card">
+        <div class="card text-white success leave"  id="card">
             <div class="card-body">
                 <h3 class="card-title text-dark"> Individual </h3>
             </div>
@@ -23,7 +23,7 @@
                 <div data-list='{"valueNames":["Name","Date","NRC","Age","Gender","Phone","Tpin","Email","Province","District","Costituency"],"page":6}'> --}}
                 <div class="row align-items-end justify-content-between pb-5 g-3">
                     <div class="col-auto">
-                        <h5> Log </h5>
+                        <h5> Log 2</h5>
                     </div>
                     <div class="col-12 col-md-auto">
                         <div class="row g-2 gy-3">
@@ -61,7 +61,7 @@
                 </div>
                 <div class="table-responsive mx-n1 px-1 scrollbar">
                     <table class="table fs--1 mb-0 border-top border-200">
-                        <thead>
+                        <thead  id="leave">
                             <tr>
                                 <th class="sort white-space-nowrap" scope="col" data-sort=" Name">Full Name</th>
                                 <th class="sort" scope="col" data-sort="Date ">Date of Birth</th>
@@ -76,92 +76,92 @@
                                 <th class="sort" scope="col" data-sort="Costituency">Costituency</th>
                                 <th class="sort" scope="col" data-sort="Address">Address</th>
                                 <th class="sort" scope="col" data-sort="Action">Action</th>
-                                <th class="sort" scope="col"></th>
+                                
                             </tr>
                         </thead>
                         <tbody class="list" id="table-latest-review-body">
                             <tr class="hover-actions-trigger btn-reveal-trigger position-static">
 
-                                <td class="white-space-nowrap Name">
+                                <td class="white-space-nowrap tdtd Name">
                                     Biness chama
                                 </td>
-                                <td class="white-space-nowrap Date">
+                                <td class="white-space-nowrap tdtd Date">
                                    23/09/89
                                 </td>
-                                <td class=" white-space-nowrap NRC">
+                                <td class=" white-space-nowrap tdtd NRC">
                                    352689/67/1
                                 </td>
-                                <td class="white-space-nowrap Gender fs--2">
+                                <td class="white-space-nowrap tdtd Gender ">
                                  Adult
                                 </td>
-                                <td class="white-space-nowrap Phone">
+                                <td class="white-space-nowrap tdtd Phone">
                                   Male
                                 </td>
-                                <td class=" text-start ps-5 Tpin">
+                                <td class=" white-space-nowrap tdtd Tpin">
                                    09876543211
                                 </td>
-                                <td class=" white-space-nowrap Email">
+                                <td class=" white-space-nowrap tdtd Email">
                                  1000326780
                                 </td>
-                                <td class="white-space-nowrap Province">
+                                <td class="white-space-nowrap tdtd Province">
                                    chama@gmail.com
                                 </td>
-                                <td class="white-space-nowrap District">
+                                <td class="white-space-nowrap tdtd District">
                                    Copperbelt
                                 </td>
-                                <td class="white-space-nowrap Costituency">
+                                <td class="white-space-nowrap tdtd Costituency">
                                    Kitwe
                                 </td>
-                                <td class="white-space-nowrap Address">
+                                <td class="white-space-nowrap tdtd Address">
                                    Kwacha
                                 </td>
-                                <td class="white-space-nowrap review">
+                                <td class="white-space-nowrap tdtd review">
                                    1236 kwacha
                                 </td>
-                                <td class="white-space-nowrap review">
+                                <td class="white-space-nowrap tdtd review">
                                     view
                                 </td>
 
                             </tr>
                             <tr class="hover-actions-trigger btn-reveal-trigger position-static">
 
-                                <td class="white-space-nowrap Name">
+                                <td class="white-space-nowrap tdtd Name">
                                     Biness chama
                                 </td>
-                                <td class="white-space-nowrap Date">
+                                <td class="white-space-nowrap tdtd Date">
                                    23/09/89
                                 </td>
-                                <td class=" white-space-nowrap NRC">
+                                <td class=" white-space-nowrap tdtd NRC">
                                    352689/67/1
                                 </td>
-                                <td class="white-space-nowrap Gender fs--2">
+                                <td class="white-space-nowrap tdtd Gender ">
                                  Adult
                                 </td>
-                                <td class="white-space-nowrap Phone">
+                                <td class="white-space-nowrap tdtd Phone">
                                   Male
                                 </td>
-                                <td class=" text-start ps-5 Tpin">
+                                <td class=" white-space-nowrap tdtd Tpin">
                                    09876543211
                                 </td>
-                                <td class=" white-space-nowrap Email">
+                                <td class=" white-space-nowrap tdtd Email">
                                  1000326780
                                 </td>
-                                <td class="white-space-nowrap Province">
+                                <td class="white-space-nowrap tdtd Province">
                                    chama@gmail.com
                                 </td>
-                                <td class="white-space-nowrap District">
+                                <td class="white-space-nowrap tdtd District">
                                    Copperbelt
                                 </td>
-                                <td class="white-space-nowrap Costituency">
+                                <td class="white-space-nowrap tdtd Costituency">
                                    Kitwe
                                 </td>
-                                <td class="white-space-nowrap Address">
+                                <td class="white-space-nowrap tdtd Address">
                                    Kwacha
                                 </td>
-                                <td class="white-space-nowrap review">
+                                <td class="white-space-nowrap tdtd review">
                                    1236 kwacha
                                 </td>
-                                <td class="white-space-nowrap review">
+                                <td class="white-space-nowrap tdtd review">
                                     view
                                 </td>
 

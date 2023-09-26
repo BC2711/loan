@@ -9,7 +9,7 @@
     </nav>
 
     <div class="col-sm-6 col-md-9 col-lg-12 m-4">
-        <div class="card text-white success" id="card">
+        <div class="card text-white success leave" id="card">
             <div class="card-body">
                 <h4 class="card-title text-dark">Cooperatives  </h4>
             </div>
@@ -62,7 +62,7 @@
                     </div>
                     <div class="table-responsive mx-n1 px-1 scrollbar">
                         <table class="table fs--1 mb-0 border-top border-200">
-                            <thead>
+                            <thead id="leave">
                                 <tr>
                                     <th class="sort white-space-nowrap" scope="col" data-sort=" Name">Cooperative Name</th>
                                     <th class="sort" scope="col" data-sort="Contact ">Contact Name</th>
@@ -72,7 +72,7 @@
                                     <th class="sort" scope="col" data-sort="Checker ">Checker </th>
                                     <th class="sort" scope="col" data-sort="Status">Status</th>                                   
                                     <th class="sort" scope="col" data-sort="Action">Action</th>
-                                    <th class="sort" scope="col"></th>
+                            
                                 </tr>
                             </thead>
                             <tbody class="list" id="table-latest-review-body">

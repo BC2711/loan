@@ -5,7 +5,9 @@
             border-radius: 0px;
             width: 150px;
         }
-
+.table1{
+    width: 30px;
+}
 
         #btn:hover {
             background-color: #7db37d !important;
@@ -27,38 +29,38 @@
                 <hr />
                 <div class="row">
                     <div class="col-sm-1 col-md-1 col-lg-2 m-0">
+                        <h6 class="card-title text-dark text-center"   id="card1"> Days Absent </h6>
                         <div class="card text-white success" style="background-color:#b5abab;"  id="card1">
-                            <div class="card-body">
-                                <h6 class="card-title text-dark text-center"> Days Absent </h6>
+                            <div class="card-body">                              
                                 <h6 class="text-center">2</h6>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-1 col-md-1 col-lg-2 m-0">
+                        <h6 class="card-title text-dark text-center" id="card1"> Pre-approved Absences </h6>
                         <div class="card text-white success" style="background-color:#b5abab;"  id="card1">
-                            <div class="card-body">
-                                <h6 class="card-title text-dark text-center"> Pre-approved Absences </h6>
+                            <div class="card-body">                            
                                  <h6  class="text-center">262</h6>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-1 col-md-1 col-lg-2 m-0">
+                        <h6 class="card-title text-dark text-center" id="card1"> Overtime Hours </h6>
                         <div class="card text-white success" style="background-color:#7070d9;"  id="card1">
-                            <div class="card-body">
-                                <h6 class="card-title text-dark text-center"> Overtime Hours </h6>
+                            <div class="card-body">                              
                                   <h6  class="text-center">1</h6>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-1 col-md-1 col-lg-2 m-0">
+                        <h6 class="card-title text-dark text-center" id="card1">Working Hours </h6>
                         <div class="card text-white success" style="background-color:#d9b778;"  id="card1">
-                            <div class="card-body">
-                                <h6 class="card-title text-dark text-center">Working Hours </h6>
+                            <div class="card-body">                             
                                   <h6  class="text-center">0</h6>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-1 col-md-1 col-lg-2 ml-0">
+                    {{-- <div class="col-sm-1 col-md-1 col-lg-2 ml-0">
                         <div class="card text-white "style="background-color:#9be79b;"  id="card1">
                             <div class="card-body">
                                 <h6 class="card-title text-dark text-center"> Bereavement </h6>
@@ -73,7 +75,7 @@
                                   <h6  class="text-center">0</h6>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
 
             </div>
@@ -146,10 +148,10 @@
                         </div>
                     </div>
                     <div class="table-responsive mx-n1 px-0 scrollbar">
-                        <table class="table table-bordered  table-striped  table-hover">
+                        <table class="table table-bordered  table-striped">
                             <thead style="background-color:green;">
                                 <tr>
-                                    <th class="sort white-space-nowrap" scope="col" data-sort=" Name">Months</th>
+                                    <th class="sort" scope="col" data-sort=" Name">Months</th>
                                     <th class="sort" scope="col" data-sort="Surname ">Mon</th>
                                     <th class="sort" scope="col" data-sort="Address">Tue</th>
                                     <th class="sort" scope="col" data-sort="Contact">Wed</th>
@@ -158,48 +160,48 @@
                                     <th class="sort" scope="col" data-sort="Address">Sat</th>
                                     <th class="sort" scope="col" data-sort="Address">Sun</th>
 
-                                    <th class="sort" scope="col" data-sort="Surname ">Mon</th>
-                                    <th class="sort" scope="col" data-sort="Address">Tue</th>
-                                    <th class="sort" scope="col" data-sort="Contact">Wed</th>
-                                    <th class="sort" scope="col" data-sort="Email">Thu</th>
-                                    <th class="sort" scope="col" data-sort="Address"> Fri</th>
-                                    <th class="sort" scope="col" data-sort="Address">Sat</th>
-                                    <th class="sort" scope="col" data-sort="Address">Sun</th>
+                                    <th class="sort" scope="col"  data-sort="Surname ">Mon</th>
+                                    <th class="sort" scope="col"  data-sort="Address">Tue</th>
+                                    <th class="sort" scope="col"  data-sort="Contact">Wed</th>
+                                    <th class="sort" scope="col"  data-sort="Email">Thu</th>
+                                    <th class="sort" scope="col"  data-sort="Address"> Fri</th>
+                                    <th class="sort" scope="col"  data-sort="Address">Sat</th>
+                                    <th class="sort" scope="col"  data-sort="Address">Sun</th>
 
-                                    <th class="sort" scope="col" data-sort="Surname ">Mon</th>
-                                    <th class="sort" scope="col" data-sort="Address">Tue</th>
-                                    <th class="sort" scope="col" data-sort="Contact">Wed</th>
-                                    <th class="sort" scope="col" data-sort="Email">Thu</th>
-                                    <th class="sort" scope="col" data-sort="Address"> Fri</th>
-                                    <th class="sort" scope="col" data-sort="Address">Sat</th>
-                                    <th class="sort" scope="col" data-sort="Address">Sun</th>
+                                    <th class="sort" scope="col"  data-sort="Surname ">Mon</th>
+                                    <th class="sort" scope="col"  data-sort="Address">Tue</th>
+                                    <th class="sort" scope="col"  data-sort="Contact">Wed</th>
+                                    <th class="sort" scope="col"  data-sort="Email">Thu</th>
+                                    <th class="sort" scope="col"  data-sort="Address"> Fri</th>
+                                    <th class="sort" scope="col"  data-sort="Address">Sat</th>
+                                    <th class="sort" scope="col"  data-sort="Address">Sun</th>
 
-                                    <th class="sort" scope="col" data-sort="Surname ">Mon</th>
-                                    <th class="sort" scope="col" data-sort="Address">Tue</th>
-                                    <th class="sort" scope="col" data-sort="Contact">Wed</th>
-                                    <th class="sort" scope="col" data-sort="Email">Thu</th>
-                                    <th class="sort" scope="col" data-sort="Address"> Fri</th>
-                                    <th class="sort" scope="col" data-sort="Address">Sat</th>
-                                    <th class="sort" scope="col" data-sort="Address">Sun</th>
+                                    <th class="sort" scope="col"  data-sort="Surname ">Mon</th>
+                                    <th class="sort" scope="col"  data-sort="Address">Tue</th>
+                                    <th class="sort" scope="col"  data-sort="Contact">Wed</th>
+                                    <th class="sort" scope="col"  data-sort="Email">Thu</th>
+                                    <th class="sort" scope="col"  data-sort="Address"> Fri</th>
+                                    <th class="sort" scope="col"  data-sort="Address">Sat</th>
+                                    <th class="sort" scope="col"  data-sort="Address">Sun</th>
 
                                 </tr>
                             </thead>
                             <tbody class="list" id="table-striped">
-                                <tr class="hover-actions-trigger btn-reveal-trigger position-static">
+                                <tr class="hover-actions-trigger btn-reveal-trigger position-static text-center">
                                     <td class="white-space-nowrap Name">
 
                                     </td>
 
-                                    <td colspan="7" class="table text-center">week 1</td>
+                                    <td colspan="7">week 1</td>
 
 
-                                    <td colspan="7" class="table text-center">week 2</td>
+                                    <td colspan="7">week 2</td>
 
 
-                                    <td colspan="7" class="table  text-center">week 3</td>
+                                    <td colspan="7" >week 3</td>
 
 
-                                    <td colspan="7" class="table  text-center">week 4</td>
+                                    <td colspan="7" >week 4</td>
 
                                 </tr>
                                 <tr class="hover-actions-trigger btn-reveal-trigger position-static">
