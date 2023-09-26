@@ -81,6 +81,8 @@
                             <tr>                      
                                 <th class="sort white-space-nowrap" scope="col" data-sort=" Name">Name</th>
                                 <th class="sort" scope="col" data-sort="Surname " >Surname</th>
+                                <th class="sort" scope="col" data-sort="Surname " >Employee Id</th>
+                                <th class="sort" scope="col" data-sort="Surname " >Department</th>
                                 <th class="sort" scope="col" data-sort="Address">Tpin</th>
                                 <th class="sort" scope="col" data-sort="Contact" >Contact Number</th>
                                 <th class="sort" scope="col" data-sort="Email">Email</th>
@@ -126,6 +128,12 @@
                                 <td class=" white-space-nowrap Role">
                                  Employed                       
                                 </td>  
+                                <td class=" white-space-nowrap Role">
+                                    Kwacha                         
+                                 </td>  
+                                 <td class=" white-space-nowrap Role">
+                                  Employed                       
+                                 </td>  
                                 <td class=" white-space-nowrap Role"  style="text-align: center;">
                                     <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2"  id="btn"  href="/timeattendance"> Time Attendance</a>
                                     <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2"  id="btn"  href="/leave"> Leave Application</a>
@@ -158,6 +166,12 @@
                                 <td class=" white-space-nowrap Role">
                                     Lusaka                       
                                 </td>  
+                                <td class=" white-space-nowrap Role">
+                                    Just now                          
+                                </td>  
+                                <td class=" white-space-nowrap Role">
+                                  Discharged                       
+                                </td> 
                                 <td class=" white-space-nowrap Role">
                                     Just now                          
                                 </td>  

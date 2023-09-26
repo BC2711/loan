@@ -26,9 +26,18 @@
                         <div class="col-12 col-sm-6 col-md-4">
                             <div class="p-4 code-to-copy">
                                 <div class="form-floating mb-3">
-                                    <input class="form-control" id="floatingPassword" type="text"
-                                        placeholder="Password" />
-                                    <label for="floatingPassword">First Name<span class="danger">*</span></label>
+                                    <select class="form-select" id="floatingSelect"
+                                        aria-label="Floating label select example">
+                                        <option value="MALE">Human Resource</option>
+                                        <option value="FEMALE">IT</option>
+                                    </select>
+                                    <label for="floatingSelect"> Department <span class="danger">*</span></label>
+                                </div>
+                                <div class="form-floating mb-3">
+
+                                    <input class="form-control" id="floatingInput" type="text"
+                                        placeholder="name@example.com" />
+                                    <label for="floatingPassword">Surname <span class="danger">*</span></label>
                                 </div>
                                 <div class="form-floating mb-3">
                                     <input class="form-control" id="floatingPassword" type="text"
@@ -43,11 +52,7 @@
                                     </select>
                                     <label for="floatingSelect"> Gender <span class="danger">*</span></label>
                                 </div>
-                                <div class="form-floating mb-3">
-                                    <input class="form-control" id="floatingPassword" type="text"
-                                        placeholder="Password" />
-                                    <label for="floatingPassword">Email <span class="danger">*</span></label>
-                                </div>
+                               
                                 <div class="form-floating ">
                                     <input class="form-control" id="floatingPassword" type="file"
                                         placeholder="Password" />
@@ -60,8 +65,9 @@
                                 <div class="form-floating mb-3">
                                     <input class="form-control" id="floatingPassword" type="text"
                                         placeholder="Password" />
-                                    <label for="floatingPassword">Other Names</label>
+                                    <label for="floatingPassword">First Name<span class="danger">*</span></label>
                                 </div>
+                               
                                 <div class="form-floating mb-3">
                                     <input class="form-control" id="floatingPassword" type="date"
                                         placeholder="Password" />
@@ -73,6 +79,11 @@
                                     <label for="floatingPassword">Tpin<span class="danger">*</span> </label>
                                 </div>
                                 <div class="form-floating mb-3">
+                                    <input class="form-control" id="floatingPassword" type="text"
+                                        placeholder="Password" />
+                                    <label for="floatingPassword">Email <span class="danger">*</span></label>
+                                </div>
+                                <div class="form-floating mb-3">
                                     <input class="form-control" id="floatingPassword" type="file"
                                         placeholder="Password" />
                                     <label for="floatingPassword">CV<span class="danger">*</span> </label>
@@ -82,10 +93,11 @@
                         <div class="col-12 col-sm-6 col-md-4">
                             <div class="p-4 code-to-copy">
                                 <div class="form-floating mb-3">
-                                    <input class="form-control" id="floatingInput" type="text"
-                                        placeholder="name@example.com" />
-                                    <label for="floatingPassword">Surname <span class="danger">*</span></label>
+                                    <input class="form-control" id="floatingPassword" type="text"
+                                        placeholder="Password" />
+                                    <label for="floatingPassword">Other Names</label>
                                 </div>
+                              
                                 <div class="form-floating mb-3">
                                     <input class="form-control" id="floatingPassword" type="text"
                                         placeholder="Password" />

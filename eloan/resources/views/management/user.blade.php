@@ -5,7 +5,7 @@
         background-color: green!important;
        }
         .tdtd{
-            height: 20px !important;
+            font-weight: bold !important;
         }
     
     #button{
@@ -13,7 +13,9 @@
         height: 20px !important;
         width:131px;       
     }
-  
+  #thead{
+    font-size: 20px;
+  }
 </style>
 <nav class="mb-2" aria-label="breadcrumb">
     <ol class="breadcrumb mb-0">
@@ -73,25 +75,26 @@
                     <table class="table table-striped fs--1 mb-0 border-top border-200">
                         <thead  style="background-color: #7db37d; height:60px;">
                             <tr style="margin:10px; padding:5px;">                      
-                                <th class="sort white-space-nowrap tdtd"  style="height:10px !important;" scope="col" data-sort=" Name">Name</th>
-                                <th class="sort" scope="col" data-sort="Surname " >Surname</th>
-                                <th class="sort" scope="col" data-sort="Contact" >Contact Number</th>
-                                <th class="sort" scope="col" data-sort="Email">Email</th>
-                                <th class="sort" scope="col" data-sort="Address">Address</th>
-                                <th class="sort" scope="col" data-sort="Province ">Province</th>
-                                <th class="sort" scope="col" data-sort="Role">Role Type</th>
-                                <th class="sort" scope="col" data-sort="Username">Username</th>
-                                <th class="sort" scope="col" data-sort="Status">Status</th>
-                                <th class="sort" scope="col" data-sort="Last">Last Login</th>
-                                <th class="sort" scope="col" data-sort="Auth">Auth Status</th>
-                                <th class="sort" scope="col" data-sort="Action" style="text-align: center;">Action</th>
+                                <th class="sort white-space-nowrap tdtd"  style="height:10px !important;" scope="col" data-sort=" Name" id="thead">Name</th>
+                                <th class="sort" scope="col" data-sort="Surname " id="thead" >Surname</th>
+                                <th class="sort" scope="col" data-sort="Contact"  id="thead" >Contact Number</th>
+                                <th class="sort" scope="col" data-sort="Email"  id="thead">Email</th>
+                                <th class="sort" scope="col" data-sort="Address"  id="thead">Address</th>
+                                <th class="sort" scope="col" data-sort="Province "  id="thead">Province</th>
+                                <th class="sort" scope="col" data-sort="Role"  id="thead">Role Type</th>
+                                <th class="sort" scope="col" data-sort="Username"  id="thead">Username</th>
+                                <th class="sort" scope="col" data-sort="Status"  id="thead">Status</th>
+                                <th class="sort" scope="col" data-sort="Last"  id="thead">Last Login</th>
+                                <th class="sort" scope="col" data-sort="Auth"  id="thead">Auth Status</th>
+                                <th class="sort" scope="col" data-sort="Action" style="text-align: center;"  id="thead">Action</th>
                                 <th class="sort" scope="col"></th>
                             </tr>
                         </thead>
                         <tbody class="list" id="table-latest-review-body">
                             <tr class="hover-actions-trigger btn-reveal-trigger position-static">
                                 
-                                <td class="white-space-nowrap  tdtd Name"> Victor                          
+                                <td class="white-space-nowrap  tdtd Name"> 
+                                    Victor                       
                                 </td> 
                                 <td class="white-space-nowrap  tdtd Surname">
                                     Kabwe
@@ -171,7 +174,8 @@
                             </tr>
                             <tr class="hover-actions-trigger btn-reveal-trigger position-static">
                                 
-                                <td class="white-space-nowrap tdtd  Name">Jacob                           
+                                <td class="white-space-nowrap tdtd  Name">
+                                    Jacob                           
                                 </td> 
                                 <td class="white-space-nowrap  tdtd Surname">
                                     Phiri
@@ -210,7 +214,7 @@
                             </tr>
                             <tr class="hover-actions-trigger btn-reveal-trigger position-static">
                                 
-                                <td class="white-space-nowrap  Name"> Christopher                          
+                                <td class="white-space-nowrap tdtd Name"> Christopher                          
                                 </td> 
                                 <td class="white-space-nowrap tdtd Surname">
                                     Chifwembe
@@ -224,10 +228,10 @@
                                 <td class="white-space-nowrap tdtd Address" >
                                     Lusaka, Lusaka
                                 </td>
-                                <td class=" text-start ps-5 Province">                          
+                                <td class="white-space-nowrap tdtd Province">                          
                                     Northern
                                 </td>
-                                <td class=" white-space-nowrap tdtd Role">
+                                <td class=" white-space-nowrap tdtd  Role">
                                     SENIOR CREDIT OFFICER     
                                 </td>
                                 <td class="white-space-nowrap tdtd Username" >
@@ -263,7 +267,7 @@
                                 <td class="white-space-nowrap tdtd Address" >
                                     Lusaka, Lusaka
                                 </td>
-                                <td class=" text-start ps-5 Province">                          
+                                <td class=" white-space-nowrap tdtd  Province">                          
                                     Northern
                                 </td>
                                 <td class=" white-space-nowrap tdtd Role">
@@ -302,7 +306,7 @@
                                 <td class="white-space-nowrap tdtd Address" >
                                     Lusaka, Lusaka
                                 </td>
-                                <td class=" text-start ps-5 Province">                          
+                                <td class=" white-space-nowrap tdtd  Province">                          
                                     Eastern
                                 </td>
                                 <td class=" white-space-nowrap tdtd Role">
@@ -341,7 +345,7 @@
                                 <td class="white-space-nowrap tdtd Address" >
                                     Lusaka
                                 </td>
-                                <td class=" text-start ps-5 Province">                          
+                                <td class=" white-space-nowrap tdtd  Province">                          
                                     Central
                                 </td>
                                 <td class=" white-space-nowrap tdtd Role">
@@ -380,7 +384,7 @@
                                 <td class="white-space-nowrap tdtd Address" >
                                     Malawi
                                 </td>
-                                <td class=" text-start ps-5 Province">                          
+                                <td class=" white-space-nowrap tdtd Province">                          
                                     Central
                                 </td>
                                 <td class=" white-space-nowrap tdtd Role">
@@ -420,7 +424,7 @@
                                 <td class="white-space-nowrap tdtd Address" >
                                     Oasis
                                 </td>
-                                <td class=" text-start ps-5 Province">                          
+                                <td class=" white-space-nowrap tdtd  Province">                          
                                     Eastern
                                 </td>
                                 <td class=" white-space-nowrap tdtd Role">
@@ -459,7 +463,7 @@
                                 <td class="white-space-nowrap tdtd Address" >
                                     chelstone
                                 </td>
-                                <td class=" text-start ps-5 Province">                          
+                                <td class="white-space-nowrap tdtd  Province">                          
                                    Southern
                                 </td>
                                 <td class=" white-space-nowrap tdtd Role">
@@ -498,7 +502,7 @@
                                 <td class="white-space-nowrap tdtd Address" >
                                     Lusaka, Lusaka
                                 </td>
-                                <td class=" text-start ps-5 Province">                          
+                                <td class=" white-space-nowrap tdtd  Province">                          
                                     Northern
                                 </td>
                                 <td class=" white-space-nowrap tdtd Role">
@@ -537,7 +541,7 @@
                                 <td class="white-space-nowrap tdtd Address" >
                                     Lusaka, Lusaka
                                 </td>
-                                <td class=" text-start ps-5 Province">                          
+                                <td class=" white-space-nowrap tdtd  Province">                          
                                     Northern
                                 </td>
                                 <td class=" white-space-nowrap tdtd Role">
@@ -576,7 +580,7 @@
                                 <td class="white-space-nowrap tdtd Address" >
                                     Lusaka, Lusaka
                                 </td>
-                                <td class=" text-start ps-5 Province">                          
+                                <td class="white-space-nowrap tdtd  Province">                          
                                     Eastern
                                 </td>
                                 <td class=" white-space-nowrap tdtd Role">
@@ -615,7 +619,7 @@
                                 <td class="white-space-nowrap tdtd Address" >
                                     Lusaka
                                 </td>
-                                <td class=" text-start ps-5 Province">                          
+                                <td class=" white-space-nowrap tdtd  Province">                          
                                     Central
                                 </td>
                                 <td class=" white-space-nowrap tdtd Role">

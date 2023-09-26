@@ -16,11 +16,22 @@
         border-color: orange!important;
     }
     #button{
-        padding: 20px!important;
-        height: 20px !important;
-        width:131px;
+     
+        /* height: 20px !important;
+        width:131px; */
         /* background-color: #7db37d */
     }
+    #dbt{
+        padding: 3px!important;
+        margin-bottom: 7px;
+    }
+    
+    .btn {
+            width: 150px !important;
+            text-align: center;
+
+        }
+
     #button:hover{
         background-color: #7db37d !important;
     }
@@ -221,11 +232,11 @@
 
                     </div>
                     <div class="form-buttons-w text-center">
-                        <a class="btn btn-md btn-phoenix-secondary bg-white hover-bg-100 me-2" id="button" name="add"
-                            href="/agent"  id="label"><h6>Back</h6> </a>
+                        <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2 " id="button"
+                            name="add" href="/employee"><h5 id="dbt">Back </h5></a>
 
-                        <button class="btn btn-md btn-phoenix-secondary bg-white hover-bg-100 me-2"  id="button" name="add"
-                            type="submit"  id="label"><h6>Submit</h6> </button>
+                        <button class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2 " id="button"
+                            name="add" type="submit"><h5 id="dbt">Submit</h5> </button>
                     </div>
                 </form>
             </div>

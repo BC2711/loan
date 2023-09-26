@@ -29,7 +29,7 @@
                     <div class="col-sm-1 col-md-1 col-lg-2 m-0">
                         <div class="card text-white success" style="background-color:#b5abab;"  id="card1">
                             <div class="card-body">
-                                <h6 class="card-title text-dark text-center"> Days of Leave </h6>
+                                <h6 class="card-title text-dark text-center"> Days Absent </h6>
                                 <h6 class="text-center">2</h6>
                             </div>
                         </div>
@@ -37,7 +37,7 @@
                     <div class="col-sm-1 col-md-1 col-lg-2 m-0">
                         <div class="card text-white success" style="background-color:#b5abab;"  id="card1">
                             <div class="card-body">
-                                <h6 class="card-title text-dark text-center"> Working Days </h6>
+                                <h6 class="card-title text-dark text-center"> Pre-approved Absences </h6>
                                  <h6  class="text-center">262</h6>
                             </div>
                         </div>
@@ -45,7 +45,7 @@
                     <div class="col-sm-1 col-md-1 col-lg-2 m-0">
                         <div class="card text-white success" style="background-color:#7070d9;"  id="card1">
                             <div class="card-body">
-                                <h6 class="card-title text-dark text-center"># Sick Days </h6>
+                                <h6 class="card-title text-dark text-center"> Overtime Hours </h6>
                                   <h6  class="text-center">1</h6>
                             </div>
                         </div>
@@ -53,7 +53,7 @@
                     <div class="col-sm-1 col-md-1 col-lg-2 m-0">
                         <div class="card text-white success" style="background-color:#d9b778;"  id="card1">
                             <div class="card-body">
-                                <h6 class="card-title text-dark text-center">Vecation </h6>
+                                <h6 class="card-title text-dark text-center">Working Hours </h6>
                                   <h6  class="text-center">0</h6>
                             </div>
                         </div>
@@ -110,7 +110,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-12 col-sm-6 col-md-6">
+                                    {{-- <div class="col-12 col-sm-6 col-md-6">
                                         <div class="col-auto flex-0">
                                             <div class="search-box text-left" style="margin-left:690px;">
                                                 <form class="position-relative" data-bs-toggle="search"
@@ -121,7 +121,7 @@
                                                 </form>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> --}}
                                 </div>
                                 <div class="col-auto">
                                     {{-- <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2"
