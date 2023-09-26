@@ -71,8 +71,8 @@
         }
 /* #card{
     border-color: #7db37d;
-} */
-        /* h5,
+/* } */
+     h5,
         thead,
         tbody,
         tfoot,
@@ -80,7 +80,7 @@
         td,
         th {
             border-color: #7db37d !important;
-        } */
+        } 
 
 .leave{
     background-color: #7db37d;
@@ -10819,13 +10819,14 @@
                                             <a class="dropdown-link" href="/employee">Employees</a>
                                             <a class="dropdown-link"
                                                 href="modules/components/alerts.html">POS Device</a>
-                                            <a class="dropdown-link" href="modules/components/badge.html">Products</a>
+                                           
+                                                <a class="dropdown-link" href="/payroll">Payroll</a>
                                         </div>
                                         <div class="col-12 col-sm-6 col-md-4">
                                             <a class="dropdown-link" href="modules/tables/basic-tables.html">Account Holder Class of Service
                                                 </a>
                                             <a class="dropdown-link"
-                                                href="modules/tables/advance-tables.html">Auto SMS </a>
+                                                href="/sms"> SMS  Log</a>
                                             <a class="dropdown-link" href="modules/tables/bulk-select.html">Collection Account
                                                 </a>
                                                  <a class="dropdown-link"

@@ -9,7 +9,7 @@
   </nav>
   
   <div class="col-sm-6 col-md-9 col-lg-12 m-4">
-    <div class="card text-white success" id="card">
+    <div class="card text-white success leave" id="card">
         <div class="card-body">
             <h4 class="card-title text-dark"> Email Logs  </h4>
         </div>
@@ -21,24 +21,49 @@
             <div data-list='{"valueNames":["Name","Surname","Contact","Address","Role","Username","Auth","Email","Province","Status","Last"],"page":6}'>
                 <div class="row align-items-end justify-content-between pb-5 g-3">
                     <div class="col-auto">
-                        <h5>  Number of Email Logs </h5>
+                        <h5>  Log 3 </h5>
                     </div>
                     <div class="col-12 col-md-auto">
                         <div class="row g-2 gy-3">
                             <div class="col-auto flex-1">
+                                {{-- <div class="search-box">
+                                    <form class="position-relative" data-bs-toggle="search" data-bs-display="static">
+                                        <div class="form-floating">
+                                            <input class="form-control search-input search" placeholder="Search" aria-label="Search" id="floatingPassword" type="search"
+                                                placeholder="Password" />
+                                            <label for="floatingPassword"><h5><span class="fas fa-search search-box-icon"></span> </h5></label>
+                                        </div>   
+                                    </form>
+                                </div> --}}
+                            </div>
+                            <div class="col-auto flex-1">
                                 <div class="search-box">
                                     <form class="position-relative" data-bs-toggle="search" data-bs-display="static">
-                                        <input class="form-control search-input search form-control-sm" type="search" placeholder="Search" aria-label="Search"/>
-                                        <span class="fas fa-search search-box-icon"></span>
+                                        <div class="form-floating">
+                                            <input class="form-control" id="floatingPassword" type="date"
+                                                placeholder="Password" />
+                                            <label for="floatingPassword">From </label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-auto flex-1">
+                                <div class="search-box">
+                                    <form class="position-relative" data-bs-toggle="search" data-bs-display="static">
+                                        <div class="form-floating">
+                                            <input class="form-control" id="floatingPassword" type="date"
+                                                placeholder="Password" />
+                                            <label for="floatingPassword">To </label>
+                                        </div>
                                     </form>
                                 </div>
                             </div>
                             <div class="col-auto">
-                                <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" href="/systemUser">Add new System User</a>
-        
-                                <button class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 action-btn" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent">
+                                {{-- <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2"
+                                href="/createemployee"> </a> --}}
+                                {{-- <button  class="form-control" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent">
                                     <span class="fas fa-ellipsis-h" data-fa-transform="shrink-2"></span>
-                                </button>
+                                </button> --}}
                                 <ul class="dropdown-menu dropdown-menu-end">
                                     <li>
                                         <a class="dropdown-item" href="#">Action</a>
@@ -56,88 +81,122 @@
                 </div>
                 <div class="table-responsive mx-n1 px-1 scrollbar">
                     <table class="table fs--1 mb-0 border-top border-200">
-                        <thead>
+                        <thead id="leave">
                             <tr>                      
-                                <th class="sort white-space-nowrap" scope="col" data-sort=" Name">Count</th>
-                                <th class="sort" scope="col" data-sort="Surname " >Date & Time</th>
-                                <th class="sort" scope="col" data-sort="Contact" >Account Name</th>
-                                <th class="sort" scope="col" data-sort="Email">Account Type</th>
-                                <th class="sort" scope="col" data-sort="Address">Sender ID</th>
-                                <th class="sort" scope="col" data-sort="Province ">Account Email</th>
-                                <th class="sort" scope="col" data-sort="Role">Subject </th>
-                                <th class="sort" scope="col" data-sort="Username">Email Type</th>
-                                <th class="sort" scope="col" data-sort="Status">Status</th>
-                                <th class="sort" scope="col" data-sort="Action">Action</th>
-                                <th class="sort" scope="col"></th>
+                                <th class="sort  white-space-nowrap" scope="col" data-sort=" Name">Count</th>
+                                <th class="sort " scope="col" data-sort="Surname " >Date & Time</th>
+                                <th class="sort " scope="col" data-sort="Contact" >Account Name</th>
+                                <th class="sort " scope="col" data-sort="Email">Account Type</th>
+                                <th class="sort " scope="col" data-sort="Province ">Account Email</th>
+                                <th class="sort " scope="col" data-sort="Province ">Sender ID</th>
+                                <th class="sort " scope="col" data-sort="Role">Subject </th>
+                                <th class="sort " scope="col" data-sort="Username">Email Type</th>
+                                <th class="sort " scope="col" data-sort="Status">Status</th>
+                                <th class="sort " scope="col" data-sort="Action">Action</th>
+                               
                             </tr>
                         </thead>
                         <tbody class="list" id="table-latest-review-body">
                             <tr class="hover-actions-trigger btn-reveal-trigger position-static">
                                 
-                                <td class="white-space-nowrap Name">                           
-                                      Name                           
+                                <td class="white-space-nowrap tdtd Name">                           
+                                      1                           
                                 </td>
-                                <td class="white-space-nowrap Surname">
-                                 Date
+                                <td class="white-space-nowrap tdtd Surname">
+                                 2/09/2023
                                 </td>
-                                <td class=" white-space-nowrap Contact">                           
-                                       Richard Dawkins                        
+                                <td class=" white-space-nowrap tdtd Contact">                           
+                                        FNB                        
                                 </td>
-                                <td class="white-space-nowrap Email fs--2">                          
-                                    <span class="fa fa-star text-warning"></span>
+                                <td class="white-space-nowrap tdtd Email ">                          
+                                Cooperative
                                 </td>
-                                <td class="white-space-nowrap Address" >
-                                    Sample
+                                <td class="white-space-nowrap tdtd Province">                          
+                                        fnb@gmail.com
                                 </td>
-                                <td class=" text-start ps-5 Province">                          
-                                        Approved
+                                <td class="white-space-nowrap tdtd Province">                          
+                                   loans@ceec.co.zm
+                            </td>
+                                <td class=" white-space-nowrap tdtd Role">
+                                    Dear FNB  your loan application is been processed...                       
                                 </td>
-                                <td class=" white-space-nowrap Role">
-                                    Just now                          
+                                <td class="white-space-nowrap tdtd Username" >
+                                    Communication
                                 </td>
-                                <td class="white-space-nowrap Username" >
-                                    Sample
+                                <td class="white-space-nowrap tdtd Status" >
+                                    Delivered
                                 </td>
-                                <td class="white-space-nowrap Status" >
-                                    Sample
-                                </td>
-                                <td class="white-space-nowrap Last" >
-                                    Sample
+                                <td class="white-space-nowrap tdtd Last" >
+                                    <a href="#"> view | Resend </a>
                                 </td>      
                               
                             </tr>
                             <tr class="hover-actions-trigger btn-reveal-trigger position-static">
                                 
-                                <td class="white-space-nowrap Name">                           
-                                      Name                           
+                                <td class="white-space-nowrap tdtd Name">                           
+                                      2                           
                                 </td>
-                                <td class="white-space-nowrap Surname">
-                                 Date
+                                <td class="white-space-nowrap tdtd Surname">
+                                 6/09/2023
                                 </td>
-                                <td class=" white-space-nowrap Contact">                           
-                                       Richard Dawkins                        
+                                <td class=" white-space-nowrap tdtd Contact">                           
+                                       Issac Banda                        
                                 </td>
-                                <td class="white-space-nowrap Email fs--2">                          
-                                    <span class="fa fa-star text-warning"></span>
+                                <td class="white-space-nowrap tdtd Email ">                          
+                                Individual
                                 </td>
-                                <td class="white-space-nowrap Address" >
-                                    Sample
+                                <td class="white-space-nowrap tdtd Province">                          
+                                    Issac@gmail.com
                                 </td>
-                                <td class=" text-start ps-5 Province">                          
-                                        Approved
+                                <td class="white-space-nowrap tdtd Province">                          
+                                    loans@ceec.co.zm
+                             </td>
+                                <td class=" white-space-nowrap tdtd Role">
+                                    Dear  Issac Banda  your loan application has been a..                         
                                 </td>
-                                <td class=" white-space-nowrap Role">
-                                    Just now                          
+                                <td class="white-space-nowrap tdtd Username" >
+                                    Communication
                                 </td>
-                                <td class="white-space-nowrap Username" >
-                                    Sample
+                                <td class="white-space-nowrap tdtd Status" >
+                                    Delivered
                                 </td>
-                                <td class="white-space-nowrap Status" >
-                                    Sample
+                                <td class="white-space-nowrap tdtd Last" >
+                                   <a href="#"> view | Resend </a>
+                                </td>      
+                              
+                            </tr>
+                            <tr class="hover-actions-trigger btn-reveal-trigger position-static">
+                                
+                                <td class="white-space-nowrap tdtd Name">                           
+                                      3                           
                                 </td>
-                                <td class="white-space-nowrap Last" >
-                                    Sample
-                                </td>     
+                                <td class="white-space-nowrap tdtd Surname">
+                                 20/09/2023
+                                </td>
+                                <td class=" white-space-nowrap tdtd Contact">                           
+                                    Speedpay                          
+                                </td>
+                                <td class="white-space-nowrap tdtd Email ">                          
+                                Limited Company
+                                </td>
+                                <td class="white-space-nowrap tdtd Province">                          
+                                    Speedpay@gmail.com
+                                </td>
+                                <td class="white-space-nowrap tdtd Province">                          
+                                    loans@ceec.co.zm
+                             </td>
+                                <td class=" white-space-nowrap tdtd Role">
+                                   Dear Speedpay   your loan application is being proc..                         
+                                </td>
+                                <td class="white-space-nowrap tdtd Username" >
+                                    Communication
+                                </td>
+                                <td class="white-space-nowrap tdtd Status" >
+                                    Delivered
+                                </td>
+                                <td class="white-space-nowrap tdtd Last" >
+                                    <a href="#"> view | Resend </a>
+                                </td>      
                               
                             </tr>
                         </tbody>

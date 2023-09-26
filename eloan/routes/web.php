@@ -109,6 +109,14 @@ Route::get('/pending', function () {
     return view('management.user');
 });
 
+Route::get('/sms', function () {
+    return view('management.sms');
+});
+
+Route::get('/payroll', function () {
+    return view('management.payroll');
+});
+
 Route::get('/timeattendance', function () {
     return view('management.timeattendance');
 });
