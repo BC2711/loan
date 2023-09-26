@@ -3,17 +3,25 @@
 <style>
     #card{
         /* background-color: #7db37d !important; */
-        border-color: #d99724!important;
+        border-color: #7db37d!important;
     }
     .form-floating{
         border-blockcolor:orange !important;
     }
 
+    .btn{   
+        width: 150px;
+    }
+
+    .btn:hover{
+        background-color: #7db37d!important;
+    }
      h5,thead, tbody, tfoot, tr, td, th{
-        border-color: orange!important;
+        border-color: rgb(201, 192, 177)!important;
     }
     .form-check-label{
         color:green;
+        font-weight: bolder; 
     }
 </style>
     <nav class="mb-2" aria-label="breadcrumb">
@@ -25,7 +33,7 @@
     </nav>
 
     <div class="col-sm-6 col-md-9 col-lg-12 m-4">
-        <div class="card text-white success " id="card">
+        <div class="card text-white success leave" id="card">
             <div class="card-body" id="boder">
                 <h3 class="card-title text-dark"> User Permission </h3>
             </div>
@@ -37,12 +45,12 @@
             <div class="card-body">
                 <form action="" method="post">
                     <div class="row gx-4 gy-5">
-                        <div class="col-12 col-sm-6 col-md-6">
+                        <div class="col-12 col-sm-6 col-md-3">
                             <div class="p-0 code-to-copy">
                                 <div class="form-floating">
                                     <select class="form-select" id="floatingSelect"
                                         aria-label="Floating label select example">
-                                        <option selected="">select user Role</option>
+                                        <option selected=""><h6>Select User Role</h6></option>
                                         <option value="1">CREDIT AND RISK MANAGER</option>
                                         <option value="2">ASSISTANT FINANCE TREASURY</option>
                                         <option value="3">DIRECTOR CREDIT AND RISK</option>
@@ -50,14 +58,15 @@
                                         <option value="3">FINANCE DIRECTOR </option>
                                         <option value="3">IT SUPPORT </option>
                                     </select>
-                                    <label for="floatingSelect"> User Role</label>
+                                    <label for="floatingSelect"><h6> User Role</h6></label>
                                 </div>
                             </div>
                         </div>
 
-                        
-
                         <div class="col-12 col-sm-6 col-md-6">
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-3">
                             <div class="p-0 code-to-copy">
                                 <div class="form-floating mb-3">
                                     <input class="form-control" id="floatingInput" type="email"
