@@ -209,3 +209,10 @@ Route::get('/risk', function () {
     return view('reports.risk');
 });
 
+/***
+ * EMPLOYEE
+ */
+
+ Route::get('/dashboard', function () {
+    return view('employee.dashboard');
+});
