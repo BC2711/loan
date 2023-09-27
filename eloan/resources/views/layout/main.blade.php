@@ -10881,7 +10881,7 @@
                                                 </a>
                                             <a class="dropdown-link" href="/custom">Custom
                                                 </a>
-                                                <a class="dropdown-link" href="/storage">Storage</a>
+                                                <a class="dropdown-link" href="/library">Documents Library</a>
                                             {{-- <a class="dropdown-link" href="modules/components/alerts.html">Login
                                                 Attempts</a>
                                             <a class="dropdown-link" href="modules/components/alerts.html">Outlet

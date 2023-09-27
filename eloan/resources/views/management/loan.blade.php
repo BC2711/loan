@@ -158,6 +158,7 @@
                         <thead id="leave">
                             <tr>                      
                                 <th class="sort white-space-nowrap" scope="col" data-sort=" Name">Count</th>
+                                <th class="sort" scope="col" data-sort="Last">Initiated Date </th>
                                 <th class="sort" scope="col" data-sort="Contact" >Trading As | Business Name </th>
                                    <th class="sort" scope="col" data-sort="Province ">Deposit Reference</th>
                                 <th class="sort" scope="col" data-sort="Email">Mobile Number</th>
@@ -166,10 +167,11 @@
                                 <th class="sort" scope="col" data-sort="Username">Loan Amount</th>
                                 <th class="sort" scope="col" data-sort="Username">Loan fees</th>
                                 <th class="sort" scope="col" data-sort="Status">Payable amount</th>
-                                   <th class="sort" scope="col" data-sort="Last">Initiated Date </th>
+                                  
                                 <th class="sort" scope="col" data-sort="Last">Approved Date </th>
-                                <th class="sort" scope="col" data-sort="Auth">Checker  </th>
-                                   <th class="sort" scope="col" data-sort="Last">Maker </th>
+                               
+                                   <th class="sort" scope="col" data-sort="Last">Initiated By </th>
+                                   <th class="sort" scope="col" data-sort="Auth">Approved By </th>
                                 <th class="sort" scope="col" data-sort="Action">Action</th>
                                 <th class="sort" scope="col"></th>
                             </tr>
@@ -179,6 +181,9 @@
                                 
                                 <td class="white-space-nowrap tdtd Name">                           
                                       1                           
+                                </td>
+                                <td class="white-space-nowrap tdtd Last"  >
+                                    2022-09-20
                                 </td>
                                 <td class="white-space-nowrap tdtd Surname">
                                     MOH Global 
@@ -190,7 +195,7 @@
                                   0978678654
                                 </td>
                                 <td class="white-space-nowrap tdtd Address" >
-                                    Govenment
+                                    Corporate
                                 </td>
                                 <td class=" white-space-nowrap tdtd Province">                          
                                         MOHG0001
@@ -204,17 +209,15 @@
                                 <td class="white-space-nowrap tdtd Status"  >
                                   1,055,000.00
                                 </td>
-                                <td class="white-space-nowrap tdtd Last"  >
-                                    2022-09-20
-                                </td>
+                             
                                 <td class="white-space-nowrap tdtd Auth" >
                                     2022-09-24
                                 </td>
                                 <td class="white-space-nowrap tdtd Auth" >
-                                    Joshua  Manduwa
+                                    Joshua  Mandla
                                 </td>
                                 <td class="white-space-nowrap tdtd Auth" >
-                                    Joshua  Manduwa
+                                    Mary Banda
                                 </td>
                                 <td class="white-space-nowrap tdtd review" style="color: blue;">
                                    View 
@@ -227,6 +230,9 @@
                                 <td class="white-space-nowrap tdtd Name">                           
                                       2                           
                                 </td>
+                                <td class="white-space-nowrap tdtd Last"  >
+                                    2022-09-20
+                                </td>
                                 <td class="white-space-nowrap tdtd Surname">
                                 SAFE MOTHERHOOD
                                 </td>
@@ -237,7 +243,7 @@
                                   0978778456
                                 </td>
                                 <td class="white-space-nowrap tdtd Address" >
-                                    Govenment
+                                    Limited Company
                                 </td>
                                 <td class=" white-space-nowrap tdtd Province">                          
                                     SAFEMOHG0001
@@ -251,17 +257,15 @@
                                 <td class="white-space-nowrap tdtd Status"  >
                                   1025,000.00
                                 </td>
-                                <td class="white-space-nowrap tdtd Last"  >
-                                    2022-09-20
-                                </td>
+                              
                                 <td class="white-space-nowrap tdtd Auth" >
                                     2022-09-24
                                 </td>
                                 <td class="white-space-nowrap tdtd Auth" >
-                                    Joshua  Manduwa
+                                    John Phiri
                                 </td>
                                 <td class="white-space-nowrap tdtd Auth" >
-                                   Admin Admin
+                                   Peter Mwamba
                                 </td>
                                 <td class="white-space-nowrap tdtd review" style="color: blue;">
                                    View 
@@ -274,8 +278,11 @@
                                 <td class="white-space-nowrap tdtd Name">                           
                                       3                         
                                 </td>
+                                <td class="white-space-nowrap tdtd Last"  >
+                                    2022-09-20
+                                </td>
                                 <td class="white-space-nowrap tdtd Surname">
-                                  CONSUMER ASSOCIATION OF MALAWI
+                                  CONSUMER ASSOCIATION OF ZAMBIA
                                 </td>
                                 <td class=" white-space-nowrap tdtd Contact">                           
                                     CONN0001                      
@@ -284,7 +291,7 @@
                                   0968674652
                                 </td>
                                 <td class="white-space-nowrap tdtd Address" >
-                                    NGO
+                                    Partnership
                                 </td>
                                 <td class=" white-space-nowrap tdtd Province">                          
                                         NOGMOHG0001
@@ -298,17 +305,15 @@
                                 <td class="white-space-nowrap tdtd Status"  >
                                   2,075,000.00
                                 </td>
-                                <td class="white-space-nowrap tdtd Last"  >
-                                    2022-09-20
-                                </td>
+                                
                                 <td class="white-space-nowrap tdtd Auth" >
                                     2022-09-24
                                 </td>
                                 <td class="white-space-nowrap tdtd Auth" >
-                                    Admin  Admin
+                                    Alice Simukoko
                                 </td>
                                 <td class="white-space-nowrap tdtd Auth" >
-                                    Joshua  Manduwa
+                                    Mercy  Ndalama
                                 </td>
                                 <td class="white-space-nowrap tdtd review" style="color: blue;">
                                    View 

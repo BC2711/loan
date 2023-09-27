@@ -179,7 +179,7 @@
                             </tr>
                         </thead>
                         <tbody class="list" id="table-latest-review-body">
-                            <tr class="hover-actions-trigger btn-reveal-trigger position-static">
+                            <tr class="hover-actions-trigger btn-reveal-trigger position-static"  style="color: red;">
                                 
                                 <td class="white-space-nowrap tdtd Name">                           
                                       1                           
@@ -205,8 +205,8 @@
                                 <td class="white-space-nowrap tdtd Username" >
                                     1100
                                 </td>
-                                <td class="white-space-nowrap tdtd Status"  style="color: GREEN;">
-                                    Approved
+                                <td class="white-space-nowrap tdtd Status" >
+                                    Rejected
                                 </td>
                                 <td class="white-space-nowrap tdtd Last"  >
                                     2022-09-20
@@ -215,12 +215,12 @@
                                     10:00:23
                                 </td>
                                 <td class="white-space-nowrap tdtd review" style="color: blue;">
-                                   View | Statement
+                                   View 
                                 </td>      
                               
                             </tr>
                           
-                            <tr class="hover-actions-trigger btn-reveal-trigger position-static">
+                            <tr class="hover-actions-trigger btn-reveal-trigger position-static" style="color: GREEN;">
                                 
                                 <td class="white-space-nowrap tdtd Name">                           
                                       3                           
@@ -246,7 +246,7 @@
                                 <td class="white-space-nowrap tdtd Username" >
                                     3000
                                 </td>
-                                <td class="white-space-nowrap tdtd Status"  style="color: GREEN;" >
+                                <td class="white-space-nowrap tdtd Status"   >
                                     Approved
                                 </td>
                                 <td class="white-space-nowrap tdtd Last" >
@@ -256,12 +256,12 @@
                                     10:00:23
                                 </td>
                                 <td class="white-space-nowrap tdtd review" style="color: blue;">
-                                   View | Statement
+                                   View Statement | Pay Loan
                                 </td>      
                               
                             </tr>
 
-                            <tr class="hover-actions-trigger btn-reveal-trigger position-static">
+                            <tr class="hover-actions-trigger btn-reveal-trigger position-static" style="color: orange;">
                                 
                                 <td class="white-space-nowrap tdtd Name">                           
                                       1                           
@@ -287,8 +287,8 @@
                                 <td class="white-space-nowrap tdtd Username" >
                                     5100
                                 </td>
-                                <td class="white-space-nowrap tdtd Status" style="color: GREEN;" >
-                                    Approved
+                                <td class="white-space-nowrap tdtd Status"  >
+                                    Being Processed
                                 </td>
                                 <td class="white-space-nowrap tdtd Last" >
                                     2022-09-20
@@ -297,7 +297,7 @@
                                     10:00:23
                                 </td>
                                 <td class="white-space-nowrap tdtd review" style="color: blue;">
-                                   View | Statement
+                                   Pending Approval
                                 </td>      
                               
                             </tr>

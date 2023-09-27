@@ -166,7 +166,7 @@ Route::get('/agentcommission', function () {
     return view('reports.agentcommission');
 });
 
-Route::get('/storage', function () {
+Route::get('/library', function () {
     return view('reports.storage');
 });
 
