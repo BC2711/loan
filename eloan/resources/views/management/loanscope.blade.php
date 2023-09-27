@@ -11,7 +11,92 @@
   <div class="col-sm-6 col-md-9 col-lg-12 m-4">
     <div class="card text-white success" id="card">
         <div class="card-body">
-            <h4 class="card-title text-dark">  nam  </h4>
+            <div class="row">
+
+                <div class="col-sm-1 col-md-1 col-lg-2 m-2">
+                    <div class="form-group mb-3">
+                        <label for="groupPassword"><h5>Initiated From date</h5></label>
+                        <input class="form-control" id="groupPassword" type="date"
+                            placeholder="Email" />
+                       
+                    </div>
+                
+                </div>
+             
+                <div class="col-sm-1 col-md-1 col-lg-2 m-2">
+                    <div class="form-group mb-3">
+                        <label for="groupPassword"><h5>Initiated To </h5></label>
+                        <input class="form-control" id="groupPassword" type="date"
+                            placeholder="Email" />
+                       
+                    </div>
+                
+                </div>
+                <div class="col-sm-1 col-md-1 col-lg-2 m-2">
+                    <div class="form-group mb-3">
+                        <label for="groupPassword"><h5>Trading As | Business </h5></label>
+                        <input class="form-control" id="groupPassword" type="text"
+                            placeholder="" />
+                       
+                    </div>
+                
+                </div>
+                <div class="col-sm-1 col-md-1 col-lg-2 m-2">
+                    <div class="form-group mb-3">
+                        <label for="groupPassword"><h5>Contact Mobile Number </h5></label>
+                        <input class="form-control" id="groupPassword" type="number"
+                            placeholder="" />
+                       
+                    </div>
+                
+                </div>
+                <div class="col-sm-1 col-md-1 col-lg-2 m-2">
+                    <div class="form-group mb-3">
+                        <label for="groupPassword"><h5>Deposit Reference</label>
+                        <input class="form-control" id="groupPassword" type="text"
+                            placeholder="" />
+                       
+                    </div>
+                
+                </div>
+                <div class="col-sm-1 col-md-1 col-lg-2 m-2">
+                    <div class="form-group mb-3">
+                        <label for="groupPassword"><h5>Loan Amount</label>
+                        <input class="form-control" id="groupPassword" type="text"
+                            placeholder="Email" />
+                       
+                    </div>
+                
+                </div>
+                <div class="col-sm-1 col-md-1 col-lg-2 m-2">
+                    <div class="form-group mb-3">
+                        <label for="groupPassword"><h5>Email</label>
+                        <input class="form-control" id="groupPassword" type="text"
+                            placeholder="Email" />
+                       
+                    </div>
+                
+                </div>
+                <div class="col-sm-1 col-md-1 col-lg-2 m-2">
+                    <div class="form-group mb-3">
+                        <label for="groupPassword"><h5>Email <span class="danger">*</span></h5></label>
+                        <input class="form-control" id="groupPassword" type="text"
+                            placeholder="Email" />
+                       
+                    </div>
+                
+                </div>
+                <div class="col-sm-1 col-md-1 col-lg-2 m-2">
+                    <div class="form-group mb-3">
+                        <label for="groupPassword"><h5>Email <span class="danger">*</span></h5></label>
+                        <input class="form-control" id="groupPassword" type="text"
+                            placeholder="Email" />
+                       
+                    </div>
+                
+                </div>
+            </div>
+            
         </div>
     </div>
 </div>

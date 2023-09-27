@@ -39,10 +39,11 @@
                             <div class="col-auto flex-1">
                                 <div class="search-box">
                                     <form class="position-relative" data-bs-toggle="search" data-bs-display="static">
-                                        <div class="form-floating">
+                                        <div class="form-group">
+                                            <label for="floatingSelect"><h6> From</h6></label>
                                             <input class="form-control" id="floatingPassword" type="date"
                                                 placeholder="Password" />
-                                            <label for="floatingPassword">From </label>
+                                           
                                         </div>
                                     </form>
                                 </div>
@@ -50,10 +51,11 @@
                             <div class="col-auto flex-1">
                                 <div class="search-box">
                                     <form class="position-relative" data-bs-toggle="search" data-bs-display="static">
-                                        <div class="form-floating">
+                                        <div class="form-group">
+                                            <label for="floatingSelect"><h6> To</h6></label>
                                             <input class="form-control" id="floatingPassword" type="date"
                                                 placeholder="Password" />
-                                            <label for="floatingPassword">To </label>
+                                         
                                         </div>
                                     </form>
                                 </div>

@@ -47,7 +47,8 @@
                     <div class="row gx-4 gy-5">
                         <div class="col-12 col-sm-6 col-md-3">
                             <div class="p-0 code-to-copy">
-                                <div class="form-floating">
+                                <div class="form-group">
+                                    <label for="floatingSelect"><h6> User Role</h6></label>
                                     <select class="form-select" id="floatingSelect"
                                         aria-label="Floating label select example">
                                         <option selected=""><h6>Select User Role</h6></option>
@@ -58,7 +59,7 @@
                                         <option value="3">FINANCE DIRECTOR </option>
                                         <option value="3">IT SUPPORT </option>
                                     </select>
-                                    <label for="floatingSelect"><h6> User Role</h6></label>
+                                   
                                 </div>
                             </div>
                         </div>
@@ -68,10 +69,11 @@
 
                         <div class="col-12 col-sm-6 col-md-3">
                             <div class="p-0 code-to-copy">
-                                <div class="form-floating mb-3">
-                                    <input class="form-control" id="floatingInput" type="email"
-                                        placeholder="name@example.com" />
-                                    <label for="floatingInput">User Role</label>
+                                <div class="form-group mb-3">
+                                    <label for="floatingSelect"><h6> User Role</h6></label>
+                                    <input class="form-control" id="" type="email"
+                                        placeholder="User Role" />
+                                  
                                 </div>
                             </div>
                         </div>

@@ -26,7 +26,7 @@
   </nav>
   
   <div class="col-sm-6 col-md-9 col-lg-12 m-4">
-    <div class="card text-white success" id="card">
+    <div class="card text-white success leave" id="card">
         <div class="card-body">
             <h4 class="card-title text-dark"> System User  </h4>
         </div>

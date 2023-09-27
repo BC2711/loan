@@ -65,6 +65,11 @@
             font-weight: bold !important;
             font-size: 14px;
         }
+
+        #tdtd{
+            font-weight: bold !important;
+            font-size: 14px;
+        }
         .head{
             font-weight: bolder !important;
             font-size: 20px;
@@ -10811,7 +10816,7 @@
                                         </div>
                                         <div class="col-12 col-sm-6 col-md-4">
                                             <a class="dropdown-link"
-                                                href="modules/components/accordion.html">Commission fees &
+                                                href="/advances">Commission fees &
                                                 chargers</a>
                                                 <a class="dropdown-link"
                                                 href="modules/components/accordion.html"> Loyalt Scheme
@@ -10821,6 +10826,7 @@
                                                 href="modules/components/alerts.html">POS Device</a>
                                            
                                                 <a class="dropdown-link" href="/payroll">Payroll</a>
+                                              
                                         </div>
                                         <div class="col-12 col-sm-6 col-md-4">
                                             <a class="dropdown-link" href="modules/tables/basic-tables.html">Account Holder Class of Service
@@ -10875,6 +10881,7 @@
                                                 </a>
                                             <a class="dropdown-link" href="/custom">Custom
                                                 </a>
+                                                <a class="dropdown-link" href="/storage">Storage</a>
                                             {{-- <a class="dropdown-link" href="modules/components/alerts.html">Login
                                                 Attempts</a>
                                             <a class="dropdown-link" href="modules/components/alerts.html">Outlet

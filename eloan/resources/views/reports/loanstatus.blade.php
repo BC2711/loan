@@ -9,7 +9,7 @@
   </nav>
   
   <div class="col-sm-6 col-md-9 col-lg-12 m-4">
-    <div class="card text-white success" id="card">
+    <div class="card text-white success leave" id="card">
         <div class="card-body">
             <h4 class="card-title text-dark"> Applicant Loan Status  </h4>
         </div>
@@ -21,7 +21,7 @@
             <div data-list='{"valueNames":["Name","Surname","Contact","Address","Role","Username","Auth","Email","Province","Status","Last"],"page":6}'>
                 <div class="row align-items-end justify-content-between pb-5 g-3">
                     <div class="col-auto">
-                        <h5> Log</h5>
+                        <h5> Log 2</h5>
                     </div>
                     <div class="col-12 col-md-auto">
                         <div class="row g-2 gy-3">
@@ -56,9 +56,9 @@
                 </div>
                 <div class="table-responsive mx-n1 px-1 scrollbar">
                     <table class="table fs--1 mb-0 border-top border-200">
-                        <thead>
+                        <thead id="leave">
                             <tr>   
-                                <th class="sort white-space-nowrap" scope="col" data-sort=" Name">Application Date</th>                   
+                                <th class="sort white-space-nowrap " scope="col" data-sort=" Name">Application Date</th>                   
                                 <th class="sort white-space-nowrap" scope="col" data-sort=" Name">Name</th>
                                 <th class="sort" scope="col" data-sort="Surname " >Surname</th>
                                 <th class="sort" scope="col" data-sort="Contact" >Contact Number</th>
@@ -76,40 +76,40 @@
                         <tbody class="list" id="table-latest-review-body">
                             <tr class="hover-actions-trigger btn-reveal-trigger position-static">
                                 
-                                <td class="white-space-nowrap Name">                           
+                                <td class="white-space-nowrap tdtd Name">                           
                                       22/09/2023                           
                                 </td>
-                                <td class="white-space-nowrap Surname">
+                                <td class="white-space-nowrap tdtd Surname">
                                  Biness
                                 </td>
-                                <td class=" white-space-nowrap Contact">                           
+                                <td class=" white-space-nowrap tdtd Contact">                           
                                         Chama                        
                                 </td>
-                                <td class="white-space-nowrap Email fs--2">                          
+                                <td class="white-space-nowrap tdtd Email fs--2">                          
                                    0965508033
                                 </td>
-                                <td class="white-space-nowrap Address" >
+                                <td class="white-space-nowrap tdtd Address" >
                                     chama@gmail.com
                                 </td>
-                                <td class=" text-start ps-5 Province">                          
+                                <td class=" white-space-nowrap tdtd Province">                          
                                         chelstone
                                 </td>
-                                <td class=" white-space-nowrap Role">
+                                <td class=" white-space-nowrap tdtd Role">
                                     Lusaka                          
                                 </td>
-                                <td class=" white-space-nowrap Role">
+                                <td class=" white-space-nowrap tdtd Role">
                                    ZMW 5,000                          
                                 </td>
-                                <td class="white-space-nowrap Username" >
+                                <td class="white-space-nowrap tdtd Username" >
                                     provincial
                                 </td>
-                                <td class="white-space-nowrap Status" >
+                                <td class="white-space-nowrap tdtd Status" >
                                     1-5
                                 </td>
-                                <td class="white-space-nowrap Last" >
+                                <td class="white-space-nowrap tdtd Last" >
                                     5 minutes
                                 </td>
-                                <td class="white-space-nowrap Auth" >
+                                <td class="white-space-nowrap tdtd Auth" >
                                     view 
                                 </td>
                                
@@ -117,40 +117,40 @@
                             </tr>
                             <tr class="hover-actions-trigger btn-reveal-trigger position-static">
                                 
-                                <td class="white-space-nowrap Name">                           
+                                <td class="white-space-nowrap tdtd Name">                           
                                       09/09/23                           
                                 </td>
-                                <td class="white-space-nowrap Surname">
+                                <td class="white-space-nowrap tdtd Surname">
                                  Micheal
                                 </td>
-                                <td class=" white-space-nowrap Contact">                           
+                                <td class=" white-space-nowrap tdtd Contact">                           
                                         Dawkins                        
                                 </td>
-                                <td class="white-space-nowrap Email fs--2">                          
+                                <td class="white-space-nowrap tdtd Email fs--2">                          
                                    0987654321
                                 </td>
-                                <td class="white-space-nowrap Address" >
+                                <td class="white-space-nowrap tdtd Address" >
                                     micheal@gmail.com
                                 </td>
-                                <td class=" text-start ps-5 Province">                          
+                                <td class=" white-space-nowrap tdtd Province">                          
                                         oasis park
                                 </td>
-                                <td class=" white-space-nowrap Role">
+                                <td class=" white-space-nowrap tdtd Role">
                                    copperbelt                       
                                 </td>
-                                <td class=" white-space-nowrap Role">
+                                <td class=" white-space-nowrap tdtd Role">
                                     ZMW 3,000                       
                                  </td>
-                                <td class="white-space-nowrap Username" >
+                                <td class="white-space-nowrap tdtd Username" >
                                     credit and risk
                                 </td>
-                                <td class="white-space-nowrap Status" >
+                                <td class="white-space-nowrap tdtd Status" >
                                     3-6
                                 </td>
-                                <td class="white-space-nowrap Last" >
+                                <td class="white-space-nowrap tdtd Last" >
                                     10 minutes
                                 </td>
-                                <td class="white-space-nowrap Auth" >
+                                <td class="white-space-nowrap tdtd Auth" >
                                     view
                                 </td>
                                 

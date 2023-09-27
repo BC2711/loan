@@ -1,14 +1,15 @@
 @extends('layout.main')
 @section('content')
-<style>
-    #card{
-        background-color: #7db37d !important;
-        border-color: #d99724!important;
-    }
-    /* .form-floating{
-        background-color:orange !important;
-    } */
-    .tdtd{
+    <style>
+        #card {
+            background-color: #7db37d !important;
+            border-color: #d99724 !important;
+        }
+
+        /* .form-floating{
+                    background-color:orange !important;
+                } */
+        .tdtd {
             font-weight: bold !important;
         }
 
@@ -17,18 +18,27 @@
             text-align: center;
 
         }
-     h5,thead, tbody, tfoot, tr, td, th{
-        border-color: orange!important;
-    }
-    #button{
-        padding: 20px!important;
-        height: 20px !important;
-       width: 50px!important;
-    }
-    #button:hover{
-        background-color: #7db37d !important;
-    }
-</style>
+
+        h5,
+        thead,
+        tbody,
+        tfoot,
+        tr,
+        td,
+        th {
+            border-color: orange !important;
+        }
+
+        #button {
+            padding: 20px !important;
+            height: 20px !important;
+            width: 50px !important;
+        }
+
+        #button:hover {
+            background-color: #7db37d !important;
+        }
+    </style>
     <nav class="mb-2" aria-label="breadcrumb">
         <ol class="breadcrumb mb-0">
             <li class="breadcrumb-item"><a href="/home">Home</a></li>
@@ -54,41 +64,58 @@
                     <div class="row gx-4 gy-5">
                         <div class="col-12 col-sm-6 col-md-4">
                             <div class="p-4 code-to-copy">
-                                <div class="form-floating mb-3 tdtd">
+
+                                <div class="form-gruop mb-3">
+                                    <label for="floatingPassword">
+                                        <h6>First Name<span class="danger">*</span></h6>
+                                    </label>
                                     <input class="form-control" id="floatingPassword" type="text"
-                                        placeholder="Password" />
-                                    <label for="floatingPassword"><h6>First Name<span class="danger">*</span></h6></label>
+                                        placeholder="First Name" />
+                                </div>
+                                <div class="form-gruop mb-3">
+                                    <label for="floatingPassword">
+                                        <h6>NRC <span class="danger">*</span></h6>
+                                    </label>
+                                    <input class="form-control" id="floatingPassword" type="text" placeholder="NRC" />
                                 </div>
 
-                                <div class="form-floating mb-3">
-                                    <input class="form-control" id="floatingPassword" type="text"
-                                        placeholder="Password" />
-                                    <label for="floatingPassword"><h6>NRC <span class="danger">*</span></h6></label>
-                                </div>
-
-                                <div class="form-floating mb-3">
+                                <div class="form-gruop mb-3">
+                                    <label>
+                                        <h6> Gender <span class="danger">*</span></h6>
+                                    </label>
                                     <select class="form-select" id="floatingSelect"
                                         aria-label="Floating label select example">
-                                        <option value="MALE"><h6>Male</h6></option>
-                                        <option value="FEMALE"><h6>Female</h6></option>
+                                        <option value="MALE">
+                                            <h6>Male</h6>
+                                        </option>
+                                        <option value="FEMALE">
+                                            <h6>Female</h6>
+                                        </option>
                                     </select>
-                                    <label for="floatingSelect"><h6> Gender <span class="danger">*</span></h6></label>
+
                                 </div>
 
-                                <div class="form-floating mb-3">
+                                <div class="form-gruop mb-3">
+                                    <label for="floatingSelect">
+                                        <h6> District <span class="danger">*</span></h6>
+                                    </label>
                                     <select class="form-select" id="floatingSelect"
                                         aria-label="Floating label select example">
-                                        <option value=""><h6>Select District</h6></option>
+                                        <option value="">
+                                            <h6>Select District</h6>
+                                        </option>
                                         <option value="MALE"></option>
                                         <option value="FEMALE"></option>
                                     </select>
-                                    <label for="floatingSelect"><h6> District <span class="danger">*</span></h6></label>
+
                                 </div>
 
-                                <div class="form-floating ">
-                                    <input class="form-control" id="floatingPassword" type="text"
-                                        placeholder="Password" />
-                                    <label for="floatingPassword"><h6>Email <span class="danger">*</span></h6></label>
+                                <div class="form-gruop ">
+                                    <label for="floatingPassword">
+                                        <h6>Email <span class="danger">*</span></h6>
+                                    </label>
+                                    <input class="form-control" id="floatingPassword" type="text" placeholder="Email" />
+
                                 </div>
 
                             </div>
@@ -97,39 +124,62 @@
                         <div class="col-12 col-sm-6 col-md-4">
                             <div class="p-4 code-to-copy">
 
-                                <div class="form-floating mb-3">
+                                <div class="form-gruop mb-3">
+                                    <label for="floatingPassword">
+                                        <h6>Other Names</h6>
+                                    </label>
                                     <input class="form-control" id="floatingPassword" type="text"
-                                        placeholder="Password" />
-                                    <label for="floatingPassword"><h6>Other Names</h6></label>
+                                        placeholder="Other Names" />
+
                                 </div>
-                                <div class="form-floating mb-3">
-                                    <input class="form-control" id="date" type="date" placeholder="Password" />
-                                    <label for="date"><h6>Date of Birth<span class="danger">*</span> </h6></label>
+                                <div class="form-gruop mb-3">
+                                    <label for="date">
+                                        <h6>Date of Birth<span class="danger">*</span> </h6>
+                                    </label>
+                                    <input class="form-control" id="date" type="date"
+                                        placeholder=">Date of Birth" />
+
                                 </div>
 
-                                <div class="form-floating mb-3">
+                                <div class="form-gruop mb-3">
+                                    <label for="floatingSelect">
+                                        <h6> Disability <span class="danger">*</span></h6>
+                                    </label>
                                     <select class="form-select" id="floatingSelect"
                                         aria-label="Floating label select example">
-                                        <option value=""><h6>Please Select</h6> </option>
-                                        <option value="NO"><h6>NO</h6></option>
-                                        <option value="YES"><h6>YES</h6></option>
+                                        <option value="">
+                                            <h6>Please Select</h6>
+                                        </option>
+                                        <option value="NO">
+                                            <h6>NO</h6>
+                                        </option>
+                                        <option value="YES">
+                                            <h6>YES</h6>
+                                        </option>
                                     </select>
-                                    <label for="floatingSelect"><h6> Disability <span class="danger">*</span></h6></label>
+
                                 </div>
-                                <div class="form-floating mb-3">
+                                <div class="form-gruop mb-3">
+                                    <label for="floatingSelect">
+                                        <h6> Constituency <span class="danger">*</span></h6>
+                                    </label>
                                     <select class="form-select" id="floatingSelect"
                                         aria-label="Floating label select example">
-                                        <option value=""><h6>Please Select Constituency</h6></option>
+                                        <option value="">
+                                            <h6>Please Select Constituency</h6>
+                                        </option>
                                         <option value="NO"></option>
                                         <option value="YES"></option>
                                     </select>
-                                    <label for="floatingSelect"><h6> Constituency <span class="danger">*</span></h6></label>
+
                                 </div>
 
-                                <div class="form-floating mb-3">
-                                    <input class="form-control" id="floatingPassword" type="text"
-                                        placeholder="Password" />
-                                    <label for="floatingPassword"><h6>Tpin<span class="danger">*</span></h6> </label>
+                                <div class="form-gruop mb-3">
+                                    <label for="floatingPassword">
+                                        <h6>Tpin<span class="danger">*</span></h6>
+                                    </label>
+                                    <input class="form-control" id="floatingPassword" type="text" placeholder="Tpin" />
+
                                 </div>
                             </div>
 
@@ -137,21 +187,32 @@
                         <div class="col-12 col-sm-6 col-md-4">
 
                             <div class="p-4 code-to-copy">
-                                <div class="form-floating mb-3">
+                                <div class="form-gruop mb-3">
+                                    <label for="floatingPassword">
+                                        <h6>Surname <span class="danger">*</span></h6>
+                                    </label>
                                     <input class="form-control" id="floatingInput" type="text"
-                                        placeholder="name@example.com" />
-                                    <label for="floatingPassword"><h6>Surname <span class="danger">*</span></h6></label>
+                                        placeholder="Surname" />
+
 
                                 </div>
-                                <div class="form-floating mb-3">
-                                    <input class="form-control" id="age" type="text" placeholder="Password" />
-                                    <label for="age"><h6>Age <span class="danger">*</span></h6></label>
+                                <div class="form-gruop mb-3">
+                                    <label for="age">
+                                        <h6>Age <span class="danger">*</span></h6>
+                                    </label>
+                                    <input class="form-control" id="age" type="text" placeholder="Age" />
+
                                 </div>
 
-                                <div class="form-floating mb-3">
+                                <div class="form-gruop mb-3">
+                                    <label for="floatingSelect">
+                                        <h6>Province <span class="danger">*</span></h6>
+                                    </label>
                                     <select class="form-select" id="floatingSelect"
                                         aria-label="Floating label select example">
-                                        <option value=""><h6>Select Province</h6></option>
+                                        <option value="">
+                                            <h6>Select Province</h6>
+                                        </option>
                                         <option value="LUSAKA">Lusaka</option>
                                         <option value="COPPERBELT">Copperbelt</option>
                                         <option value="CENTRAL">Central</option>
@@ -163,17 +224,23 @@
                                         <option value="EASTERN">Eastern</option>
                                         <option value="NORTHERN">Northern</option>
                                     </select>
-                                    <label for="floatingSelect"> <h6>Province <span class="danger">*</span></h6></label>
+
                                 </div>
-                                <div class="form-floating mb-3">
+                                <div class="form-gruop mb-3">
+                                    <label for="floatingInput">
+                                        <h6>Phone Number <span class="danger">*</span></h6>
+                                    </label>
                                     <input class="form-control" id="floatingPassword" type="text"
-                                        placeholder="Password" />
-                                    <label for="floatingInput"><h6>Phone Number <span class="danger">*</span></h6> </label>
+                                        placeholder="Phone Number" />
+
                                 </div>
-                                <div class="form-floating">
+                                <div class="form-gruop">
+                                    <label for="floatingInput">
+                                        <h6>Physical Address <span class="danger">*</span> </h6>
+                                    </label>
                                     <input class="form-control" id="floatingPassword" type="text"
-                                        placeholder="Password" />
-                                    <label for="floatingInput"><h6>Physical Address <span class="danger">*</span> </h6></label>
+                                        placeholder="Physical Address " />
+
                                 </div>
                             </div>
                         </div>
@@ -182,8 +249,10 @@
                                 <div class="form-check">
                                     <input class="form-check-input" id="flexRadioDefault1" type="check"
                                         name="flexRadioDefault" />
-                                    <label class="form-check-label" for="flexRadioDefault1"><h6>Tick If Access Authentication
-                                        is required</h6></label>
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        <h6>Tick If Access Authentication
+                                            is required</h6>
+                                    </label>
                                 </div>
                             </div>
                         </div>
@@ -191,10 +260,14 @@
                     </div>
                     <div class="form-buttons-w text-center">
                         <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" name="add"
-                            href="/individual"><h6>Back</h6> </a>
+                            href="/individual">
+                            <h6>Back</h6>
+                        </a>
 
                         <button class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" name="add"
-                            type="submit"><h6>Submit</h6> </button>
+                            type="submit">
+                            <h6>Submit</h6>
+                        </button>
                     </div>
                 </form>
             </div>

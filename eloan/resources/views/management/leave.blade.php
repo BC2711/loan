@@ -122,30 +122,32 @@
                         <div class="col-12 col-sm-6 col-md-4">
                             <div class="p-4 code-to-copy">
 
-                                <div class="form-floating mb-3">
-                                    <select class="form-select" id="floatingSelect"
-                                        aria-label="Floating label select example">
+                                <div class="form-group mb-3">
+                                    <label for="groupSelect">
+                                        <h6>Leave Type</h6>
+                                    </label>
+                                    <select class="form-select" id="groupSelect"
+                                        aria-label="group label select example">
                                         <option selected="">Select Leave Type</option>
                                         <option value="1">Annual Leave</option>
                                         <option value="2">Sick Leave</option>
                                         <option value="3">Maternit Leave</option>
                                         <option value="4">Study Leave</option>
                                     </select>
-                                    <label for="floatingSelect">
-                                        <h6>Leave Type</h6>
-                                    </label>
+                                   
                                 </div>
 
-                                <div class="form-floating mb-3">
-                                    <select class="form-select" id="floatingSelect"
-                                        aria-label="Floating label select example">
+                                <div class="form-group mb-3">
+                                    <label for="groupPassword"><h6>Durties Taken Over By</h6></label>
+                                    <select class="form-select" id="groupSelect"
+                                        aria-label="group label select example">
                                         <option selected="">Select Employee </option>
                                         <option value="1">Annual Leave</option>
                                         <option value="2">Sick Leave</option>
                                         <option value="3">Maternit Leave</option>
                                         <option value="4">Study Leave</option>
                                     </select>
-                                    <label for="floatingPassword"></h6>Durties Taken Over By</h6></label>
+                                   
                                 </div>
                             </div>
 
@@ -153,18 +155,20 @@
                         <div class="col-12 col-sm-6 col-md-4">
                             <div class="p-4 code-to-copy">
 
-                                <div class="form-floating mb-3">
-                                    <input class="form-control" id="floatingPassword" type="date"
-                                        placeholder="Password" />
-                                    <label for="floatingPassword">
+                                <div class="form-group mb-3">
+                                    <label for="groupPassword">
                                         <h6>Start Date</h6>
                                     </label>
+                                    <input class="form-control" id="groupPassword" type="date"
+                                        placeholder="Password" />
+                                   
                                 </div>
-                                <div class="form-floating mb-3">
-                                    <textarea class="form-control" id="floatingPassword" type="" placeholder="Password"></textarea>
-                                    <label for="floatingPassword">
+                                <div class="form-group mb-3">
+                                    <label for="groupPassword">
                                         <h6>Reason For Leave</h6>
                                     </label>
+                                    <textarea class="form-control" id="groupPassword" type="" placeholder="Reason For Leave"></textarea>
+                                  
                                 </div>
                             </div>
 
@@ -172,19 +176,21 @@
                         <div class="col-12 col-sm-6 col-md-4">
 
                             <div class="p-4 code-to-copy">
-                                <div class="form-floating mb-3">
-                                    <input class="form-control" id="floatingPassword" type="date"
-                                        placeholder="Password" />
-                                    <label for="floatingPassword">
+                                <div class="form-group mb-3">
+                                    <label for="groupPassword">
                                         <h6>End Date</h6>
                                     </label>
-                                </div>
-                                <div class="form-floating">
-                                    <input class="form-control" id="floatingPassword" type="file"
+                                    <input class="form-control" id="groupPassword" type="date"
                                         placeholder="Password" />
-                                    <label for="floatingInput">
+                                  
+                                </div>
+                                <div class="form-group">
+                                    <label for="groupInput">
                                         <h6>Attachment (If any)</h6>
                                     </label>
+                                    <input class="form-control" id="groupPassword" type="file"
+                                        placeholder="Password" />
+                                   
                                 </div>
                             </div>
                         </div>
@@ -250,8 +256,8 @@
                                     <th class="sort head" scope="col" data-sort="Surname " >Leave Type</th>
                                     <th class="sort head" scope="col" data-sort="Surname " >Start Date</th>
                                     <th class="sort head" scope="col" data-sort="Surname " >End Date</th>
-                                    <th class="sort head" scope="col" data-sort="Address">Leave Status</th>>
-                                   
+                                    <th class="sort head" scope="col" data-sort="Address">Leave Status</th>
+                                    <th class="sort head" scope="col" data-sort="Address">Action</th>
                                 </tr>
                             </thead>
                             <tbody class="list" id="table-latest-review-body">
@@ -270,7 +276,10 @@
                                     </td>
                                     <td class="white-space-nowrap tdtd Address" >
                                      Approved
-                                    </td>       
+                                    </td>   
+                                    <td class="white-space-nowrap tdtd Address"  style="color: blue" >
+                                        View
+                                       </td>       
                                 </tr>
                                 <tr class="hover-actions-trigger btn-reveal-trigger position-static">                                    
                                     <td class="white-space-nowrap tdtd Name">                           
@@ -287,7 +296,10 @@
                                     </td>
                                     <td class="white-space-nowrap tdtd Address" >
                                      Rejected
-                                    </td>       
+                                    </td>   
+                                    <td class="white-space-nowrap tdtd Address" style="color: blue" >
+                                        View
+                                       </td>        
                                 </tr>
                             </tbody>
                         </table>

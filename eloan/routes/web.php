@@ -151,6 +151,10 @@ Route::get('/createemployee', function () {
     return view('management.createemployee');
 });
 
+Route::get('/advances', function () {
+    return view('management.advances');
+});
+
 /**
  * End of Mangement
  */
@@ -161,6 +165,11 @@ Route::get('/createemployee', function () {
 Route::get('/agentcommission', function () {
     return view('reports.agentcommission');
 });
+
+Route::get('/storage', function () {
+    return view('reports.storage');
+});
+
 
 Route::get('/loanstatus', function () {
     return view('reports.loanstatus');
