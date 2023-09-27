@@ -9,9 +9,108 @@
   </nav>
   
   <div class="col-sm-6 col-md-9 col-lg-12 m-4">
-    <div class="card text-white success" id="card">
+    <div class="card text-white success leave" id="card">
         <div class="card-body">
-            <h4 class="card-title text-dark"> name   </h4>
+            <div class="row">
+
+                <div class="col-sm-1 col-md-1 col-lg-2 m-2">
+                    <div class="form-group mb-3">
+                        <label for="groupPassword"><h5>Initiated From </h5></label>
+                        <input class="form-control" id="groupPassword" type="date"
+                            placeholder="Email" />
+                       
+                    </div>
+                
+                </div>
+             
+                <div class="col-sm-1 col-md-1 col-lg-2 m-2">
+                    <div class="form-group mb-3">
+                        <label for="groupPassword"><h5>Initiated To </h5></label>
+                        <input class="form-control" id="groupPassword" type="date"
+                            placeholder="Email" />
+                       
+                    </div>
+                
+                </div>
+                <div class="col-sm-1 col-md-1 col-lg-2 m-2">
+                    <div class="form-group mb-3">
+                        <label for="groupPassword"><h5>Trading As | Business </h5></label>
+                        <input class="form-control" id="groupPassword" type="text"
+                            placeholder="Trading As | Business " />
+                       
+                    </div>
+                
+                </div>
+                <div class="col-sm-1 col-md-1 col-lg-2 m-2">
+                    <div class="form-group mb-3">
+                        <label for="groupPassword"><h5>Contact Mobile Number </h5></label>
+                        <input class="form-control" id="groupPassword" type="number"
+                            placeholder="Contact Mobile Number" />
+                       
+                    </div>
+                
+                </div>
+                <div class="col-sm-1 col-md-1 col-lg-2 m-2">
+                    <div class="form-group mb-3">
+                        <label for="groupPassword"><h5>Deposit Reference</h5></label>
+                        <input class="form-control" id="groupPassword" type="text"
+                            placeholder="Deposit Reference" />
+                       
+                    </div>
+                
+                </div>
+                <div class="col-sm-1 col-md-1 col-lg-2 m-2">
+                    <div class="form-group mb-3">
+                        <label for="groupPassword"><h5>Loan Amount</h5></label>
+                        <input class="form-control" id="groupPassword" type="text"
+                            placeholder="Loan Amount" />
+                       
+                    </div>
+                
+                </div>
+                <div class="col-sm-1 col-md-1 col-lg-2 m-2">
+                    <div class="form-group mb-3">
+                        <label for="groupPassword"><h5>Txn Reference</h5></label>
+                        <input class="form-control" id="groupPassword" type="text"
+                            placeholder="Txn Reference" />
+                       
+                    </div>
+                
+                </div>
+                <div class="col-sm-1 col-md-1 col-lg-2 m-2">
+                    <div class="form-group mb-3">
+                        <label for="groupPassword"><h5>Account Type</h5></label>
+                        <select name="" id=""  class="form-control">
+                            <option value="">Account Type</option>
+                            <option value="">Ascending</option>
+                        </select>
+                       
+                    </div>
+                
+                </div>
+                <div class="col-sm-1 col-md-1 col-lg-2 m-2">
+                    <div class="form-group mb-3">
+                        <label for="groupPassword"><h5>Order By</h5></label>
+                        <select name="" id=""  class="form-control">
+                            <option value="">Descending</option>
+                            <option value="">Ascending</option>
+                        </select>
+                    
+                       
+                    </div>
+                
+                </div>
+                <hr id="leave">
+                <div class="form-buttons-w">
+                  
+                    <button class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" name="add"
+                        type="submit">Search </button>
+                        <button class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" name="add"
+                        type="submit">Clear </button>
+                        <button class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" name="add"
+                        href="/employee">Download File </button>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -21,7 +120,7 @@
             <div data-list='{"valueNames":["Name","Surname","Contact","Address","Role","Username","Auth","Email","Province","Status","Last"],"page":6}'>
                 <div class="row align-items-end justify-content-between pb-5 g-3">
                     <div class="col-auto">
-                        <h5> Log</h5>
+                        <h5> Log 3</h5>
                     </div>
                     <div class="col-12 col-md-auto">
                         <div class="row g-2 gy-3">
@@ -55,8 +154,8 @@
                     </div>
                 </div>
                 <div class="table-responsive mx-n1 px-1 scrollbar">
-                    <table class="table fs--1 mb-0 border-top border-200">
-                        <thead>
+                    <table class="table  mb-0 border-top border-200">
+                        <thead id="leave">
                             <tr>                      
                                 <th class="sort white-space-nowrap" scope="col" data-sort=" Name">Count</th>
                                 <th class="sort" scope="col" data-sort="Contact" >Trading As | Business Name </th>
@@ -78,94 +177,143 @@
                         <tbody class="list" id="table-latest-review-body">
                             <tr class="hover-actions-trigger btn-reveal-trigger position-static">
                                 
-                                <td class="white-space-nowrap Name">                           
-                                      Name                           
+                                <td class="white-space-nowrap tdtd Name">                           
+                                      1                           
                                 </td>
-                                <td class="white-space-nowrap Surname">
-                                 Date
+                                <td class="white-space-nowrap tdtd Surname">
+                                    MOH Global 
                                 </td>
-                                <td class=" white-space-nowrap Contact">                           
-                                       Richard Dawkins                        
+                                <td class=" white-space-nowrap tdtd Contact">                           
+                                    MOHG0001                      
                                 </td>
-                                <td class="white-space-nowrap Email fs--2">                          
-                                    <span class="fa fa-star text-warning"></span>
+                                <td class="white-space-nowrap tdtd Email ">                          
+                                  0978678654
                                 </td>
-                                <td class="white-space-nowrap Address" >
-                                    Sample
+                                <td class="white-space-nowrap tdtd Address" >
+                                    Govenment
                                 </td>
-                                <td class=" text-start ps-5 Province">                          
-                                        Approved
+                                <td class=" white-space-nowrap tdtd Province">                          
+                                        MOHG0001
                                 </td>
-                                <td class=" white-space-nowrap Role">
-                                    Just now                          
+                                <td class=" white-space-nowrap tdtd Role">
+                                   1,000,000.00                       
                                 </td>
-                                <td class="white-space-nowrap Username" >
-                                    Sample
+                                <td class="white-space-nowrap tdtd Username" >
+                                    55,000.00
                                 </td>
-                                <td class="white-space-nowrap Status" >
-                                    Sample
+                                <td class="white-space-nowrap tdtd Status"  >
+                                  1,055,000.00
                                 </td>
-                                <td class="white-space-nowrap Last" >
-                                    Sample
+                                <td class="white-space-nowrap tdtd Last"  >
+                                    2022-09-20
                                 </td>
-                                <td class="white-space-nowrap Auth" >
-                                    Sample
+                                <td class="white-space-nowrap tdtd Auth" >
+                                    2022-09-24
                                 </td>
-                                <td class="white-space-nowrap review">
-                                    Sample
-                                </td>   
-                                <td class="white-space-nowrap review">
-                                    Sample
-                                </td>   
-                                <td class="white-space-nowrap review">
-                                    Sample
+                                <td class="white-space-nowrap tdtd Auth" >
+                                    Joshua  Manduwa
+                                </td>
+                                <td class="white-space-nowrap tdtd Auth" >
+                                    Joshua  Manduwa
+                                </td>
+                                <td class="white-space-nowrap tdtd review" style="color: blue;">
+                                   View 
                                 </td>      
                               
                             </tr>
+                          
                             <tr class="hover-actions-trigger btn-reveal-trigger position-static">
                                 
-                                <td class="white-space-nowrap Name">                           
-                                      Name                           
+                                <td class="white-space-nowrap tdtd Name">                           
+                                      2                           
                                 </td>
-                                <td class="white-space-nowrap Surname">
-                                 Date
+                                <td class="white-space-nowrap tdtd Surname">
+                                SAFE MOTHERHOOD
                                 </td>
-                                <td class=" white-space-nowrap Contact">                           
-                                       Richard Dawkins                        
+                                <td class=" white-space-nowrap tdtd Contact">                           
+                                    SAFE0001                      
                                 </td>
-                                <td class="white-space-nowrap Email fs--2">                          
-                                    <span class="fa fa-star text-warning"></span>
+                                <td class="white-space-nowrap tdtd Email ">                          
+                                  0978778456
                                 </td>
-                                <td class="white-space-nowrap Address" >
-                                    Sample
+                                <td class="white-space-nowrap tdtd Address" >
+                                    Govenment
                                 </td>
-                                <td class=" text-start ps-5 Province">                          
-                                        Approved
+                                <td class=" white-space-nowrap tdtd Province">                          
+                                    SAFEMOHG0001
                                 </td>
-                                <td class=" white-space-nowrap Role">
-                                    Just now                          
+                                <td class=" white-space-nowrap tdtd Role">
+                                   100,000.00                       
                                 </td>
-                                <td class="white-space-nowrap Username" >
-                                    Sample
+                                <td class="white-space-nowrap tdtd Username" >
+                                    25,000.00
                                 </td>
-                                <td class="white-space-nowrap Status" >
-                                    Sample
+                                <td class="white-space-nowrap tdtd Status"  >
+                                  1025,000.00
                                 </td>
-                                <td class="white-space-nowrap Last" >
-                                    Sample
+                                <td class="white-space-nowrap tdtd Last"  >
+                                    2022-09-20
                                 </td>
-                                <td class="white-space-nowrap Auth" >
-                                    Sample
+                                <td class="white-space-nowrap tdtd Auth" >
+                                    2022-09-24
                                 </td>
-                                <td class="white-space-nowrap review">
-                                    Sample
+                                <td class="white-space-nowrap tdtd Auth" >
+                                    Joshua  Manduwa
+                                </td>
+                                <td class="white-space-nowrap tdtd Auth" >
+                                   Admin Admin
+                                </td>
+                                <td class="white-space-nowrap tdtd review" style="color: blue;">
+                                   View 
                                 </td>      
-                                <td class="white-space-nowrap review">
-                                    Sample
-                                </td>   
-                                <td class="white-space-nowrap review">
-                                    Sample
+                              
+                            </tr>
+
+                            <tr class="hover-actions-trigger btn-reveal-trigger position-static">
+                                
+                                <td class="white-space-nowrap tdtd Name">                           
+                                      3                         
+                                </td>
+                                <td class="white-space-nowrap tdtd Surname">
+                                  CONSUMER ASSOCIATION OF MALAWI
+                                </td>
+                                <td class=" white-space-nowrap tdtd Contact">                           
+                                    CONN0001                      
+                                </td>
+                                <td class="white-space-nowrap tdtd Email ">                          
+                                  0968674652
+                                </td>
+                                <td class="white-space-nowrap tdtd Address" >
+                                    NGO
+                                </td>
+                                <td class=" white-space-nowrap tdtd Province">                          
+                                        NOGMOHG0001
+                                </td>
+                                <td class=" white-space-nowrap tdtd Role">
+                                   2,000,000.00                       
+                                </td>
+                                <td class="white-space-nowrap tdtd Username" >
+                                    75,000.00
+                                </td>
+                                <td class="white-space-nowrap tdtd Status"  >
+                                  2,075,000.00
+                                </td>
+                                <td class="white-space-nowrap tdtd Last"  >
+                                    2022-09-20
+                                </td>
+                                <td class="white-space-nowrap tdtd Auth" >
+                                    2022-09-24
+                                </td>
+                                <td class="white-space-nowrap tdtd Auth" >
+                                    Admin  Admin
+                                </td>
+                                <td class="white-space-nowrap tdtd Auth" >
+                                    Joshua  Manduwa
+                                </td>
+                                <td class="white-space-nowrap tdtd review" style="color: blue;">
+                                   View 
                                 </td>      
+                              
                             </tr>
                         </tbody>
                     </table>

@@ -85,7 +85,7 @@
                                 <td class=" white-space-nowrap tdtd Contact">                           
                                         Chama                        
                                 </td>
-                                <td class="white-space-nowrap tdtd Email fs--2">                          
+                                <td class="white-space-nowrap tdtd Email ">                          
                                    0965508033
                                 </td>
                                 <td class="white-space-nowrap tdtd Address" >
@@ -126,7 +126,7 @@
                                 <td class=" white-space-nowrap tdtd Contact">                           
                                         Dawkins                        
                                 </td>
-                                <td class="white-space-nowrap tdtd Email fs--2">                          
+                                <td class="white-space-nowrap tdtd Email ">                          
                                    0987654321
                                 </td>
                                 <td class="white-space-nowrap tdtd Address" >

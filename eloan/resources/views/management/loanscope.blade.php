@@ -1,5 +1,10 @@
 @extends('layout.main')
 @section('content')
+<style>
+     .btn{
+        width:140px;
+    }
+</style>
 <nav class="mb-2" aria-label="breadcrumb">
     <ol class="breadcrumb mb-0">
       <li class="breadcrumb-item"><a href="/home">Home</a></li>
@@ -9,13 +14,13 @@
   </nav>
   
   <div class="col-sm-6 col-md-9 col-lg-12 m-4">
-    <div class="card text-white success" id="card">
+    <div class="card text-white success leave" id="card">
         <div class="card-body">
             <div class="row">
 
                 <div class="col-sm-1 col-md-1 col-lg-2 m-2">
                     <div class="form-group mb-3">
-                        <label for="groupPassword"><h5>Initiated From date</h5></label>
+                        <label for="groupPassword"><h5>Initiated From </h5></label>
                         <input class="form-control" id="groupPassword" type="date"
                             placeholder="Email" />
                        
@@ -36,7 +41,7 @@
                     <div class="form-group mb-3">
                         <label for="groupPassword"><h5>Trading As | Business </h5></label>
                         <input class="form-control" id="groupPassword" type="text"
-                            placeholder="" />
+                            placeholder="Trading As | Business " />
                        
                     </div>
                 
@@ -45,55 +50,70 @@
                     <div class="form-group mb-3">
                         <label for="groupPassword"><h5>Contact Mobile Number </h5></label>
                         <input class="form-control" id="groupPassword" type="number"
-                            placeholder="" />
+                            placeholder="Contact Mobile Number" />
                        
                     </div>
                 
                 </div>
                 <div class="col-sm-1 col-md-1 col-lg-2 m-2">
                     <div class="form-group mb-3">
-                        <label for="groupPassword"><h5>Deposit Reference</label>
+                        <label for="groupPassword"><h5>Deposit Reference</h5></label>
                         <input class="form-control" id="groupPassword" type="text"
-                            placeholder="" />
+                            placeholder="Deposit Reference" />
                        
                     </div>
                 
                 </div>
                 <div class="col-sm-1 col-md-1 col-lg-2 m-2">
                     <div class="form-group mb-3">
-                        <label for="groupPassword"><h5>Loan Amount</label>
+                        <label for="groupPassword"><h5>Loan Amount</h5></label>
                         <input class="form-control" id="groupPassword" type="text"
-                            placeholder="Email" />
+                            placeholder="Loan Amount" />
                        
                     </div>
                 
                 </div>
                 <div class="col-sm-1 col-md-1 col-lg-2 m-2">
                     <div class="form-group mb-3">
-                        <label for="groupPassword"><h5>Email</label>
+                        <label for="groupPassword"><h5>Txn Reference</h5></label>
                         <input class="form-control" id="groupPassword" type="text"
-                            placeholder="Email" />
+                            placeholder="Txn Reference" />
                        
                     </div>
                 
                 </div>
                 <div class="col-sm-1 col-md-1 col-lg-2 m-2">
                     <div class="form-group mb-3">
-                        <label for="groupPassword"><h5>Email <span class="danger">*</span></h5></label>
-                        <input class="form-control" id="groupPassword" type="text"
-                            placeholder="Email" />
+                        <label for="groupPassword"><h5>Account Type</h5></label>
+                        <select name="" id=""  class="form-control">
+                            <option value="">Account Type</option>
+                            <option value="">Ascending</option>
+                        </select>
                        
                     </div>
                 
                 </div>
                 <div class="col-sm-1 col-md-1 col-lg-2 m-2">
                     <div class="form-group mb-3">
-                        <label for="groupPassword"><h5>Email <span class="danger">*</span></h5></label>
-                        <input class="form-control" id="groupPassword" type="text"
-                            placeholder="Email" />
+                        <label for="groupPassword"><h5>Order By</h5></label>
+                        <select name="" id=""  class="form-control">
+                            <option value="">Descending</option>
+                            <option value="">Ascending</option>
+                        </select>
+                    
                        
                     </div>
                 
+                </div>
+                <hr id="leave">
+                <div class="form-buttons-w">
+                  
+                    <button class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" name="add"
+                        type="submit">Search </button>
+                        <button class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" name="add"
+                        type="submit">Clear </button>
+                        <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" name="add"
+                        href="/employee">Back </a>
                 </div>
             </div>
             
@@ -141,7 +161,7 @@
                 </div>
                 <div class="table-responsive mx-n1 px-1 scrollbar">
                     <table class="table fs--1 mb-0 border-top border-200">
-                        <thead>
+                        <thead id="leave">
                             <tr>                      
                                 <th class="sort white-space-nowrap" scope="col" data-sort=" Name">Count</th>
                                 <th class="sort" scope="col" data-sort="Surname " >initiated Date</th>
@@ -155,87 +175,129 @@
                                 <th class="sort" scope="col" data-sort="Last">Approved Date </th>
                                 <th class="sort" scope="col" data-sort="Auth">Time Lapse </th>
                                 <th class="sort" scope="col" data-sort="Action">Action</th>
-                                <th class="sort" scope="col"></th>
+                            
                             </tr>
                         </thead>
                         <tbody class="list" id="table-latest-review-body">
                             <tr class="hover-actions-trigger btn-reveal-trigger position-static">
                                 
-                                <td class="white-space-nowrap Name">                           
-                                      Name                           
+                                <td class="white-space-nowrap tdtd Name">                           
+                                      1                           
                                 </td>
-                                <td class="white-space-nowrap Surname">
-                                 Date
+                                <td class="white-space-nowrap tdtd Surname">
+                                 2022-09-29
                                 </td>
-                                <td class=" white-space-nowrap Contact">                           
-                                       Richard Dawkins                        
+                                <td class=" white-space-nowrap tdtd Contact">                           
+                                      MOH Global                        
                                 </td>
-                                <td class="white-space-nowrap Email fs--2">                          
-                                    <span class="fa fa-star text-warning"></span>
+                                <td class="white-space-nowrap tdtd Email ">                          
+                                  0978678654
                                 </td>
-                                <td class="white-space-nowrap Address" >
-                                    Sample
+                                <td class="white-space-nowrap tdtd Address" >
+                                    Govenment
                                 </td>
-                                <td class=" text-start ps-5 Province">                          
-                                        Approved
+                                <td class=" white-space-nowrap tdtd Province">                          
+                                        MOHG0001
                                 </td>
-                                <td class=" white-space-nowrap Role">
-                                    Just now                          
+                                <td class=" white-space-nowrap tdtd Role">
+                                   FMS22092HA9G/LOA                       
                                 </td>
-                                <td class="white-space-nowrap Username" >
-                                    Sample
+                                <td class="white-space-nowrap tdtd Username" >
+                                    1100
                                 </td>
-                                <td class="white-space-nowrap Status" >
-                                    Sample
+                                <td class="white-space-nowrap tdtd Status"  style="color: GREEN;">
+                                    Approved
                                 </td>
-                                <td class="white-space-nowrap Last" >
-                                    Sample
+                                <td class="white-space-nowrap tdtd Last"  >
+                                    2022-09-20
                                 </td>
-                                <td class="white-space-nowrap Auth" >
-                                    Sample
+                                <td class="white-space-nowrap tdtd Auth" >
+                                    10:00:23
                                 </td>
-                                <td class="white-space-nowrap review">
-                                    Sample
+                                <td class="white-space-nowrap tdtd review" style="color: blue;">
+                                   View | Statement
                                 </td>      
                               
                             </tr>
+                          
                             <tr class="hover-actions-trigger btn-reveal-trigger position-static">
                                 
-                                <td class="white-space-nowrap Name">                           
-                                      Name                           
+                                <td class="white-space-nowrap tdtd Name">                           
+                                      3                           
                                 </td>
-                                <td class="white-space-nowrap Surname">
-                                 Date
+                                <td class="white-space-nowrap tdtd Surname">
+                                 2022-08-9
                                 </td>
-                                <td class=" white-space-nowrap Contact">                           
-                                       Richard Dawkins                        
+                                <td class=" white-space-nowrap tdtd Contact">                           
+                                      NBM PLC                        
                                 </td>
-                                <td class="white-space-nowrap Email fs--2">                          
-                                    <span class="fa fa-star text-warning"></span>
+                                <td class="white-space-nowrap tdtd Email ">                          
+                                  0968456234
                                 </td>
-                                <td class="white-space-nowrap Address" >
-                                    Sample
+                                <td class="white-space-nowrap tdtd Address" >
+                                    Corporate
                                 </td>
-                                <td class=" text-start ps-5 Province">                          
-                                        Approved
+                                <td class=" white-space-nowrap tdtd Province">                          
+                                        NBMP00023
                                 </td>
-                                <td class=" white-space-nowrap Role">
-                                    Just now                          
+                                <td class=" white-space-nowrap tdtd Role">
+                                    NBMP00292H9G/LOA                       
                                 </td>
-                                <td class="white-space-nowrap Username" >
-                                    Sample
+                                <td class="white-space-nowrap tdtd Username" >
+                                    3000
                                 </td>
-                                <td class="white-space-nowrap Status" >
-                                    Sample
+                                <td class="white-space-nowrap tdtd Status"  style="color: GREEN;" >
+                                    Approved
                                 </td>
-                                <td class="white-space-nowrap Last" >
-                                    Sample
+                                <td class="white-space-nowrap tdtd Last" >
+                                    2022-08-20
                                 </td>
-                                <td class="white-space-nowrap Auth" >
-                                    Sample
+                                <td class="white-space-nowrap tdtd Auth" >
+                                    10:00:23
                                 </td>
-                                <td class="white-space-nowrap review">
-                                    Sample
+                                <td class="white-space-nowrap tdtd review" style="color: blue;">
+                                   View | Statement
+                                </td>      
+                              
+                            </tr>
+
+                            <tr class="hover-actions-trigger btn-reveal-trigger position-static">
+                                
+                                <td class="white-space-nowrap tdtd Name">                           
+                                      1                           
+                                </td>
+                                <td class="white-space-nowrap tdtd Surname">
+                                 2022-09-29
+                                </td>
+                                <td class=" white-space-nowrap tdtd Contact">                           
+                                      FMS UAT                        
+                                </td>
+                                <td class="white-space-nowrap tdtd Email ">                          
+                                  0987532244
+                                </td>
+                                <td class="white-space-nowrap tdtd Address" >
+                                    Govenment
+                                </td>
+                                <td class=" white-space-nowrap tdtd Province">                          
+                                        FMS00031
+                                </td>
+                                <td class=" white-space-nowrap tdtd Role">
+                                    FMS000312HA9G/LOA                       
+                                </td>
+                                <td class="white-space-nowrap tdtd Username" >
+                                    5100
+                                </td>
+                                <td class="white-space-nowrap tdtd Status" style="color: GREEN;" >
+                                    Approved
+                                </td>
+                                <td class="white-space-nowrap tdtd Last" >
+                                    2022-09-20
+                                </td>
+                                <td class="white-space-nowrap tdtd Auth" >
+                                    10:00:23
+                                </td>
+                                <td class="white-space-nowrap tdtd review" style="color: blue;">
+                                   View | Statement
                                 </td>      
                               
                             </tr>

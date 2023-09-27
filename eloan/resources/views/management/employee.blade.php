@@ -144,7 +144,7 @@
                                  </td>  
                                 <td class=" white-space-nowrap tdtd Role"  style="text-align: center;">
                                     <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2"  id="btn"  href="/timeattendance"> Time Attendance</a>
-                                    <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2"  id="btn"  href="/leave"> Leave Application</a>
+                                    <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2 leave"  id="btn"  href="/leave"> Leave Application</a>
                                                             
                                 </td>                              
                             </tr>
@@ -188,7 +188,7 @@
                                 </td>  
                                 <td class=" white-space-nowrap tdtd  Role"  style="text-align: center;">
                                     <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" id="btn" href="/timeattendance"> Time Attendance </a>
-                                    <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2"  id="btn" href="/leave"> Leave Application</a>                      
+                                    <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2"  style="background-color: green!important;" id="btn" href="/leave"> Leave Application</a>                      
                                 </td>                              
                             </tr>
                         </tbody>

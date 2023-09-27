@@ -18,45 +18,23 @@
         <ol class="breadcrumb mb-0">
             <li class="breadcrumb-item"><a href="/home">Home</a></li>
             <li class="breadcrumb-item active">Report</li>
-            <li class="breadcrumb-item active"> Storage</li>
+            <li class="breadcrumb-item active"> Documents Library</li>
         </ol>
     </nav>
-    {{-- <div class="col-sm-6 col-md-9 col-lg-12 m-4">
+    <div class="col-sm-6 col-md-9 col-lg-12 m-4">
         <div class="card text-white success leave" id="card">
             <div class="card-body">              
-                <div class="row">   
-                    <div class="col-sm-3 col-md-4 col-lg-1 mb-3"> 
-                        <h5 class="card-title text-dark"> <a id="approved"  href="/pending">Approved = 25</a> </h5> 
-                    </div>   
-                    <div class="col-sm-3 col-md-4 col-lg-1 mb-3">  
-                        <h5 class="card-title text-dark"><a id="pending" href="/pending">Pending = 35</a> </h5>
-                    </div>   
-                    <div class="col-sm-3 col-md-4 col-lg-1 mb-3">  
-                        <h5 class="card-title text-dark"><a id="declined" href="/pending">Declined = 0</a>  </h5>
-                    </div>      
-                </div>              
+               <h5>Documents Library</h5>            
             </div>
         </div>
-    </div> --}}
+    </div>
 
     <div class="col-sm-6 col-md-9 col-lg-12 m-4">
         <div class="card text-white success" id="card">
             <div class="card-body">
                 <h6 class="card-title text-white"> </h6>
                 <div class="row">
-                    <div class="col-sm-4 col-md-2 col-lg-2 ">
-                        <a href="#">
-                            <div class="card border text-dark mb-2" id="card1">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <img src="/img/icons/folder.jpg" style="margin-top: -20px;" alt="">
-                                        <h4 class="card-title text-center">Loan Applications </h4>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                    
 
                     <div class="col-sm-4 col-md-2 col-lg-2 ">
                         <a href="#">
