@@ -62,7 +62,8 @@
                     </select>
                 </div>
             </div>
-            <div class="echart-total-sales-chart" style="min-height:320px;width:100%"></div>
+            <div class="echart-total-sales-chart"></div>
+            {{-- <div class="echart-total-sales-chart" style="min-height:320px;width:100%"></div> --}}
         </div>
         <div class="col-12 col-xxl-6">
             <div class="row g-3">

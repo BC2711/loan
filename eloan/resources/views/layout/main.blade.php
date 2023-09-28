@@ -10492,41 +10492,7 @@
                                 aria-expanded="false">
                                 <span class="uil fs-0 me-2 uil-chart-pie"></span>
                                 Home
-                            </a>
-                            {{-- <ul class="dropdown-menu navbar-dropdown-caret">
-                                    <li>
-                                        <a class="dropdown-item active" href="index.html">
-                                            <div class="dropdown-item-wrapper">
-                                                <span class="me-2 uil" data-feather="shopping-cart"></span>
-                                               sample
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="dashboard/project-management.html">
-                                            <div class="dropdown-item-wrapper">
-                                                <span class="me-2 uil" data-feather="clipboard"></span>
-                                                sample
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="dashboard/crm.html">
-                                            <div class="dropdown-item-wrapper">
-                                                <span class="me-2 uil" data-feather="phone"></span>
-                                                sample
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="apps/social/feed.html">
-                                            <div class="dropdown-item-wrapper">
-                                                <span class="me-2 uil" data-feather="share-2"></span>
-                                                sample
-                                            </div>
-                                        </a>
-                                    </li>
-                                </ul> --}}
+                            </a>                          
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle lh-1" href="#!" role="button"
@@ -10537,29 +10503,9 @@
                             </a>
                             <ul class="dropdown-menu navbar-dropdown-caret">
                                 <li class="dropdown">
-                                    {{-- <a class="dropdown-item dropdown-toggle" id="e-commerce" href="#"
-                                        data-bs-toggle="dropdown" data-bs-auto-close="outside">
-                                        <div class="dropdown-item-wrapper">
-                                            <span
-                                                class="uil fs-0 uil-angle-right lh-1 dropdown-indicator-icon"></span>
-                                            <span>
-                                                <span class="me-2 uil" data-feather="shopping-cart"></span>
-                                                Account Holder
-                                            </span>
-                                        </div>
-                                    </a> --}}
+                                  
                                     <ul class="dropdown-menu">
-                                        {{-- <li class="dropdown">
-                                                <a class="dropdown-item dropdown-toggle" id="admin" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
-                                                    <div class="dropdown-item-wrapper">
-                                                        <span class="uil fs-0 uil-angle-right lh-1 dropdown-indicator-icon"></span>
-                                                        <span>
-                                                            <span class="me-2 uil"></span>
-                                                            Agents
-                                                        </span>
-                                                    </div>
-                                                </a>
-                                                <ul class="dropdown-menu"> --}}
+                                      
                                         <li>
                                             <a class="dropdown-item" href="/agents">
                                                 <div class="dropdown-item-wrapper">
@@ -10608,110 +10554,9 @@
                                                 </div>
                                             </a>
                                         </li>
-
-                                        {{-- </ul> --}}
+                                      
                                 </li>
-                                {{-- <li class="dropdown">
-                                                <a class="dropdown-item dropdown-toggle" id="customer" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
-                                                    <div class="dropdown-item-wrapper">
-                                                        <span class="uil fs-0 uil-angle-right lh-1 dropdown-indicator-icon"></span>
-                                                        <span>
-                                                            <span class="me-2 uil"></span>
-                                                            sample
-                                                        </span>
-                                                    </div>
-                                                </a>
-                                                <ul class="dropdown-menu">
-                                                    <li>
-                                                        <a class="dropdown-item" href="apps/e-commerce/landing/homepage.html">
-                                                            <div class="dropdown-item-wrapper">
-                                                                <span class="me-2 uil"></span>
-                                                                sample
-                                                            </div>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="dropdown-item" href="apps/e-commerce/landing/product-details.html">
-                                                            <div class="dropdown-item-wrapper">
-                                                                <span class="me-2 uil"></span>
-                                                                sample
-                                                            </div>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="dropdown-item" href="apps/e-commerce/landing/products-filter.html">
-                                                            <div class="dropdown-item-wrapper">
-                                                                <span class="me-2 uil"></span>
-                                                                sample
-                                                            </div>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="dropdown-item" href="apps/e-commerce/landing/cart.html">
-                                                            <div class="dropdown-item-wrapper">
-                                                                <span class="me-2 uil"></span>
-                                                                sample
-                                                            </div>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="dropdown-item" href="apps/e-commerce/landing/checkout.html">
-                                                            <div class="dropdown-item-wrapper">
-                                                                <span class="me-2 uil"></span>
-                                                                sample
-                                                            </div>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="dropdown-item" href="apps/e-commerce/landing/shipping-info.html">
-                                                            <div class="dropdown-item-wrapper">
-                                                                <span class="me-2 uil"></span>
-                                                                sample
-                                                            </div>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="dropdown-item" href="apps/e-commerce/landing/profile.html">
-                                                            <div class="dropdown-item-wrapper">
-                                                                <span class="me-2 uil"></span>
-                                                                sample
-                                                            </div>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="dropdown-item" href="apps/e-commerce/landing/favourite-stores.html">
-                                                            <div class="dropdown-item-wrapper">
-                                                                <span class="me-2 uil"></span>
-                                                                sample
-                                                            </div>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="dropdown-item" href="apps/e-commerce/landing/wishlist.html">
-                                                            <div class="dropdown-item-wrapper">
-                                                                <span class="me-2 uil"></span>
-                                                                sample
-                                                            </div>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="dropdown-item" href="apps/e-commerce/landing/order-tracking.html">
-                                                            <div class="dropdown-item-wrapper">
-                                                                <span class="me-2 uil"></span>
-                                                                sample
-                                                            </div>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="dropdown-item" href="apps/e-commerce/landing/invoice.html">
-                                                            <div class="dropdown-item-wrapper">
-                                                                <span class="me-2 uil"></span>
-                                                                sample
-                                                            </div>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </li> --}}
+                              
                             </ul>
                         </li>
                         <li class="dropdown">
@@ -10882,23 +10727,9 @@
                                             <a class="dropdown-link" href="/custom">Custom
                                                 </a>
                                                 <a class="dropdown-link" href="/library">Documents Library</a>
-                                            {{-- <a class="dropdown-link" href="modules/components/alerts.html">Login
-                                                Attempts</a>
-                                            <a class="dropdown-link" href="modules/components/alerts.html">Outlet
-                                                Balance Transfer</a> --}}
+                                           
                                         </div>
-                                        {{-- <div class="col-12 col-sm-6 col-md-4">
-                                            <a class="dropdown-link" href="modules/tables/basic-tables.html">
-                                                Merchant Payments</a>
-                                            <a class="dropdown-link"
-                                                href="modules/tables/advance-tables.html">Outlet Deposit</a>
-                                            <a class="dropdown-link" href="modules/tables/bulk-select.html">Outlet
-                                                Statement</a>
-                                            <a class="dropdown-link" href="modules/components/alerts.html">POS
-                                                Devices</a>
-                                            <a class="dropdown-link" href="modules/components/alerts.html">SMS
-                                                Logs</a>
-                                        </div> --}}
+                                     
                                     </div>
                                 </div>
                             </div>
