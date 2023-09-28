@@ -31,6 +31,7 @@ class CommonFunction
                 "url" => "/#",
                 "icon" => "",
                 "sub" => [
+                   
                     [
 
                         "menuName" => "Client KYC",
@@ -72,14 +73,14 @@ class CommonFunction
                                 "sub" => "",
                             ]
                         ]
-                    ],
-                    [
+                            ], [
 
-                        "menuName" => "Account Requests",
-                        "url" => "/requests",
-                        "icon" => "",
-                        "sub" => "",
-                    ]
+                                "menuName" => "Account Requests",
+                                "url" => "/requests",
+                                "icon" => "",
+                                "sub" => "",
+                            ],
+                   
                 ]
             ]
         );
@@ -115,7 +116,10 @@ class CommonFunction
                 $array .='<ul class="dropdown-menu navbar-dropdown-caret">';
                 $array .='<li class="nav-item dropdown">';
                   foreach ($value['sub'] as $key => $value2) {
+                  
                     $array .='<li class="dropdown">';
+                    if($value2['url'] == 'individual')
+                    {
                     $array .='
                    
                     <a class="dropdown-item dropdown-toggle" id="CRM" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
@@ -127,6 +131,7 @@ class CommonFunction
                             </span>
                         </div>
                     </a>';
+                    }
                     $array .='<ul class="dropdown-menu">';
                     if($value2['menuName'] == 'Client KYC')
                     {
@@ -134,10 +139,10 @@ class CommonFunction
                             $array .='
                         
                             <li>
-                                <a class="dropdown-item" href="'.$value3['url'].'">
+                                <a class="dropdown-item" href="'.$value2['url'].'">
                                     <div class="dropdown-item-wrapper">
                                         <span class="me-2 uil"></span>
-                                     '.$value3['menuName'].'
+                                     '.$value2['menuName'].'
                                     </div>
                                 </a>
                             </li>
@@ -146,14 +151,7 @@ class CommonFunction
                        
                     }
                     $array .='</ul>';
-                    $array .=' <li>
-                    <a class="dropdown-item" href="apps/calendar.html">
-                        <div class="dropdown-item-wrapper">
-                            <span class="me-2 uil" data-feather="calendar"></span>
-                            '.$value2['menuName'].'
-                        </div>
-                    </a>
-                </li>';
+                   
                     $array .='</li>';
                     $array .='</ul>';
                     $array .='</li>';
