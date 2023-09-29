@@ -115,7 +115,8 @@
                 <!-- scrollbar removed-->
                 <div class="navbar-vertical-content">
                     <ul class="navbar-nav flex-column" id="navbarVerticalNav">
-                        <li class="nav-item">
+                        <?php echo \App\Helper\CommonFunction::sidNavMenu(); ?>
+                        {{-- <li class="nav-item">
                             <!-- parent pages-->
                             <div class="nav-item-wrapper">
                                 <a class="nav-link dropdown-indicator label-1" href="#nv-home" role="button"
@@ -766,7 +767,7 @@
                                     </div>
                                 </a>
                             </div>
-                        </li>
+                        </li> --}}
                       
                     </ul>
                 </div>

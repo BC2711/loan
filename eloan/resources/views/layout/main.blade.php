@@ -115,7 +115,8 @@
                 <!-- scrollbar removed-->
                 <div class="navbar-vertical-content">
                     <ul class="navbar-nav flex-column" id="navbarVerticalNav">
-                        <li class="nav-item">
+                        <?php echo \App\Helper\CommonFunction::sidNavMenu(); ?>
+                        {{-- <li class="nav-item">
                             <!-- parent pages-->
                             <div class="nav-item-wrapper">
                                 <a class="nav-link dropdown-indicator label-1" href="#nv-home" role="button"
@@ -127,7 +128,7 @@
                                         <span class="nav-link-icon">
                                             <span data-feather="pie-chart"></span>
                                         </span>
-                                        <span class="nav-link-text">Home</span>
+                                        <span class="nav-link-text">Home1</span>
                                     </div>
                                 </a>
                                 <div class="parent-wrapper label-1">
@@ -766,7 +767,7 @@
                                     </div>
                                 </a>
                             </div>
-                        </li>
+                        </li> --}}
                       
                     </ul>
                 </div>
@@ -794,8 +795,8 @@
                     <a class="navbar-brand me-1 me-sm-3" href="index.html">
                         <div class="d-flex align-items-center">
                             <div class="d-flex align-items-center">
-                                <img src="Logo" alt="phoenix" width="27" />
-                                <p class="logo-text ms-2 d-none d-sm-block">System Name</p>
+                                <img src="Logo" alt="" width="27" />
+                                <p class="logo-text ms-2 d-none d-sm-block">CEEC</p>
                             </div>
                         </div>
                     </a>
@@ -10486,7 +10487,8 @@
                     id="navbarTopCollapse">
                     <ul class="navbar-nav navbar-nav-top" data-dropdown-on-hover="data-dropdown-on-hover"
                         id="list">
-                        <li class="nav-item dropdown">
+                        <?php echo \App\Helper\CommonFunction::navMenu(); ?>
+                        {{-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle lh-1" href="/home" role="button"
                                 data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true"
                                 aria-expanded="false">
@@ -10628,9 +10630,9 @@
                                     </span>
                                 </div>
                             </a>                                   
-                        </li>
+                        </li> --}}
                     </ul>
-                    </li>
+                    {{-- </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle lh-1" href="#!" role="button"
                             data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true"
@@ -10758,7 +10760,7 @@
                             </div>
                         </ul>
                     </li>
-                    </ul>
+                    </ul> --}}
                 </div>
             </div>
         </nav>
@@ -11400,7 +11402,7 @@
                     </span>
                 </div>
             </div>
-            {{-- <small class="text-uppercase text-700 fw-bold py-2 pe-2 ps-1 rounded-end">customize</small> --}}
+            <small class="text-uppercase text-700 fw-bold py-2 pe-2 ps-1 rounded-end">customize</small>
         </div>
     </a>
     <!-- ===============================================-->
