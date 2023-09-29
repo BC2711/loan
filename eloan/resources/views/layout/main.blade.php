@@ -10699,6 +10699,7 @@
     <script src="/vendors/leaflet.markercluster/leaflet.markercluster.js"></script>
     <script src="/vendors/leaflet.tilelayer.colorfilter/leaflet-tilelayer-colorfilter.min.js"></script>
     <script src="/js/ecommerce-dashboard.js"></script>
+      <script src="echarts/echarts-example.js"></script>
 </body>
 
 </html>
