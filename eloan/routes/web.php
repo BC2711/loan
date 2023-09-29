@@ -33,7 +33,7 @@ Route::get('/login', function () {
  * Accounts
  */
 
- Route::get('/agent', function () {
+ Route::get('/cooperative', function () {
     return view('account.agent');
 });
 Route::get('/request', function () {
