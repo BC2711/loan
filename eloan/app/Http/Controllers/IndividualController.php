@@ -21,8 +21,9 @@ class IndividualController extends Controller
 
     public function store(request $request)
     {
-        $user_id = Auth::User()->id;
+      
         $validated = $this->validation($request);
+        echo $validated; die;
         $individual = new Client();
         $individual->first_name = $validated['first_name'];
         $individual->other_name = $validated['other_name'];
@@ -41,9 +42,9 @@ class IndividualController extends Controller
         $individual->tpin = $validated['tpin'];
         $individual->physical_address = $validated['physical_address'];
         $individual->status = 'PENDING';
-        $individual->created_by_id = $user_id;
+        $individual->created_by_id = 1;
         $individual->create()->save();
-        return redirect()->route('')->with('success', '');
+        return redirect()->route('/home')->with('success', '');
     }
 
     public function edit()

@@ -288,7 +288,7 @@
 
 :root.dual-nav:not(.dark) .navbar-darker,:root.light.dual-nav:not(.dark) .navbar-darker,:root .light.dual-nav:not(.dark) .navbar-darker {
     --phoenix-dual-nav-border-color: #31374a;
-    --phoenix-dual-nav-first-layer-bg: #0f111a
+    --phoenix-dual-nav-first-layer-bg: #0a750a;
 }
 
 :root.dual-nav:not(.dark) .navbar-darker .search-box,:root.light.dual-nav:not(.dark) .navbar-darker .search-box,:root .light.dual-nav:not(.dark) .navbar-darker .search-box {
@@ -355,7 +355,7 @@
     --phoenix-navbar-vertical-collapsed-menu-color: #9fa6bc;
     --phoenix-logo-text: #eff2f6;
     --phoenix-navbar-footer-border-color: #31374a;
-    --phoenix-navbar-top-bg-color: #141824;
+    --phoenix-navbar-top-bg-color: #2a2c97;
     --phoenix-nav-link-color: #8a94ad;
     --phoenix-theme-control-toggle-bg: rgba(255, 204, 133, 0.18);
     --phoenix-theme-control-toggle-hover-bg: rgba(229, 120, 11, 0.7);
@@ -23681,6 +23681,9 @@ section {
 input,button,select,optgroup,textarea,label,.alert,.badge,.blockquote-footer,.btn,.google-map-control-btn .zoomIn,.google-map-control-btn .zoomOut,.tox .tox-dialog__footer .tox-button:last-child,.tox .tox-dialog__footer .tox-button--secondary,.tox .tox-button-secondary,.tox .tox-button,[data-list] .page,.table-list .page,.navbar,.pagination,.valid-feedback,.invalid-feedback {
     font-family: "Nunito Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"
 }
+.pagename {
+    font-family: Arial Black !important;
+}
 
 pre {
     margin: 0;
@@ -30542,7 +30545,7 @@ html:not(.navbar-vertical-collapsed) .navbar-vertical.navbar-expand-xs .navbar-v
     }
 
     .navbar-horizontal .navbar-top.navbar-expand-lg:not(.navbar-slim) .navbar-nav-top .nav-link.show,.navbar-horizontal .navbar-top.navbar-expand-lg:not(.navbar-slim) .navbar-nav-top .nav-link:hover,.dual-nav .navbar-top.navbar-expand-lg:not(.navbar-slim) .navbar-nav-top .nav-link.show,.dual-nav .navbar-top.navbar-expand-lg:not(.navbar-slim) .navbar-nav-top .nav-link:hover,.navbar-combo .navbar-top.navbar-expand-lg:not(.navbar-slim) .navbar-nav-top .nav-link.show,.navbar-combo .navbar-top.navbar-expand-lg:not(.navbar-slim) .navbar-nav-top .nav-link:hover {
-        background-color: var(--phoenix-navbar-top-dropdown-hover-bg)
+        /* background-color: var(--phoenix-navbar-top-dropdown-hover-bg) */
     }
 
     .navbar-horizontal .navbar-top.navbar-expand-lg .navbar-nav-top .nav-link,.dual-nav .navbar-top.navbar-expand-lg .navbar-nav-top .nav-link,.navbar-combo .navbar-top.navbar-expand-lg .navbar-nav-top .nav-link {
@@ -31557,7 +31560,7 @@ html:not(.navbar-vertical-collapsed) .navbar-vertical.navbar-expand-xs .navbar-v
     }
 
     .dual-nav .navbar-top.navbar-expand-lg .navbar-top-collapse {
-        border-top: 1px solid var(--phoenix-dual-nav-border-color);
+        border-top: 1px solid #2a2c97;
         padding: .5rem 2rem
     }
 
@@ -31566,7 +31569,7 @@ html:not(.navbar-vertical-collapsed) .navbar-vertical.navbar-expand-xs .navbar-v
     }
 
     .dual-nav .navbar-top.navbar-expand-lg .dual-nav-first-layer {
-        background-color: var(--phoenix-dual-nav-first-layer-bg);
+        background-color: #2a2c97;
         padding-left: 2rem;
         padding-right: 2rem
     }

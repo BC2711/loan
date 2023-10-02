@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\IndividualController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,6 +33,8 @@ Route::get('/login', function () {
 /**
  * Accounts
  */
+
+ Route::post('individual', [IndividualController::class, 'store']);
 
  Route::get('/cooperative', function () {
     return view('account.agent');

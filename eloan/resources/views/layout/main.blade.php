@@ -9151,7 +9151,7 @@
                             <div class="d-flex align-items-center">
                                 <div class="d-flex align-items-center">
                                     {{-- <img src="" alt="" height="55" width="55" /> --}}
-                                    <p class="logo-text ms-2 d-none d-sm-block"> CEEC</p>
+                                    <p class="logo-text ms-2 d-none d-sm-block pagename">PORTFOLIO</p>
                                 </div>
                             </div>
                         </a>

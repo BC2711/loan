@@ -60,7 +60,8 @@
             <div class="card-body">
                 <h4 class="card-title text-white"> </h4>
 
-                <form action="" method="post" autocomplete="off">
+                <form action="/individual" method="post" autocomplete="off">
+                    @csrf
                     <div class="row gx-4 gy-5">
                         <div class="col-12 col-sm-6 col-md-4">
                             <div class="p-4 code-to-copy">
@@ -69,21 +70,21 @@
                                     <label for="floatingPassword">
                                         <h6>First Name<span class="danger">*</span></h6>
                                     </label>
-                                    <input class="form-control" id="floatingPassword" type="text"
+                                    <input class="form-control" id="first_name" name="first_name" type="text"
                                         placeholder="First Name" />
                                 </div>
                                 <div class="form-gruop mb-3">
                                     <label for="floatingPassword">
                                         <h6>NRC <span class="danger">*</span></h6>
                                     </label>
-                                    <input class="form-control" id="floatingPassword" type="text" placeholder="NRC" />
+                                    <input class="form-control" id="nrc" name="nrc" type="text" placeholder="NRC" />
                                 </div>
 
                                 <div class="form-gruop mb-3">
                                     <label>
                                         <h6> Gender <span class="danger">*</span></h6>
                                     </label>
-                                    <select class="form-select" id="floatingSelect"
+                                    <select class="form-select" id="gender" name="gender"
                                         aria-label="Floating label select example">
                                         <option value="MALE">
                                             <h6>Male</h6>
@@ -99,13 +100,13 @@
                                     <label for="floatingSelect">
                                         <h6> District <span class="danger">*</span></h6>
                                     </label>
-                                    <select class="form-select" id="floatingSelect"
+                                    <select class="form-select" id="district" name="district"
                                         aria-label="Floating label select example">
                                         <option value="">
                                             <h6>Select District</h6>
                                         </option>
-                                        <option value="MALE"></option>
-                                        <option value="FEMALE"></option>
+                                        <option value="Kitwe">Kitwe</option>
+                                        <option value="Kitwe">Kitwe</option>
                                     </select>
 
                                 </div>
@@ -114,7 +115,7 @@
                                     <label for="floatingPassword">
                                         <h6>Email <span class="danger">*</span></h6>
                                     </label>
-                                    <input class="form-control" id="floatingPassword" type="text" placeholder="Email" />
+                                    <input class="form-control" id="email" name="email" type="text" placeholder="Email" />
 
                                 </div>
 
@@ -128,7 +129,7 @@
                                     <label for="floatingPassword">
                                         <h6>Other Names</h6>
                                     </label>
-                                    <input class="form-control" id="floatingPassword" type="text"
+                                    <input class="form-control" id="other_name" name="other_name" type="text"
                                         placeholder="Other Names" />
 
                                 </div>
@@ -136,7 +137,7 @@
                                     <label for="date">
                                         <h6>Date of Birth<span class="danger">*</span> </h6>
                                     </label>
-                                    <input class="form-control" id="date" type="date"
+                                    <input class="form-control" id="date" name="dob" type="date"
                                         placeholder=">Date of Birth" />
 
                                 </div>
@@ -145,7 +146,7 @@
                                     <label for="floatingSelect">
                                         <h6> Disability <span class="danger">*</span></h6>
                                     </label>
-                                    <select class="form-select" id="floatingSelect"
+                                    <select class="form-select" id="disability" name="disability"
                                         aria-label="Floating label select example">
                                         <option value="">
                                             <h6>Please Select</h6>
@@ -163,13 +164,13 @@
                                     <label for="floatingSelect">
                                         <h6> Constituency <span class="danger">*</span></h6>
                                     </label>
-                                    <select class="form-select" id="floatingSelect"
+                                    <select class="form-select" id="constituency" name="constituency"
                                         aria-label="Floating label select example">
                                         <option value="">
                                             <h6>Please Select Constituency</h6>
                                         </option>
-                                        <option value="NO"></option>
-                                        <option value="YES"></option>
+                                        <option value="NO">Constituency</option>
+                                        <option value="YES">Constituency</option>
                                     </select>
 
                                 </div>
@@ -178,7 +179,7 @@
                                     <label for="floatingPassword">
                                         <h6>Tpin<span class="danger">*</span></h6>
                                     </label>
-                                    <input class="form-control" id="floatingPassword" type="text" placeholder="Tpin" />
+                                    <input class="form-control" id="tpin" name="tpin" type="text" placeholder="Tpin" />
 
                                 </div>
                             </div>
@@ -191,7 +192,7 @@
                                     <label for="floatingPassword">
                                         <h6>Surname <span class="danger">*</span></h6>
                                     </label>
-                                    <input class="form-control" id="floatingInput" type="text"
+                                    <input class="form-control" id="last_name" name="last_name" type="text"
                                         placeholder="Surname" />
 
 
@@ -200,7 +201,7 @@
                                     <label for="age">
                                         <h6>Age <span class="danger">*</span></h6>
                                     </label>
-                                    <input class="form-control" id="age" type="text" placeholder="Age" />
+                                    <input class="form-control" id="age" name="age" type="text" placeholder="Age" />
 
                                 </div>
 
@@ -208,7 +209,7 @@
                                     <label for="floatingSelect">
                                         <h6>Province <span class="danger">*</span></h6>
                                     </label>
-                                    <select class="form-select" id="floatingSelect"
+                                    <select class="form-select" id="province" name="province"
                                         aria-label="Floating label select example">
                                         <option value="">
                                             <h6>Select Province</h6>
@@ -230,7 +231,7 @@
                                     <label for="floatingInput">
                                         <h6>Phone Number <span class="danger">*</span></h6>
                                     </label>
-                                    <input class="form-control" id="floatingPassword" type="text"
+                                    <input class="form-control" id="phone_number" name="phone_number" type="text"
                                         placeholder="Phone Number" />
 
                                 </div>
@@ -238,13 +239,13 @@
                                     <label for="floatingInput">
                                         <h6>Physical Address <span class="danger">*</span> </h6>
                                     </label>
-                                    <input class="form-control" id="floatingPassword" type="text"
+                                    <input class="form-control" id="physical_address" name="physical_address" type="text"
                                         placeholder="Physical Address " />
 
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-md-4">
+                        <!-- <div class="col-12 col-sm-6 col-md-4">
                             <div class="px-5  code-to-copy">
                                 <div class="form-check">
                                     <input class="form-check-input" id="flexRadioDefault1" type="check"
@@ -255,11 +256,11 @@
                                     </label>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
                     </div>
                     <div class="form-buttons-w text-center">
-                        <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" name="add"
+                        <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2" 
                             href="/individual">
                             <h6>Back</h6>
                         </a>
@@ -278,6 +279,7 @@
         let date = document.getElementById('date');
         let age = document.getElementById('age');
         let limit = 35;
+        let date1 = date.slice(0,5);
         date.addEventListener('input', function(e) {
             age.value = this.value;
         })
