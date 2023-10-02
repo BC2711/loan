@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\IndividualController;
+use App\Http\Controllers\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,17 +16,17 @@ use App\Http\Controllers\IndividualController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('layout.login');
 });
 Route::get('/home', function () {
     return view('dashboard');
 });
 
-Route::get('/login', function () {
+Route::get('/', function () {
     return view('login.login');
 });
 
-
+Route::post('/login',[LoginController::class, 'login'])->name('login');
 
 
 
@@ -34,7 +35,7 @@ Route::get('/login', function () {
  * Accounts
  */
 
- Route::post('individual', [IndividualController::class, 'store']);
+ Route::post('/individual', [IndividualController::class, 'store'])->name('individual');
 
  Route::get('/cooperative', function () {
     return view('account.agent');
@@ -46,9 +47,9 @@ Route::get('/agents', function () {
     return view('account.agents');
 });
 
- Route::get('/individual', function () {
-    return view('account.individual');
-});
+//  Route::get('/individual', function () {
+//     return view('account.individual');
+// });
 
 Route::get('/createIndividual', function () {
     return view('account.createIndividual');

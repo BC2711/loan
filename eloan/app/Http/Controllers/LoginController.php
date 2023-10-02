@@ -19,9 +19,9 @@ class LoginController extends Controller
     public function login(Request $request): RedirectResponse
     {
 
-        if (Auth()->guard('admin')->check()) {
-            return redirect('dashboard');
-        }
+        // if (Auth()->guard('guest:admin')->check()) {
+        //     return redirect('dashboard');
+        // }
 
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $credentials = request()->validate(
