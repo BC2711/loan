@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\client;
+use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 
 class IndividualController extends Controller
 {
@@ -18,7 +21,29 @@ class IndividualController extends Controller
 
     public function store(request $request)
     {
-       $validated = $this->validation($request);
+        $user_id = Auth::User()->id;
+        $validated = $this->validation($request);
+        $individual = new Client();
+        $individual->first_name = $validated['first_name'];
+        $individual->other_name = $validated['other_name'];
+        $individual->last_name = $validated['last_name'];
+        $individual->name =  $validated['first_name'] . '' . $validated['last_name'];
+        $individual->nrc = $validated['nrc'];
+        $individual->dob = $validated['dob'];
+        $individual->gender = $validated['gender'];
+        $individual->age = $validated['age'];
+        $individual->disability = $validated['disability'];
+        $individual->province = $validated['province'];
+        $individual->district = $validated['district'];
+        $individual->constituency = $validated['condtituency'];
+        $individual->phone_number = $validated['phone_number'];
+        $individual->email = $validated['email'];
+        $individual->tpin = $validated['tpin'];
+        $individual->physical_address = $validated['physical_address'];
+        $individual->status = 'PENDING';
+        $individual->created_by_id = $user_id;
+        $individual->create()->save();
+        return redirect()->route('')->with('success', '');
     }
 
     public function edit()
@@ -37,12 +62,13 @@ class IndividualController extends Controller
     {
     }
 
-    public function validation (Request $request)
+    public function validation(Request $request)
     {
         $validated = $request->validate(
             [
                 'first_name' => 'required',
                 'last_name' => 'required',
+                'other_name' => 'string',
                 'nrc' => 'required',
                 'dob' => 'required',
                 'gender' => 'required',

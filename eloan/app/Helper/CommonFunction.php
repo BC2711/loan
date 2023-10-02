@@ -917,4 +917,9 @@ class CommonFunction
         }
         return $array;
     }
+
+    public static function getCurrentDate()
+    {
+        return Carbon::now();
+    }
 }
