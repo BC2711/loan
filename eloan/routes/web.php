@@ -40,7 +40,9 @@ Route::get('/individuals', [IndividualController::class, 'index'])->name('indivi
  Route::post('/store', [IndividualController::class, 'store'])->name('store');
  Route::get('/cooperative', [ClientController::class, 'index'])->name('cooperative');
  Route::get('/create-cooperative', [ClientController::class, 'create'])->name('create-cooperative');
- Route::post('/storecooperative', [ClientController::class, 'create'])->name('storecooperative');
+ Route::get('/edit-cooperative', [ClientController::class, 'edit'])->name('edit-cooperative');
+ Route::post('/updatecooperative', [ClientController::class, 'create'])->name('updatecooperative');
+ Route::post('/storecooperative', [ClientController::class, 'store'])->name('storecooperative');
 
 
 Route::get('/request', function () {

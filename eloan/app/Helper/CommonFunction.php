@@ -42,7 +42,7 @@ class CommonFunction
                             [
 
                                 "menuName" => "Individuals",
-                                "url" => "{{route('individual')}}",
+                                "url" => "individuals",
                                 "icon" => "",
                                 "sub" => "",
                             ],

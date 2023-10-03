@@ -57,7 +57,7 @@
     <div class="col-sm-6 col-md-9 col-lg-12 m-4">
         <div class="card text-white success" id="card">
             <div class="card-body">
-                <h4 class="card-title text-dark">Create Cooperative </h4>
+                <h4 class="card-title text-dark">Update Cooperative </h4>
             </div>
         </div>
     </div>
@@ -75,7 +75,7 @@
                         </ul>
                     </div>
                 @endif --}}
-                <form action="{{ route('storecooperative') }}" method="post" autocomplete="off">
+                <form action="{{ route('updatecooperative') }}" method="post" autocomplete="off">
                     @csrf
                     <div class="row gx-4 gy-5">
                         <div class="col-12 col-sm-6 col-md-4">
@@ -95,7 +95,7 @@
                                     <label for="groupPassword" id="label">
                                         <h6>Contact First Name <span class="danger">*</span></h6>
                                     </label>
-                                    <input class="form-control" id="groupPassword" type="text" name="first_name" value="{{old('first_name')}}"
+                                    <input class="form-control" id="groupPassword" type="text" nfirst_nameame=""
                                         placeholder="Contact First Name" />
                                     @if ($errors->has('first_name'))
                                         <span class="text-danger">{{ $errors->first('first_name') }}</span>
@@ -106,7 +106,7 @@
                                     <label for="groupSelect" id="label">
                                         <h6>Gender <span class="danger">*</span></h6>
                                     </label>
-                                    <select class="form-select" id="groupSelect" name="gender" value="{{old('gender')}}"
+                                    <select class="form-select" id="groupSelect" name="gender"
                                         aria-label="group label select example">
                                         <option value="MALE" id="label">
                                             <h6>Male</h6>
@@ -125,7 +125,7 @@
                                     <label for="groupPassword" id="label">
                                         <h6>Contact Mobile Number <span class="danger">*</span></h6>
                                     </label>
-                                    <input class="form-control" id="groupPassword" name="phone_number" type="text" value="{{old('phone_number')}}"
+                                    <input class="form-control" id="groupPassword" name="phone_number" type="text"
                                         placeholder="Contact Mobile Number" />
                                     @if ($errors->has('phone_number'))
                                         <span class="text-danger">{{ $errors->first('phone_number') }}</span>
@@ -136,7 +136,7 @@
                                     <label for="groupSelect" id="label">
                                         <h6>Province <span class="danger">*</span></h6>
                                     </label>
-                                    <select class="form-select" id="groupSelect" name="province" value="{{old('province')}}"
+                                    <select class="form-select" id="groupSelect" name="province"
                                         aria-label="group label select example">
                                         <option value="" id="label">
                                             <h6>Select Province</h6>
@@ -232,12 +232,12 @@
                                         <h6> District <span class="danger">*</span></h6>
                                     </label>
                                     <select class="form-select" id="groupSelect" aria-label="group label select example"
-                                        name="district" value="{{old('district')}}">
+                                        name="district">
                                         <option id="label" value="">
                                             <h6>Please Select District </h6>
                                         </option>
-                                        <option id="label" value="CHILANGA">Chilanga</option>
-                                        <option id="label" value="CHELSTONE">Chelstone</option>
+                                        <option id="label" value="NO"></option>
+                                        <option id="label" value="YES"></option>
                                     </select>
                                     @if ($errors->has('district'))
                                         <span class="text-danger">{{ $errors->first('district') }}</span>
@@ -317,7 +317,7 @@
                                         <h6> Constituency<span class="danger">*</span></h6>
                                     </label>
                                     <select class="form-select" id="groupSelect" name="constituency"
-                                        aria-label="group label select example"  value="{{old('constituency')}}">
+                                        aria-label="group label select example">
                                         <option id="label" value="">
                                             <h6>Select Constituency</h6>
                                         </option>
