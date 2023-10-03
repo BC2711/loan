@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\IndividualController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\ClientController;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,12 +36,13 @@ Route::post('/login',[LoginController::class, 'login'])->name('login');
  * Accounts
  */
 Route::get('/individuals', [IndividualController::class, 'index'])->name('individuals');
- Route::post('/create-individual', [IndividualController::class, 'store'])->name('create-individual');
- Route::get('/cooperative', [IndividualController::class, 'index'])->name('cooperative');
+ Route::get('/create-individual', [IndividualController::class, 'create'])->name('create-individual');
+ Route::post('/store', [IndividualController::class, 'store'])->name('store');
+ Route::get('/cooperative', [ClientController::class, 'index'])->name('cooperative');
+ Route::get('/create-cooperative', [ClientController::class, 'create'])->name('create-cooperative');
+ Route::post('/storecooperative', [ClientController::class, 'create'])->name('storecooperative');
 
-//  Route::get('/cooperative', function () {
-//     return view('account.agent');
-// });
+
 Route::get('/request', function () {
     return view('account.accountrequest');
 });

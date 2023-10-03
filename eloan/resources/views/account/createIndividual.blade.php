@@ -60,7 +60,7 @@
             <div class="card-body">
                 <h4 class="card-title text-white"> </h4>
 
-                <form action="{{route('individual')}}" method="post" autocomplete="off">
+                <form action="{{route('store')}}" method="post" autocomplete="off">
                     @csrf
                     <div class="row gx-4 gy-5">
                         <div class="col-12 col-sm-6 col-md-4">
@@ -115,7 +115,7 @@
                                     <label for="floatingPassword">
                                         <h6>Email <span class="danger">*</span></h6>
                                     </label>
-                                    <input class="form-control" id="email" name="email" type="text" placeholder="Email" />
+                                    <input class="form-control" id="email" name="email" type="email" placeholder="Email" />
 
                                 </div>
 

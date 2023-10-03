@@ -38,7 +38,7 @@
                                 </div>
                                 <div class="col-auto">
                                     <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2"
-                                        href="/createagent">Create a New Cooperative</a>
+                                        href="{{route('create-cooperative')}}">Create a New Cooperative</a>
 
                                     <button class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 action-btn"
                                         type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true"

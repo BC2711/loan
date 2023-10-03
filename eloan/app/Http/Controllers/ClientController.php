@@ -13,7 +13,7 @@ class ClientController extends Controller
 
    public function create()
    {
-    return view('');
+    return view('account.createCooperative');
    }
 
    public function store(request $request)
