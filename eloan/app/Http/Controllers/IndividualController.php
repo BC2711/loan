@@ -11,7 +11,7 @@ class IndividualController extends Controller
 {
     public function index()
     {
-        //
+       return view('account.individual');
     }
 
     public function create()

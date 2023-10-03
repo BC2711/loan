@@ -34,12 +34,13 @@ Route::post('/login',[LoginController::class, 'login'])->name('login');
 /**
  * Accounts
  */
+Route::get('/individuals', [IndividualController::class, 'index'])->name('individuals');
+ Route::post('/create-individual', [IndividualController::class, 'store'])->name('create-individual');
+ Route::get('/cooperative', [IndividualController::class, 'index'])->name('cooperative');
 
- Route::post('/individual', [IndividualController::class, 'store'])->name('individual');
-
- Route::get('/cooperative', function () {
-    return view('account.agent');
-});
+//  Route::get('/cooperative', function () {
+//     return view('account.agent');
+// });
 Route::get('/request', function () {
     return view('account.accountrequest');
 });

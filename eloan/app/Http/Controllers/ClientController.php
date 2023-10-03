@@ -8,12 +8,12 @@ class ClientController extends Controller
 {
    public function index()
    {
-    //
+   return view('account.agent');
    }
 
    public function create()
    {
-    return redirect()->route('');
+    return view('');
    }
 
    public function store(request $request)

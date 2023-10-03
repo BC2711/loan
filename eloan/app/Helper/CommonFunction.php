@@ -42,7 +42,7 @@ class CommonFunction
                             [
 
                                 "menuName" => "Individuals",
-                                "url" => "/individual",
+                                "url" => "{{route('individual')}}",
                                 "icon" => "",
                                 "sub" => "",
                             ],
@@ -291,7 +291,7 @@ class CommonFunction
 
                     if ($value1['menuName'] == 'Client KYC') {
                         $array .= ' <li class="dropdown">';
-                        $array .= '  <a class="dropdown-item dropdown-toggle" id="CRM" href=" ' . $value1['url'] . '" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                        $array .= '  <a class="dropdown-item dropdown-toggle" id="CRM" href="' . $value1['url'] . '" data-bs-toggle="dropdown" data-bs-auto-close="outside">
                                             <div class="dropdown-item-wrapper">
                                                 <span class="uil fs-0 uil-angle-right lh-1 dropdown-indicator-icon"></span>
                                                 <span>
@@ -303,7 +303,7 @@ class CommonFunction
                         $array .= ' <ul class="dropdown-menu">';
                         foreach ($value1['sub'] as $key => $value2) {
                             $array .= ' <li>
-                                                <a class="dropdown-item" href=" ' . $value2['url'] . '">
+                                                <a class="dropdown-item" href="' . $value2['url'] . '">
                                                     <div class="dropdown-item-wrapper">
                                                         <span class="me-2 uil"></span>
                                                        <h6>' . $value2['menuName'] . '</h6>
