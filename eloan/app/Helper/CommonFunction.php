@@ -77,7 +77,7 @@ class CommonFunction
                     ], [
 
                         "menuName" => "Account Requests",
-                        "url" => "/requests",
+                        "url" => "request",
                         "icon" => "",
                         "sub" => [],
                     ],

@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\IndividualController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ClientController;
+use App\Http\Controllers\RequestController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,6 +29,7 @@ Route::get('/', function () {
 });
 
 Route::post('/login',[LoginController::class, 'login'])->name('login');
+Route::post('/logout',[LoginController::class, 'logout'])->name('logout');
 
 
 
@@ -44,17 +46,14 @@ Route::get('/individuals', [IndividualController::class, 'index'])->name('indivi
  Route::post('/updatecooperative', [ClientController::class, 'create'])->name('updatecooperative');
  Route::post('/storecooperative', [ClientController::class, 'store'])->name('storecooperative');
 
+ Route::get('/request', [RequestController::class, 'index'])->name('request');
+ Route::get('/approve', [RequestController::class, 'index'])->name('approve');
 
-Route::get('/request', function () {
-    return view('account.accountrequest');
-});
 Route::get('/agents', function () {
     return view('account.agents');
 });
 
-//  Route::get('/individual', function () {
-//     return view('account.individual');
-// });
+
 
 Route::get('/createIndividual', function () {
     return view('account.createIndividual');

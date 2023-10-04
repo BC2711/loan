@@ -7,8 +7,8 @@
         }
 
         /* .form-floating{
-                        background-color:orange !important;
-                    } */
+                            background-color:orange !important;
+                        } */
         .tdtd {
             font-weight: bold !important;
         }
@@ -70,8 +70,8 @@
                                     <label for="floatingPassword">
                                         <h6>First Name<span class="danger">*</span></h6>
                                     </label>
-                                    <input class="form-control" id="first_name" name="first_name" type="text" value="{{old('first_name')}}"
-                                        placeholder="First Name" />
+                                    <input class="form-control" id="first_name" name="first_name" type="text"
+                                        value="{{ old('first_name') }}" placeholder="First Name" />
                                     @if ($errors->has('first_name'))
                                         <span class="text-danger">{{ $errors->first('first_name') }}</span>
                                     @endif
@@ -80,8 +80,8 @@
                                     <label for="floatingPassword">
                                         <h6>NRC <span class="danger">*</span></h6>
                                     </label>
-                                    <input class="form-control" id="nrc" name="nrc" type="text" value="{{old('nrc')}}"
-                                        placeholder="NRC" />
+                                    <input class="form-control" id="nrc" name="nrc" type="text"
+                                        value="{{ old('nrc') }}" placeholder="NRC" />
                                     @if ($errors->has('nrc'))
                                         <span class="text-danger">{{ $errors->first('nrc') }}</span>
                                     @endif
@@ -127,8 +127,8 @@
                                     <label for="floatingPassword">
                                         <h6>Email <span class="danger">*</span></h6>
                                     </label>
-                                    <input class="form-control" id="email" name="email" type="email" value="{{old('email')}}"
-                                        placeholder="Email" />
+                                    <input class="form-control" id="email" name="email" type="email"
+                                        value="{{ old('email') }}" placeholder="Email" />
                                     @if ($errors->has('email'))
                                         <span class="text-danger">{{ $errors->first('email') }}</span>
                                     @endif
@@ -144,8 +144,8 @@
                                     <label for="floatingPassword">
                                         <h6>Other Names</h6>
                                     </label>
-                                    <input class="form-control" id="other_name" name="other_name" type="text" value="{{old('other_name')}}"
-                                        placeholder="Other Names" />
+                                    <input class="form-control" id="other_name" name="other_name" type="text"
+                                        value="{{ old('other_name') }}" placeholder="Other Names" />
                                     @if ($errors->has('other_name'))
                                         <span class="text-danger">{{ $errors->first('other_name') }}</span>
                                     @endif
@@ -154,8 +154,8 @@
                                     <label for="date">
                                         <h6>Date of Birth<span class="danger">*</span> </h6>
                                     </label>
-                                    <input class="form-control" id="date" name="dob" type="date" value="{{old('dob')}}"
-                                        placeholder=">Date of Birth" />
+                                    <input class="form-control" id="date" name="dob" type="date"
+                                        value="{{ old('dob') }}" placeholder=">Date of Birth" />
                                     @if ($errors->has('dob'))
                                         <span class="text-danger">{{ $errors->first('dob') }}</span>
                                     @endif
@@ -165,8 +165,8 @@
                                     <label for="floatingSelect">
                                         <h6> Disability <span class="danger">*</span></h6>
                                     </label>
-                                    <select class="form-select" id="disability" name="disability" value="{{old('disability')}}"
-                                        aria-label="Floating label select example">
+                                    <select class="form-select" id="disability" name="disability"
+                                        value="{{ old('disability') }}" aria-label="Floating label select example">
                                         <option value="">
                                             <h6>Please Select</h6>
                                         </option>
@@ -202,8 +202,8 @@
                                     <label for="floatingPassword">
                                         <h6>Tpin<span class="danger">*</span></h6>
                                     </label>
-                                    <input class="form-control" id="tpin" name="tpin" type="text" value="{{old('tpin')}}"
-                                        placeholder="Tpin" />
+                                    <input class="form-control" id="tpin" name="tpin" type="text"
+                                        value="{{ old('tpin') }}" placeholder="Tpin" />
                                     @if ($errors->has('tpin'))
                                         <span class="text-danger">{{ $errors->first('tpin') }}</span>
                                     @endif
@@ -218,8 +218,8 @@
                                     <label for="floatingPassword">
                                         <h6>Surname <span class="danger">*</span></h6>
                                     </label>
-                                    <input class="form-control" id="last_name" name="last_name" type="text" value="{{old('last_name')}}"
-                                        placeholder="Surname" />
+                                    <input class="form-control" id="last_name" name="last_name" type="text"
+                                        value="{{ old('last_name') }}" placeholder="Surname" />
                                     @if ($errors->has('last_name'))
                                         <span class="text-danger">{{ $errors->first('last_name') }}</span>
                                     @endif
@@ -229,8 +229,8 @@
                                     <label for="age">
                                         <h6>Age <span class="danger">*</span></h6>
                                     </label>
-                                    <input class="form-control" id="age" name="age" type="text" value="{{old('age')}}"
-                                        placeholder="Age" />
+                                    <input class="form-control" id="age" name="age" type="text"
+                                        value="{{ old('age') }}" placeholder="Age" />
                                     @if ($errors->has('age'))
                                         <span class="text-danger">{{ $errors->first('age') }}</span>
                                     @endif
@@ -283,17 +283,17 @@
                             </div>
                         </div>
                         <!-- <div class="col-12 col-sm-6 col-md-4">
-                                <div class="px-5  code-to-copy">
-                                    <div class="form-check">
-                                        <input class="form-check-input" id="flexRadioDefault1" type="check"
-                                            name="flexRadioDefault" />
-                                        <label class="form-check-label" for="flexRadioDefault1">
-                                            <h6>Tick If Access Authentication
-                                                is required</h6>
-                                        </label>
+                                    <div class="px-5  code-to-copy">
+                                        <div class="form-check">
+                                            <input class="form-check-input" id="flexRadioDefault1" type="check"
+                                                name="flexRadioDefault" />
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                <h6>Tick If Access Authentication
+                                                    is required</h6>
+                                            </label>
+                                        </div>
                                     </div>
-                                </div>
-                            </div> -->
+                                </div> -->
 
                     </div>
                     <div class="form-buttons-w text-center">
@@ -314,9 +314,10 @@
     <script>
         let date = document.getElementById('date');
         let age = document.getElementById('age');
-        let limit = 35;
+        let currentDate =<?php date('Y') ?> - data.slice(0,4); 
         date.addEventListener('input', function(e) {
-            age.value = this.value;
+           
+                age.value = this.value;
         })
     </script>
 @endsection

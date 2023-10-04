@@ -12,7 +12,7 @@ class IndividualController extends Controller
     public function index()
     {
         $individuals = client::query()->latest()->paginate(10);
-       return view('account.individual', compact('individuals'));
+       return view('account.individual')->with('individuals',$individuals);
     }
 
     public function create()
@@ -23,12 +23,12 @@ class IndividualController extends Controller
     public function store(request $request)
     {
        
-        // $user_id = Auth::User()->id;
-        $user_id = 1;
+        $user_id = Auth::User()->id;
+      
         $validated = $this->validation($request);      
        
         $individual = new Client();
-        $individual->name = $validated['first_name'] ."".$validated['last_name'];
+        $individual->name = $validated['first_name'] ." ".$validated['last_name'];
         $individual->first_name = $validated['first_name'];
         $individual->last_name = $validated['last_name'];
         $individual->other_name = $validated['other_name'];

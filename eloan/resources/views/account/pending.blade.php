@@ -77,10 +77,11 @@
                                 </tr>
                             </thead>
                             <tbody class="list" id="table-latest-review-body">
+                                @foreach ($pendings as $item)
                                 <tr class="hover-actions-trigger btn-reveal-trigger position-static">
 
                                     <td class="white-space-nowrap Name">
-                                        Name
+                                        {{$item->name}}
                                     </td>
                                     <td class="white-space-nowrap Contact">
                                         Date
@@ -108,36 +109,9 @@
                                     </td>
 
                                 </tr>
-                                <tr class="hover-actions-trigger btn-reveal-trigger position-static">
-
-                                    <td class="white-space-nowrap Name">
-                                        Name
-                                    </td>
-                                    <td class="white-space-nowrap Contact">
-                                        Date
-                                    </td>
-                                    <td class=" white-space-nowrap Number">
-                                        Richard Dawkins
-                                    </td>
-                                    <td class="white-space-nowrap Maker fs--2">
-                                        <span class="fa fa-star text-warning"></span>
-                                    </td>
-                                    <td class="white-space-nowrap Time">
-                                        Sample
-                                    </td>
-                                    <td class=" text-start ps-5 Checker">
-                                        Approved
-                                    </td>
-                                    <td class=" white-space-nowrap Status">
-                                        Just now
-                                    </td>
-                                    <td class=" white-space-nowrap Status">
-                                        Just now
-                                    </td>
-                                    <td class=" white-space-nowrap Status">
-                                        Just now
-                                    </td>
-                                </tr>
+                                @endforeach
+                               
+                               
                             </tbody>
                         </table>
                     </div>

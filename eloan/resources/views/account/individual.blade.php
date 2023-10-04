@@ -1,5 +1,13 @@
 @extends('layout.main')
 @section('content')
+<style>
+    #card{
+        border-radius: 0px!important;
+    }
+    /* .body1{
+        padding: 0px!important;
+    } */
+</style>
     <nav class="mb-2" aria-label="breadcrumb">
         <ol class="breadcrumb mb-0">
             <li class="breadcrumb-item"><a href="/home">Home</a></li>
@@ -25,12 +33,12 @@
     @endif
     <div class="col-sm-12 col-md-12 col-lg-12 m-4">
         <div class="card text-white success" id="card">
-            <div class="card-body">
+            <div class="card-body body1">
                 {{-- <div class="mx-n4 px-4 mx-lg-n6 px-lg-10 bg-white pt-7 border-y border-300">
                 <div data-list='{"valueNames":["Name","Date","NRC","Age","Gender","Phone","Tpin","Email","Province","District","Costituency"],"page":6}'> --}}
                 <div class="row align-items-end justify-content-between pb-5 g-3">
                     <div class="col-auto">
-                        <h5> Log 2</h5>
+                        <h5> </h5>
                     </div>
                     <div class="col-12 col-md-auto">
                         <div class="row g-2 gy-3">
@@ -88,8 +96,13 @@
                             </tr>
                         </thead>
                         <tbody class="list" id="table-latest-review-body">
-                            {{-- @if (session('individuals')) --}}
-                                @foreach ($individuals as $individual)
+
+                            @foreach ($individuals as $individual)
+                                <?php if($individual->status == 'PENDING'){?>
+                                    {{-- <tr>
+                                        <td colspan="14" class="white-space-nowrap tdtd review text-center">No Data</td>
+                                    </tr> --}}
+                                <?php }else{?>
                                 <tr class="hover-actions-trigger btn-reveal-trigger position-static">
                                     <td class="white-space-nowrap tdtd Date">{{ $loop->index + 1 }}</td>
                                     <td class="white-space-nowrap tdtd Name">
@@ -133,15 +146,9 @@
                                     </td>
 
                                 </tr>
-                                @endforeach
-                            {{-- @else
-                                <tr>
-                                    <td colspan="13" class="white-space-nowrap tdtd review text-center">No Data</td>
-                                </tr>
-                            @endif --}}
-                            {{-- @foreach (individuals as $individual)
-                                
-                            @endforeach --}}
+                                <?php }?>
+                            @endforeach
+                           
                         </tbody>
                     </table>
                 </div>

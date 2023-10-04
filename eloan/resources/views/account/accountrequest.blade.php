@@ -27,13 +27,13 @@
         <div class="card text-white success leave" id="card">
             <div class="card-body">              
                 <div class="row">   
-                    <div class="col-sm-3 col-md-4 col-lg-1 mb-3"> 
-                        <h5 class="card-title text-dark"> <a id="approved"  href="/pending">Approved = 25</a> </h5> 
+                    <div class="col-sm-3 col-md-4 col-lg-2 mb-3"> 
+                        <h5 class="card-title text-dark"> <a id="approved"   href="{{ route('approve','appro->ACTIVE') }}">Approved = 25</a> </h5> 
                     </div>   
-                    <div class="col-sm-3 col-md-4 col-lg-1 mb-3">  
+                    <div class="col-sm-3 col-md-4 col-lg-2 mb-3">  
                         <h5 class="card-title text-dark"><a id="pending" href="/pending">Pending = 35</a> </h5>
                     </div>   
-                    <div class="col-sm-3 col-md-4 col-lg-1 mb-3">  
+                    <div class="col-sm-3 col-md-4 col-lg-2 mb-3">  
                         <h5 class="card-title text-dark"><a id="declined" href="/pending">Declined = 0</a>  </h5>
                     </div>      
                 </div>              

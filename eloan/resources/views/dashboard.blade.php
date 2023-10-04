@@ -1,4 +1,4 @@
-@extends('layout.main')
+@extends('layout.admmasterpage')
 @section('content')
 <div class="pb-5">
     <div class="row g-4">
