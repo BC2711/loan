@@ -315,7 +315,6 @@
         let date = document.getElementById('date');
         let age = document.getElementById('age');
         let limit = 35;
-        let date1 = date.slice(0, 5);
         date.addEventListener('input', function(e) {
             age.value = this.value;
         })
