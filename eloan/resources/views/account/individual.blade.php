@@ -1,198 +1,302 @@
 @extends('layout.admmasterpage')
 @section('content')
-    <nav class="mb-2" aria-label="breadcrumb">
-        <ol class="breadcrumb mb-0">
-            <li class="breadcrumb-item"><a href="/home">Home</a></li>
-            <li class="breadcrumb-item active"> Client KYC</li>
-            <li class="breadcrumb-item active">Individual </li>
-        </ol>
-    </nav>
+<style>
+   .form-header {
+    margin-bottom: 0rem !important;
+    padding-top: -6.5rem !important;
+    display: block !important;
+    height: 100px;
+}
+</style>
+    <div class="content-w">
 
-    <div class="col-sm-6 col-md-9 col-lg-12 m-4">
-        <div class="card text-white success leave"  id="card">
-            <div class="card-body">
-                <h3 class="card-title text-dark"> Individual </h3>
-            </div>
-        </div>
-    </div>
 
-    <div class="col-sm-12 col-md-12 col-lg-12 m-4">
-        <div class="card text-white success" id="card">
-            <div class="card-body">
-                {{-- <div class="mx-n4 px-4 mx-lg-n6 px-lg-10 bg-white pt-7 border-y border-300">
-                <div data-list='{"valueNames":["Name","Date","NRC","Age","Gender","Phone","Tpin","Email","Province","District","Costituency"],"page":6}'> --}}
-                <div class="row align-items-end justify-content-between pb-5 g-3">
-                    <div class="col-auto">
-                        <h5> Log 2</h5>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="home">Home</a>
+            </li>
+            <li class="breadcrumb-item">
+                <span>Account Holder</span>
+            </li>
+            <li class="breadcrumb-item">
+                <span>Individuals</span>
+            </li>
+        </ul>
+        <!--------------------
+        END - Breadcrumbs
+        -------------------->
+
+        <div class="content-i">
+            <div class="content-box">
+
+
+                <div class="element-wrapper">
+                    <div class="element-box headeingColor " style="height: 50px; padding:7px;">
+
+                        {{-- <h5 class="form-header">
+                            Individuals
+                        </h5> --}}
+
+                        {{-- <div class="element-box-content borderTopSpd"> --}}
+                            <span class="mr-2 mb-2 btn spanClass" style="margin-left: -14px;">
+                                <table>
+                                    <tr>
+                                        <td><strong>
+                                                <font  style="color: black !important; font-weight:bolder;"> Individuals</font>
+                                            </strong></td>
+                                        <td  >&nbsp;</td>
+                                        <td><strong>
+                                                <font  style="color: black !important;font-weight:bolder;">=</font>
+                                            </strong></td>
+                                        <td>&nbsp;</td>
+                                        <td><strong>
+                                                <font  style="color: black !important;font-weight:bolder;">0</font>
+                                            </strong></td>
+                                    </tr>
+                                </table>
+                            </span><!-- comment -->
+                            <span class="mr-2 mb-2 btn spanClass">
+                                <table>
+                                    <tr>
+                                        <td><strong>
+                                                <font style="color: black !important;font-weight:bolder;">Active</font>
+                                            </strong></td>
+                                        <td>&nbsp;</td>
+                                        <td><strong>
+                                                <font  style="color: black !important;font-weight:bolder;">=</font>
+                                            </strong></td>
+                                        <td>&nbsp;</td>
+                                        <td><strong>
+                                                <font  style="color: black !important;font-weight:bolder;">0</font>
+                                            </strong></td>
+                                    </tr>
+                                </table>
+                            </span>
+                            <span class="mr-2 mb-2 btn spanClass">
+                                <table>
+                                    <tr>
+                                        <td><strong>
+                                                <font style="color: black !important;font-weight:bolder;">In-Active</font>
+                                            </strong></td>
+                                        <td>&nbsp;</td>
+                                        <td><strong>
+                                                <font style="color: black !important;font-weight:bolder;">=</font>
+                                            </strong></td>
+                                        <td>&nbsp;</td>
+                                        <td><strong>
+                                                <font style="color: black !important;font-weight:bolder;">0</font>
+                                            </strong></td>
+                                    </tr>
+                                </table>
+                            </span>
+                        {{-- </div> --}}
                     </div>
-                    <div class="col-12 col-md-auto">
-                        <div class="row g-2 gy-3">
-                            <div class="col-auto flex-1">
-                                <div class="search-box">
-                                    <form class="position-relative" data-bs-toggle="search" data-bs-display="static">
-                                        <input class="form-control search-input search form-control-sm" type="search"
-                                            placeholder="Search" aria-label="Search" />
-                                        <span class="fas fa-search search-box-icon"></span>
-                                    </form>
+
+                    <div class="element-box">
+                        <div class="ppError">[[errorMsg]]</div>[[successMsg]]
+                        <form action="dealer" method="post" name="admuser">
+
+                            <div class="controls-above-table">
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                        <strong class="filterStrong"> Filter : </strong>
+                                    </div>
+                                </div>
+
+                                <div class="row form-buttons-w">
+
+
+                                    <div class="col-sm-3">
+                                        <lable><strong class=""> Trading As | Business Name</strong></lable>
+                                        <input autocomplete="off"
+                                            name="multiPageFilter_businessname" class="form-control "
+                                            placeholder="Trading As | Business Name" type="text">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <lable><strong class=""> Deposit Reference</strong></lable>
+                                        <input autocomplete="off" 
+                                            name="multiPageFilter_refNumber" class="form-control "
+                                            placeholder="Deposit Reference" type="text">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <lable><strong class=""> Contact Name</strong></lable>
+                                        <input autocomplete="off"
+                                            name="multiPageFilter_code"class="form-control " placeholder="Contact Name"
+                                            type="text">
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <lable><strong class=""> Contact Number</strong></lable>
+                                        <input autocomplete="off" 
+                                            name="multiPageFilter_phone" class="form-control " placeholder="Contact Number"
+                                            type="text">
+                                    </div>
+                                    <div class="col-sm-2">
+
+                                        <lable><strong class=""> Order By </strong></lable>
+                                        [[getOrderBy]]
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="row form-buttons-w">
+                                    <div class="col-sm-12">
+                                        <button class="btn btn-sm  headeingColor" type="submit"><img class="iconImage"
+                                                src="../newcss/search.png"> Search</button>
+
+                                        <a class="btn  btn-sm headeingColor" href="dealer?mode=create"><img
+                                                class="iconImage" src="../newcss/add.png"> Add New Dealer</span></a>
+                                        <a class="btn  btn-sm headeingColor" href="dealer"><i
+                                                class="os-icon os-icon-refresh-cw"></i><span>Clear</span></span></a>
+
+
+
+                                        <div class="btn-group mr-1 mb-1">
+                                            <button aria-expanded="false" aria-haspopup="true"
+                                                class="btn headeingColor dropdown-toggle" data-toggle="dropdown"
+                                                id="dropdownMenuButton1" type="button">
+                                                <img class="iconImage" src="../newcss/export.png"> Download File</button>
+                                            <div aria-labelledby="dropdownMenuButton1" class="dropdown-menu">
+                                                <a class="dropdown-item" onclick="exportFileCSV()"
+                                                    href="javascript:void(0)"> Export To CSV</a>
+                                                <a class="dropdown-item" onclick="exportFile11Excel()"
+                                                    href="javascript:void(0)"> Export To Excel</a>
+                                                <a class="dropdown-item" onclick="exportFilePDF()"
+                                                    href="javascript:void(0)"> Export To PDF</a>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-auto">
-                                <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2"
-                                    href="/createIndividual">Create New Individual</a>
-                                <button class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 action-btn"
-                                    type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true"
-                                    aria-expanded="false" data-bs-reference="parent">
-                                    <span class="fas fa-ellipsis-h" data-fa-transform="shrink-2"></span>
-                                </button>
-                                <ul class="dropdown-menu dropdown-menu-end">
-                                    <li>
-                                        <a class="dropdown-item" href="#">Action</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">Another action</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">Something else here</a>
-                                    </li>
-                                </ul>
+
+
+                    </div>
+
+
+                    <div class="element-box">
+
+
+
+                        <div class=" d-none d-sm-block">
+
+                            <div class="table-responsive">
+                                <!--------------------
+    START - Basic Table
+    -------------------->
+                                <table class="table table-striped table-bordered">
+                                    <thead>
+                                        <tr class="headeingColor">
+                                            <th>
+                                                Count
+                                            </th>
+                                            <th>
+                                                Trading As | Business Name
+                                            </th>
+                                            <th>
+                                                Deposit Reference
+                                            </th>
+
+                                            <th>
+                                                Contact Name
+                                            </th>
+                                            <th>
+                                                Contact Number
+                                            </th>
+                                            <th class="text-left">
+                                                Address
+                                            </th>
+                                            <th class="text-left">
+                                                Region
+                                            </th>
+                                            <th class="text-center">
+                                                Status
+                                            </th>
+                                            <th>
+                                                No Of Stations
+                                            </th>
+                                            <th>
+                                                Action
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!--[[logList]]-->
+
+                                    </tbody>
+                                </table>
+
+                                <div class="controls-below-table">
+
+                                    <div class="table-records-pages">
+                                        <ul class="ulMarginLeft">
+                                            <li>
+                                                <button class="paginationClass headeingColor" type="submit"
+                                                    name="idx_first">First</button>
+                                            </li>
+                                            <li>
+                                                <button class="paginationClass headeingColor" type="submit"
+                                                    name="idx_previous">Previous</button>
+                                            </li>
+                                            <li>
+                                                <span class="current paginationClass7">Page: [[multiPage]]
+                                                    - Lines - [[multiRow]] - Transaction - [[multiIndex]]</span>
+                                            </li>
+                                            <li>
+                                                <button class="paginationClass headeingColor" type="submit"
+                                                    name="idx_next">Next</button>
+                                            </li>
+                                            <li>
+                                                <button class="paginationClass headeingColor" type="submit"
+                                                    name="idx_last">Last</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                </form>
+                                <!--------------------
+    END - Basic Table
+    -------------------->
                             </div>
                         </div>
                     </div>
+
+
+
+
+
                 </div>
-                <div class="table-responsive mx-n1 px-1 scrollbar">
-                    <table class="table fs--1 mb-0 border-top border-200">
-                        <thead  id="leave">
-                            <tr>
-                                <th class="sort white-space-nowrap" scope="col" data-sort=" Name">Full Name</th>
-                                <th class="sort" scope="col" data-sort="Date ">Date of Birth</th>
-                                <th class="sort" scope="col" data-sort="NRC">NRC</th>
-                                <th class="sort" scope="col" data-sort="Age">Age</th>
-                                <th class="sort" scope="col" data-sort="Gender">Gender</th>
-                                <th class="sort" scope="col" data-sort="Phone ">Phone Number</th>
-                                <th class="sort" scope="col" data-sort="Tpin">Tpin</th>
-                                <th class="sort" scope="col" data-sort="Email">Email</th>
-                                <th class="sort" scope="col" data-sort="Province">Province</th>
-                                <th class="sort" scope="col" data-sort="District">District</th>
-                                <th class="sort" scope="col" data-sort="Costituency">Costituency</th>
-                                <th class="sort" scope="col" data-sort="Address">Address</th>
-                                <th class="sort" scope="col" data-sort="Action">Action</th>
-                                
-                            </tr>
-                        </thead>
-                        <tbody class="list" id="table-latest-review-body">
-                            <tr class="hover-actions-trigger btn-reveal-trigger position-static">
 
-                                <td class="white-space-nowrap tdtd Name">
-                                    Biness chama
-                                </td>
-                                <td class="white-space-nowrap tdtd Date">
-                                   23/09/89
-                                </td>
-                                <td class=" white-space-nowrap tdtd NRC">
-                                   352689/67/1
-                                </td>
-                                <td class="white-space-nowrap tdtd Gender ">
-                                 Adult
-                                </td>
-                                <td class="white-space-nowrap tdtd Phone">
-                                  Male
-                                </td>
-                                <td class=" white-space-nowrap tdtd Tpin">
-                                   09876543211
-                                </td>
-                                <td class=" white-space-nowrap tdtd Email">
-                                 1000326780
-                                </td>
-                                <td class="white-space-nowrap tdtd Province">
-                                   chama@gmail.com
-                                </td>
-                                <td class="white-space-nowrap tdtd District">
-                                   Copperbelt
-                                </td>
-                                <td class="white-space-nowrap tdtd Costituency">
-                                   Kitwe
-                                </td>
-                                <td class="white-space-nowrap tdtd Address">
-                                   Kwacha
-                                </td>
-                                <td class="white-space-nowrap tdtd review">
-                                   1236 kwacha
-                                </td>
-                                <td class="white-space-nowrap tdtd review">
-                                    view
-                                </td>
 
-                            </tr>
-                            <tr class="hover-actions-trigger btn-reveal-trigger position-static">
-
-                                <td class="white-space-nowrap tdtd Name">
-                                    Biness chama
-                                </td>
-                                <td class="white-space-nowrap tdtd Date">
-                                   23/09/89
-                                </td>
-                                <td class=" white-space-nowrap tdtd NRC">
-                                   352689/67/1
-                                </td>
-                                <td class="white-space-nowrap tdtd Gender ">
-                                 Adult
-                                </td>
-                                <td class="white-space-nowrap tdtd Phone">
-                                  Male
-                                </td>
-                                <td class=" white-space-nowrap tdtd Tpin">
-                                   09876543211
-                                </td>
-                                <td class=" white-space-nowrap tdtd Email">
-                                 1000326780
-                                </td>
-                                <td class="white-space-nowrap tdtd Province">
-                                   chama@gmail.com
-                                </td>
-                                <td class="white-space-nowrap tdtd District">
-                                   Copperbelt
-                                </td>
-                                <td class="white-space-nowrap tdtd Costituency">
-                                   Kitwe
-                                </td>
-                                <td class="white-space-nowrap tdtd Address">
-                                   Kwacha
-                                </td>
-                                <td class="white-space-nowrap tdtd review">
-                                   1236 kwacha
-                                </td>
-                                <td class="white-space-nowrap tdtd review">
-                                    view
-                                </td>
-
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="row align-items-center py-1">
-                    <div class="pagination d-none"></div>
-                    <div class="col d-flex fs--1">
-                        <p class="mb-0 d-none d-sm-block me-3 fw-semi-bold text-900" data-list-info="data-list-info"></p>
-                        <a class="fw-semi-bold" href="#!" data-list-view="*">
-                            View all<span class="fas fa-angle-right ms-1" data-fa-transform="down-1"></span>
-                        </a>
-                        <a class="fw-semi-bold d-none" href="#!" data-list-view="less">View Less</a>
-                    </div>
-                    <div class="col-auto d-flex">
-                        <button class="btn btn-link px-1 me-1" type="button" title="Previous"
-                            data-list-pagination="prev">
-                            <span class="fas fa-chevron-left me-2"></span>
-                            Previous
-                        </button>
-                        <button class="btn btn-link px-1 ms-1" type="button" title="Next"
-                            data-list-pagination="next">
-                            Next<span class="fas fa-chevron-right ms-2"></span>
-                        </button>
-                    </div>
-                    {{-- </div>
-                </div> --}}
-                </div>
             </div>
         </div>
-    </div>
-@endsection
+
+        <script>
+            function exportFileCSV() {
+                window.open('dealer?where=[[ExportWhere]]&mode=export&exportType=CSV');
+            }
+
+            function exportFile11Excel() {
+                window.open('dealer?where=[[ExportWhere]]&mode=export&exportType=EXCEL');
+            }
+
+            function exportFilePDF() {
+                window.open('dealer?where=[[ExportWhere]]&mode=export&exportType=PDF');
+            }
+        </script>
+
+        <script>
+            function passwordsendmLinks(_id) {
+
+                let text = "Do you really want to send password recovery link ?";
+                if (confirm(text) == true) {
+
+                    var url = "dealer?mode=reset-password&id=" + _id;
+                    window.location.replace(url);
+
+                }
+            }
+        </script>
+    @endsection

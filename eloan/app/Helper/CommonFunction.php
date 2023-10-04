@@ -1013,82 +1013,82 @@ class CommonFunction
                 $menu .= '</ul>';
             }
 
-            // else if($value['menuNname'] == 'Management Services')
-            // {
-            //     $menu .= '<li class="has-sub-menu ">';
-            //     $menu.=' <a href="' . $value->menuUrl . '">
-            //                 <div class="icon-w">
-            //                     <div class=""><img style="width: 22px;" src="/newcss/' . $value['icon'] . '"></div>
-            //                 </div>
-            //                 <span>' . strtoupper($value['menuNname']) . '</span>
-            //             </a>';
-            //     $menu .= '<div class="sub-menu-w">';
+            else if($value['menuNname'] == 'Management Services')
+            {
+                $menu .= '<li class="has-sub-menu ">';
+                $menu.=' <a href="' . $value->menuUrl . '">
+                            <div class="icon-w">
+                                <div class=""><img style="width: 22px;" src="/newcss/' . $value['icon'] . '"></div>
+                            </div>
+                            <span>' . strtoupper($value['menuNname']) . '</span>
+                        </a>';
+                $menu .= '<div class="sub-menu-w">';
                 
-            //     $menu .= '<div class="sub-menu-i">';
-            //     $menu .= '<ul class="sub-menu">';
-            //     $menu .='<li>';
-            //     $submenu = Menu::where('parent_id', $value->parent_id);
+                $menu .= '<div class="sub-menu-i">';
+                $menu .= '<ul class="sub-menu">';
+                $menu .='<li>';
+                $submenu = Menu::where('parent_id', $value->parent_id);
               
-            //     foreach ($submenu as $key => $value1) {
+                foreach ($submenu as $key => $value1) {
                
-            //         $menu .='<a href="'.$value1->menuUrl.'><h3>'.$value1->menuName.'</h3></a>';
+                    $menu .='<a href="'.$value1->menuUrl.'><h3>'.$value1->menuName.'</h3></a>';
                  
-            //     }
+                }
             
-            //     $menu .='</li>';
-            //     $menu .= '</ul>';
-            // }
+                $menu .='</li>';
+                $menu .= '</ul>';
+            }
 
          
-            // else if($value['menuNname'] == 'Reports')
-            // {
-            //     $menu .= '<li class="has-sub-menu ">';
-            //     $menu.=' <a href="' . $value->menuUrl . '">
-            //                 <div class="icon-w">
-            //                     <div class=""><img style="width: 22px;" src="/newcss/' . $value['icon'] . '"></div>
-            //                 </div>
-            //                 <span>' . strtoupper($value['menuNname']) . '</span>
-            //             </a>';
-            //     $menu .= '<div class="sub-menu-w">';
+            else if($value['menuNname'] == 'Reports')
+            {
+                $menu .= '<li class="has-sub-menu ">';
+                $menu.=' <a href="' . $value->menuUrl . '">
+                            <div class="icon-w">
+                                <div class=""><img style="width: 22px;" src="/newcss/' . $value['icon'] . '"></div>
+                            </div>
+                            <span>' . strtoupper($value['menuNname']) . '</span>
+                        </a>';
+                $menu .= '<div class="sub-menu-w">';
                 
-            //     $menu .= '<div class="sub-menu-i">';
-            //     $menu .= '<ul class="sub-menu">';
-            //     $menu .='<li>';
-            //     if($value->menuType =='SUBMENU'){
-            //     foreach ($value->menuType as $key => $value1) {
+                $menu .= '<div class="sub-menu-i">';
+                $menu .= '<ul class="sub-menu">';
+                $menu .='<li>';
+                if($value->menuType =='SUBMENU'){
+                foreach ($value->menuType as $key => $value1) {
                
-            //         $menu .='<a href="'.$value1->menuUrl.'><h3>'.$value1->menuName.'</h3></a>';
+                    $menu .='<a href="'.$value1->menuUrl.'><h3>'.$value1->menuName.'</h3></a>';
                  
-            //     }
-            // }
-            //     $menu .='</li>';
-            //     $menu .= '</ul>';
-            // }
+                }
+            }
+                $menu .='</li>';
+                $menu .= '</ul>';
+            }
 
-            // else if($value['menuNname'] == 'Query')
-            // {
-            //     $menu .= '<li class="has-sub-menu ">';
-            //     $menu.=' <a href="' . $value->menuUrl . '">
-            //                 <div class="icon-w">
-            //                     <div class=""><img style="width: 22px;" src="/newcss/' . $value['icon'] . '"></div>
-            //                 </div>
-            //                 <span>' . strtoupper($value['menuNname']) . '</span>
-            //             </a>';
-            //     $menu .= '<div class="sub-menu-w">';
+            else if($value['menuNname'] == 'Query')
+            {
+                $menu .= '<li class="has-sub-menu ">';
+                $menu.=' <a href="' . $value->menuUrl . '">
+                            <div class="icon-w">
+                                <div class=""><img style="width: 22px;" src="/newcss/' . $value['icon'] . '"></div>
+                            </div>
+                            <span>' . strtoupper($value['menuNname']) . '</span>
+                        </a>';
+                $menu .= '<div class="sub-menu-w">';
                 
-            //     $menu .= '<div class="sub-menu-i">';
-            //     $menu .= '<ul class="sub-menu">';
-            //     $menu .='<li>';
-            //     if($value->menuType =='SUBMENU'){
-            //     foreach ($value->menuType as $key => $value1) {
+                $menu .= '<div class="sub-menu-i">';
+                $menu .= '<ul class="sub-menu">';
+                $menu .='<li>';
+                if($value->menuType =='SUBMENU'){
+                foreach ($value->menuType as $key => $value1) {
                
-            //         $menu .='<a href="'.$value1->menuUrl.'><h3>'.$value1->menuName.'</h3></a>';
+                    $menu .='<a href="'.$value1->menuUrl.'><h3>'.$value1->menuName.'</h3></a>';
                  
-            //     }
-            // }
-            //     $menu .='</li>';
-            //     $menu .= '</ul>';
-            // }
+                }
+            }
+                $menu .='</li>';
+                $menu .= '</ul>';
+            }
           
         }
     
