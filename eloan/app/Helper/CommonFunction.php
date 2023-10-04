@@ -4,8 +4,9 @@ namespace App\Helper;
 
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\URL;
+use Illuminate\Support\Facades\DB;
+use App\Models\Menu;
 
 class CommonFunction
 {
@@ -15,7 +16,7 @@ class CommonFunction
         $array = '';
         $menu = array(
             [
-                "menuName" => "Home",
+                "menuNname" => "Home",
                 "url" => "/#",
                 "icon" => "#",
                 "sub" => [
@@ -922,4 +923,177 @@ class CommonFunction
     {
         return Carbon::now();
     }
+
+    public static function mainMenu()
+    {
+        $menu = '';
+        $menu1 = Menu::all();
+      
+        foreach ($menu1 as $key => $value)
+        {
+          
+            if($value->menuNname == 'Home')
+            {
+                    $menu .= '<li class="has-sub-menu ">';
+                    $menu.=' <a href="' . $value->menuUrl . '">
+                                <div class="icon-w">
+                                    <div class=""><img style="width: 22px;" src="/newcss/' . $value['icon'] . '"></div>
+                                </div>
+                                <span>' . strtoupper($value['menuNname']) . '</span>
+                            </a>';
+                    $menu .= '<div class="sub-menu-w">';
+                    
+                    $menu .= '<div class="sub-menu-i">';
+                  
+                  
+               
+                 $submenu = DB::table('menus')->where('parent_id', '=', $value->id)->where('menuType', '=', 'SUBMENU')->get();
+
+                    $menu .= '<ul class="sub-menu">';
+                    foreach ($submenu as $key => $value1) {
+                       
+                        $menu .='<li>';
+                        $menu .='<a href="'.$value1->menuUrl.'"><h3>'.$value1->menuNname.'</h3></a>';
+                        $menu .='</li>';
+                     
+                    }
+                
+                    $menu .= '</ul>';
+                    
+            }
+
+            else if($value['menuNname'] == 'Accounts')
+            {
+                $menu .= '<li class="has-sub-menu ">';
+                    $menu.=' <a href="' . $value->menuUrl . '">
+                                <div class="icon-w">
+                                    <div class=""><img style="width: 22px; font-weight:bold;" src="/newcss/' . $value['icon'] . '"></div>
+                                </div>
+                                <span>' . strtoupper($value['menuNname']) . '</span>
+                            </a>';
+                    $menu .= '<div class="sub-menu-w">';
+                    
+                    $menu .= '<div class="sub-menu-i">';
+                    $menu .= '<ul class="sub-menu">';
+                  
+                    $submenu = DB::table('menus')->where('parent_id', '=', $value->id)->where('menuType', '=', 'SUBMENU')->get();
+
+                    foreach ($submenu as $key => $value1) {
+                        $menu .='<li>';
+                        $menu .='<a href="'.$value1->menuUrl.'"><h3>'.$value1->menuNname.'</h3></a>';
+                        $menu .='</li>';
+                    }
+                
+                  
+                    $menu .= '</ul>';
+            }
+
+            else if($value['menuNname'] == 'Banking')
+            {
+                $menu .= '<li class="has-sub-menu ">';
+                $menu.=' <a href="' . $value->menuUrl . '">
+                            <div class="icon-w">
+                                <div class=""><img style="width: 22px;" src="/newcss/' . $value['icon'] . '"></div>
+                            </div>
+                            <span>' . strtoupper($value['menuNname']) . '</span>
+                        </a>';
+                $menu .= '<div class="sub-menu-w">';
+                
+                $menu .= '<div class="sub-menu-i">';
+                $menu .= '<ul class="sub-menu">';
+                $menu .='<li>';
+                if($value->menuType =='SUBMENU'){
+                foreach ($value->menuType as $key => $value1) {
+               
+                    $menu .='<a href="'.$value1->menuUrl.'><h3>'.$value1->menuName.'</h3></a>';
+                 
+                }
+            }
+                $menu .='</li>';
+                $menu .= '</ul>';
+            }
+
+            // else if($value['menuNname'] == 'Management Services')
+            // {
+            //     $menu .= '<li class="has-sub-menu ">';
+            //     $menu.=' <a href="' . $value->menuUrl . '">
+            //                 <div class="icon-w">
+            //                     <div class=""><img style="width: 22px;" src="/newcss/' . $value['icon'] . '"></div>
+            //                 </div>
+            //                 <span>' . strtoupper($value['menuNname']) . '</span>
+            //             </a>';
+            //     $menu .= '<div class="sub-menu-w">';
+                
+            //     $menu .= '<div class="sub-menu-i">';
+            //     $menu .= '<ul class="sub-menu">';
+            //     $menu .='<li>';
+            //     $submenu = Menu::where('parent_id', $value->parent_id);
+              
+            //     foreach ($submenu as $key => $value1) {
+               
+            //         $menu .='<a href="'.$value1->menuUrl.'><h3>'.$value1->menuName.'</h3></a>';
+                 
+            //     }
+            
+            //     $menu .='</li>';
+            //     $menu .= '</ul>';
+            // }
+
+         
+            // else if($value['menuNname'] == 'Reports')
+            // {
+            //     $menu .= '<li class="has-sub-menu ">';
+            //     $menu.=' <a href="' . $value->menuUrl . '">
+            //                 <div class="icon-w">
+            //                     <div class=""><img style="width: 22px;" src="/newcss/' . $value['icon'] . '"></div>
+            //                 </div>
+            //                 <span>' . strtoupper($value['menuNname']) . '</span>
+            //             </a>';
+            //     $menu .= '<div class="sub-menu-w">';
+                
+            //     $menu .= '<div class="sub-menu-i">';
+            //     $menu .= '<ul class="sub-menu">';
+            //     $menu .='<li>';
+            //     if($value->menuType =='SUBMENU'){
+            //     foreach ($value->menuType as $key => $value1) {
+               
+            //         $menu .='<a href="'.$value1->menuUrl.'><h3>'.$value1->menuName.'</h3></a>';
+                 
+            //     }
+            // }
+            //     $menu .='</li>';
+            //     $menu .= '</ul>';
+            // }
+
+            // else if($value['menuNname'] == 'Query')
+            // {
+            //     $menu .= '<li class="has-sub-menu ">';
+            //     $menu.=' <a href="' . $value->menuUrl . '">
+            //                 <div class="icon-w">
+            //                     <div class=""><img style="width: 22px;" src="/newcss/' . $value['icon'] . '"></div>
+            //                 </div>
+            //                 <span>' . strtoupper($value['menuNname']) . '</span>
+            //             </a>';
+            //     $menu .= '<div class="sub-menu-w">';
+                
+            //     $menu .= '<div class="sub-menu-i">';
+            //     $menu .= '<ul class="sub-menu">';
+            //     $menu .='<li>';
+            //     if($value->menuType =='SUBMENU'){
+            //     foreach ($value->menuType as $key => $value1) {
+               
+            //         $menu .='<a href="'.$value1->menuUrl.'><h3>'.$value1->menuName.'</h3></a>';
+                 
+            //     }
+            // }
+            //     $menu .='</li>';
+            //     $menu .= '</ul>';
+            // }
+          
+        }
+    
+        return $menu;
+    }
+
+
 }

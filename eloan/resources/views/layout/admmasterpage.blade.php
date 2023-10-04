@@ -23,6 +23,12 @@
      <link href="/newcss/custom.css" rel="stylesheet">
    
 </head>
+<style>
+  h5{
+    font-weight: bold !important;
+    color: black  !important;
+  }
+</style>
 <body class="menu-position-top full-screen">
     <div class="all-wrapper solid-bg-all">
 
@@ -69,12 +75,9 @@
             <!---
             START - Mobile Menu List
             --->
-            <ul class="main-menu">
-
-               [[mainMenu]]
-
-
-            </ul>
+            {{-- <ul class="main-menu">
+              <?php echo \App\Helper\CommonFunction::navMenu(); ?>
+            </ul> --}}
             <!---
             END - Mobile Menu List
             --->
@@ -90,8 +93,8 @@
           <div class="logo-w">
             <a class="logo" href="home">
               <div class="logo-element"></div>
-              <div class="logo-label">
-                [[Brand]]
+              <div class="logo-label text-light">
+              <h5>PORTFOLIO</h5>
               </div>
             </a>
           </div>
@@ -143,24 +146,16 @@
             </div>
           </div>
 
-          <!--div class="element-search autosuggest-search-activator">
-
-            <input placeholder="Start typing to search..." type="text">
-          </div>
-          <h4 class="menu-page-header">
-            [[Brand]]
-          </h4-->
+        
           <ul class="main-menu">
 
-            [[mainMenu]]
+            <?php echo \App\Helper\CommonFunction::mainmenu(); ?>
 
           </ul>
 
         </div>
-        <!---
-        END - Main Menu
-        --->
-      [[ppBody]]
+      
+        @yield('content')
       </div>
         
       <div class="display-type"></div>

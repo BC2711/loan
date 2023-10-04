@@ -1,13 +1,5 @@
-@extends('layout.main')
+@extends('layout.admmasterpage')
 @section('content')
-<style>
-    #card{
-        border-radius: 0px!important;
-    }
-    /* .body1{
-        padding: 0px!important;
-    } */
-</style>
     <nav class="mb-2" aria-label="breadcrumb">
         <ol class="breadcrumb mb-0">
             <li class="breadcrumb-item"><a href="/home">Home</a></li>
@@ -17,28 +9,21 @@
     </nav>
 
     <div class="col-sm-6 col-md-9 col-lg-12 m-4">
-        <div class="card text-white success leave" id="card">
+        <div class="card text-white success leave"  id="card">
             <div class="card-body">
                 <h3 class="card-title text-dark"> Individual </h3>
             </div>
         </div>
     </div>
-    {{-- @if (session()->has('success'))
-        <span class="text-danger">{{ session()->get('success') }}</span>
-    @endif --}}
-    @if (session()->has('success'))
-        <div class="alert alert-success">
-            {{ session()->get('success') }}
-        </div>
-    @endif
+
     <div class="col-sm-12 col-md-12 col-lg-12 m-4">
         <div class="card text-white success" id="card">
-            <div class="card-body body1">
+            <div class="card-body">
                 {{-- <div class="mx-n4 px-4 mx-lg-n6 px-lg-10 bg-white pt-7 border-y border-300">
                 <div data-list='{"valueNames":["Name","Date","NRC","Age","Gender","Phone","Tpin","Email","Province","District","Costituency"],"page":6}'> --}}
                 <div class="row align-items-end justify-content-between pb-5 g-3">
                     <div class="col-auto">
-                        <h5> </h5>
+                        <h5> Log 2</h5>
                     </div>
                     <div class="col-12 col-md-auto">
                         <div class="row g-2 gy-3">
@@ -53,7 +38,7 @@
                             </div>
                             <div class="col-auto">
                                 <a class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-2"
-                                    href="{{ route('create-individual') }}">Create New Individual</a>
+                                    href="/createIndividual">Create New Individual</a>
                                 <button class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 action-btn"
                                     type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true"
                                     aria-expanded="false" data-bs-reference="parent">
@@ -76,9 +61,8 @@
                 </div>
                 <div class="table-responsive mx-n1 px-1 scrollbar">
                     <table class="table fs--1 mb-0 border-top border-200">
-                        <thead id="leave">
+                        <thead  id="leave">
                             <tr>
-                                <th class="sort white-space-nowrap" scope="col" data-sort=" Name">#</th>
                                 <th class="sort white-space-nowrap" scope="col" data-sort=" Name">Full Name</th>
                                 <th class="sort" scope="col" data-sort="Date ">Date of Birth</th>
                                 <th class="sort" scope="col" data-sort="NRC">NRC</th>
@@ -92,63 +76,96 @@
                                 <th class="sort" scope="col" data-sort="Costituency">Costituency</th>
                                 <th class="sort" scope="col" data-sort="Address">Address</th>
                                 <th class="sort" scope="col" data-sort="Action">Action</th>
-
+                                
                             </tr>
                         </thead>
                         <tbody class="list" id="table-latest-review-body">
+                            <tr class="hover-actions-trigger btn-reveal-trigger position-static">
 
-                            @foreach ($individuals as $individual)
-                                <?php if($individual->status == 'PENDING'){?>
-                                    {{-- <tr>
-                                        <td colspan="14" class="white-space-nowrap tdtd review text-center">No Data</td>
-                                    </tr> --}}
-                                <?php }else{?>
-                                <tr class="hover-actions-trigger btn-reveal-trigger position-static">
-                                    <td class="white-space-nowrap tdtd Date">{{ $loop->index + 1 }}</td>
-                                    <td class="white-space-nowrap tdtd Name">
-                                        {{ $individual->name }}
-                                    </td>
-                                    <td class="white-space-nowrap tdtd Date">
-                                        {{ $individual->dob }}
-                                    </td>
-                                    <td class=" white-space-nowrap tdtd NRC">
-                                        {{ $individual->nrc }}
-                                    </td>
-                                    <td class="white-space-nowrap tdtd Gender ">
-                                        {{ $individual->age }}
-                                    </td>
-                                    <td class="white-space-nowrap tdtd Phone">
-                                        {{ $individual->gender }}
-                                    </td>
-                                    <td class=" white-space-nowrap tdtd Tpin">
-                                        {{ $individual->phone_number }}
-                                    </td>
-                                    <td class=" white-space-nowrap tdtd Email">
-                                        {{ $individual->tpin }}
-                                    </td>
-                                    <td class="white-space-nowrap tdtd Province">
-                                        {{ $individual->email }}
-                                    </td>
-                                    <td class="white-space-nowrap tdtd District">
-                                        {{ $individual->province }}
-                                    </td>
-                                    <td class="white-space-nowrap tdtd Costituency">
-                                        {{ $individual->district }}
-                                    </td>
-                                    <td class="white-space-nowrap tdtd Address">
-                                        {{ $individual->constituency }}
-                                    </td>
-                                    <td class="white-space-nowrap tdtd review">
-                                        {{ $individual->physical_address }}
-                                    </td>
-                                    <td class="white-space-nowrap tdtd review">
-                                        view
-                                    </td>
+                                <td class="white-space-nowrap tdtd Name">
+                                    Biness chama
+                                </td>
+                                <td class="white-space-nowrap tdtd Date">
+                                   23/09/89
+                                </td>
+                                <td class=" white-space-nowrap tdtd NRC">
+                                   352689/67/1
+                                </td>
+                                <td class="white-space-nowrap tdtd Gender ">
+                                 Adult
+                                </td>
+                                <td class="white-space-nowrap tdtd Phone">
+                                  Male
+                                </td>
+                                <td class=" white-space-nowrap tdtd Tpin">
+                                   09876543211
+                                </td>
+                                <td class=" white-space-nowrap tdtd Email">
+                                 1000326780
+                                </td>
+                                <td class="white-space-nowrap tdtd Province">
+                                   chama@gmail.com
+                                </td>
+                                <td class="white-space-nowrap tdtd District">
+                                   Copperbelt
+                                </td>
+                                <td class="white-space-nowrap tdtd Costituency">
+                                   Kitwe
+                                </td>
+                                <td class="white-space-nowrap tdtd Address">
+                                   Kwacha
+                                </td>
+                                <td class="white-space-nowrap tdtd review">
+                                   1236 kwacha
+                                </td>
+                                <td class="white-space-nowrap tdtd review">
+                                    view
+                                </td>
 
-                                </tr>
-                                <?php }?>
-                            @endforeach
-                           
+                            </tr>
+                            <tr class="hover-actions-trigger btn-reveal-trigger position-static">
+
+                                <td class="white-space-nowrap tdtd Name">
+                                    Biness chama
+                                </td>
+                                <td class="white-space-nowrap tdtd Date">
+                                   23/09/89
+                                </td>
+                                <td class=" white-space-nowrap tdtd NRC">
+                                   352689/67/1
+                                </td>
+                                <td class="white-space-nowrap tdtd Gender ">
+                                 Adult
+                                </td>
+                                <td class="white-space-nowrap tdtd Phone">
+                                  Male
+                                </td>
+                                <td class=" white-space-nowrap tdtd Tpin">
+                                   09876543211
+                                </td>
+                                <td class=" white-space-nowrap tdtd Email">
+                                 1000326780
+                                </td>
+                                <td class="white-space-nowrap tdtd Province">
+                                   chama@gmail.com
+                                </td>
+                                <td class="white-space-nowrap tdtd District">
+                                   Copperbelt
+                                </td>
+                                <td class="white-space-nowrap tdtd Costituency">
+                                   Kitwe
+                                </td>
+                                <td class="white-space-nowrap tdtd Address">
+                                   Kwacha
+                                </td>
+                                <td class="white-space-nowrap tdtd review">
+                                   1236 kwacha
+                                </td>
+                                <td class="white-space-nowrap tdtd review">
+                                    view
+                                </td>
+
+                            </tr>
                         </tbody>
                     </table>
                 </div>
