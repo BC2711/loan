@@ -1114,7 +1114,7 @@ class CommonFunction
            'LIMITED_COMPANY'=>'Limited Companies',
            'CLUBS_SOCIETIES_TRUSTS'=>'Clubs | Societies | Trusts'
         );
-        $client .='<select name="" id="" class="form-control ">';  
+        $client .='<select name="" id="client" class="form-control ">';  
         $client .='<option value="">Select Client</option>';  
         foreach ($arrayClients as $key => $value) {
           
@@ -1123,5 +1123,76 @@ class CommonFunction
         $client .='</select>';
 
         return $client;
+    }
+
+    public static function try($clientss)
+    {
+        $client = '';
+
+        $arrayClients = array(
+            'INDIVIDUAL'=>'Individuals',
+            'COOPERATIVE'=>'Cooperatives',
+            'LIMITED_COMPANY'=>'Limited Companies',
+            'CLUBS_SOCIETIES_TRUSTS'=>'Clubs | Societies | Trusts'
+         );
+         $client .='<div class="element-box headeingColor " style="height: 90px; padding:7px;" id="indvith">';
+         foreach ($arrayClients as $key => $value) {
+            if($key == $clientss)
+             $client .='<h6>Individuals</h6>';
+         }
+         $client .='</div>';
+       
+      
+        return $client;
+    }
+
+    public static function accountRequests()
+    {
+        $accountssub = '';
+        $menu = array(
+            [
+                'name'=>'Individuals',
+                'link'=>'ACTIVE',
+                'link2'=>'PENDING',
+                'link3'=>'DECLINED'
+            ],
+            [
+                'name'=>'Cooperatives',
+                'link'=>'ACTIVE',
+                'link2'=>'PENDING',
+                'link3'=>'DECLINED'
+            ],
+            [
+                'name'=>'Limited Companies',
+                'link'=>'ACTIVE',
+                'link2'=>'PENDING',
+                'link3'=>'DECLINED'
+            ],
+            [
+                'name'=>'Clubs | Societies | Trusts',
+                'link'=>'ACTIVE',
+                'link2'=>'PENDING',
+                'link3'=>'DECLINED'
+            ],
+           
+        );
+        $accountssub .= '<div class="row">';
+       
+        foreach ($menu as $key => $value) {
+            $accountssub .= '<div class="col-md-2 " style="margin-right:30px; ">';
+                    $accountssub .= '<span class=" btn spanClass"  >
+                                                <div class="element-box headeingColor " style="width: 250px; ">
+                                                    <a href="#"> '.$value['name'].'</a>
+                                                    <a href="'.$value['link'].'"><h6 style="color: green !important;">'.$value['link']. ':0</h6></a>
+                                                    <a href="'.$value['link2'].'"><h6 style="color:orange !important;">'.$value['link2'].':0</h6></a>
+                                                    <a href="'.$value['link3'].'"><h6 style="color:red !important;">'.$value['link3'].':0</h6></a>
+                                                </div>
+                                    </span>  '; 
+            $accountssub .= '</div>';
+                                  
+        }
+        $accountssub .= '</div>';
+       return $accountssub;
+
     }
 }
