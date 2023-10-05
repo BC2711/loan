@@ -37,6 +37,8 @@ Route::post('/logout',[LoginController::class, 'logout'])->name('logout');
 /**
  * Accounts
  */
+Route::get('/accounts', [ClientController::class, 'account'])->name('accounts');
+Route::get('/clients', [ClientController::class, 'client'])->name('clients');
 Route::get('/individuals', [IndividualController::class, 'index'])->name('individuals');
  Route::get('/create-individual', [IndividualController::class, 'create'])->name('create-individual');
  Route::post('/store', [IndividualController::class, 'store'])->name('store');

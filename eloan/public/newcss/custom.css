@@ -45,7 +45,7 @@ body {
 
 .fixed-top{
     position: fixed !important;
-        border: 2px solid #2a2c97 !important;
+        /* border: 2px solid #2a2c97 !important; */
 
 }
 

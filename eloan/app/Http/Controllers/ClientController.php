@@ -10,6 +10,14 @@ use DB;
 
 class ClientController extends Controller
 {
+   public function account()
+   {
+      return view('account.accounts');
+   }
+   public function client()
+   {
+      return view('account.clients');
+   }
    public function index()
    {
    return view('account.agent');

@@ -16,7 +16,7 @@ class CommonFunction
         $array = '';
         $menu = array(
             [
-                "menuNname" => "Home",
+                "menuName" => "Home",
                 "url" => "/#",
                 "icon" => "#",
                 "sub" => [
@@ -953,7 +953,7 @@ class CommonFunction
                     foreach ($submenu as $key => $value1) {
                        
                         $menu .='<li>';
-                        $menu .='<a href="'.$value1->menuUrl.'"><h3>'.$value1->menuNname.'</h3></a>';
+                        $menu .='<a href="'.$value1->menuUrl.'"><h6>'.$value1->menuNname.'</h6></a>';
                         $menu .='</li>';
                      
                     }
@@ -965,27 +965,18 @@ class CommonFunction
             else if($value['menuNname'] == 'Accounts')
             {
                 $menu .= '<li class="has-sub-menu ">';
-                    $menu.=' <a href="' . $value->menuUrl . '">
-                                <div class="icon-w">
-                                    <div class=""><img style="width: 22px; font-weight:bold;" src="/newcss/' . $value['icon'] . '"></div>
-                                </div>
-                                <span>' . strtoupper($value['menuNname']) . '</span>
-                            </a>';
-                    $menu .= '<div class="sub-menu-w">';
+                $menu.=' <a href="' . $value->menuUrl . '">
+                            <div class="icon-w">
+                                <div class=""><img style="width: 22px;" src="/newcss/' . $value['icon'] . '"></div>
+                            </div>
+                            <span>' . strtoupper($value['menuNname']) . '</span>
+                        </a>';
+               
+                $menu .='</li>';
                     
-                    $menu .= '<div class="sub-menu-i">';
-                    $menu .= '<ul class="sub-menu">';
-                  
-                    $submenu = DB::table('menus')->where('parent_id', '=', $value->id)->where('menuType', '=', 'SUBMENU')->get();
-
-                    foreach ($submenu as $key => $value1) {
-                        $menu .='<li>';
-                        $menu .='<a href="'.$value1->menuUrl.'"><h3>'.$value1->menuNname.'</h3></a>';
-                        $menu .='</li>';
-                    }
                 
                   
-                    $menu .= '</ul>';
+                   
             }
 
             else if($value['menuNname'] == 'Banking')
@@ -997,20 +988,9 @@ class CommonFunction
                             </div>
                             <span>' . strtoupper($value['menuNname']) . '</span>
                         </a>';
-                $menu .= '<div class="sub-menu-w">';
-                
-                $menu .= '<div class="sub-menu-i">';
-                $menu .= '<ul class="sub-menu">';
-                $menu .='<li>';
-                if($value->menuType =='SUBMENU'){
-                foreach ($value->menuType as $key => $value1) {
                
-                    $menu .='<a href="'.$value1->menuUrl.'><h3>'.$value1->menuName.'</h3></a>';
-                 
-                }
-            }
                 $menu .='</li>';
-                $menu .= '</ul>';
+              
             }
 
             else if($value['menuNname'] == 'Management Services')
@@ -1025,17 +1005,20 @@ class CommonFunction
                 $menu .= '<div class="sub-menu-w">';
                 
                 $menu .= '<div class="sub-menu-i">';
-                $menu .= '<ul class="sub-menu">';
-                $menu .='<li>';
-                $submenu = Menu::where('parent_id', $value->parent_id);
+                $menu .= '<ul class="sub-menu" style="width: 700px;">';
               
+                $submenu = Menu::where('parent_id', $value->parent_id);   $submenu = DB::table('menus')->where('parent_id', '=', $value->id)->where('menuType', '=', 'SUBMENU')->get();
+
+                $menu .= '<div class="row">';
                 foreach ($submenu as $key => $value1) {
-               
-                    $menu .='<a href="'.$value1->menuUrl.'><h3>'.$value1->menuName.'</h3></a>';
-                 
+                    $menu .='<div class="col-md-3">';
+                    $menu .='<li>';
+                    $menu .='<a href="'.$value1->menuUrl.'"><h6>'.$value1->menuNname.'</h6></a>';
+                    $menu .='</li>';
+                    $menu .= '</div>';
                 }
-            
-                $menu .='</li>';
+                $menu .= '</div>';
+               
                 $menu .= '</ul>';
             }
 
@@ -1096,4 +1079,49 @@ class CommonFunction
     }
 
 
+    public static function accountSubMenu()
+    {
+        $accountssub = '';
+        $menu = Menu::all();
+        foreach ($menu as $key => $value) {
+           if($value->menuNname == 'Accounts')
+           {
+            $submenu = DB::table('menus')->where('parent_id', '=', $value->id)->where('menuType', '=', 'SUBMENU')->get();
+                foreach ($submenu as $key => $value1) {
+                    $accountssub .= '<span class="mr-2 mb-2 btn spanClass" style="margin-left: -14px;">
+                                        <a href="'.$value1->menuUrl.'">
+                                            <div class="element-box headeingColor " id="card1" >
+                                                <h6>'.$value1->menuNname.'</h6>
+                                            </div>
+                                        </a>
+                                    </span>  ';
+                                    
+                }
+                        
+           }
+        }
+
+       return $accountssub;
+
+    }
+
+    public static function clients()
+    {
+        $client ='';
+        $arrayClients = array(
+           'INDIVIDUAL'=>'Individuals',
+           'COOPERATIVE'=>'Cooperatives',
+           'LIMITED_COMPANY'=>'Limited Companies',
+           'CLUBS_SOCIETIES_TRUSTS'=>'Clubs | Societies | Trusts'
+        );
+        $client .='<select name="" id="" class="form-control ">';  
+        $client .='<option value="">Select Client</option>';  
+        foreach ($arrayClients as $key => $value) {
+          
+            $client .='<option value="'.$key.'">'. $value.'</option>';
+        }
+        $client .='</select>';
+
+        return $client;
+    }
 }

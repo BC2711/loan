@@ -28,6 +28,9 @@
     font-weight: bold !important;
     color: black  !important;
   }
+  h6{
+    color: white !important;
+  }
 </style>
 <body class="menu-position-top full-screen">
     <div class="all-wrapper solid-bg-all">

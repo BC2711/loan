@@ -24,77 +24,24 @@
                 <span>Account Holder</span>
             </li>
             <li class="breadcrumb-item">
-                <span>Individuals</span>
+                <span>Client KYC</span>
             </li>
         </ul>
         <!--------------------
-            END - Breadcrumbs
-            -------------------->
+                END - Breadcrumbs
+                -------------------->
 
         <div class="content-i">
             <div class="content-box">
-
-
                 <div class="element-wrapper">
-                    <div class="element-box headeingColor " style="height: 50px; padding:7px;">
+                    <div class="element-box headeingColor " style="height: 90px; padding:7px;">
 
-                        {{-- <h5 class="form-header">
-                            Individuals
-                        </h5> --}}
-
-                        {{-- <div class="element-box-content borderTopSpd"> --}}
-                        <span class="mr-2 mb-2 btn spanClass" style="margin-left: -14px;">
-                            <table>
-                                <tr>
-                                    <td><strong>
-                                            <font id="color"> Individuals</font>
-                                        </strong></td>
-                                    <td>&nbsp;</td>
-                                    <td><strong>
-                                            <font id="color">=</font>
-                                        </strong></td>
-                                    <td>&nbsp;</td>
-                                    <td><strong>
-                                            <font id="color">0</font>
-                                        </strong></td>
-                                </tr>
-                            </table>
-                        </span><!-- comment -->
-                        <span class="mr-2 mb-2 btn spanClass">
-                            <table>
-                                <tr>
-                                    <td><strong>
-                                            <font id="color">Active</font>
-                                        </strong></td>
-                                    <td>&nbsp;</td>
-                                    <td><strong>
-                                            <font id="color">=</font>
-                                        </strong></td>
-                                    <td>&nbsp;</td>
-                                    <td><strong>
-                                            <font id="color">0</font>
-                                        </strong></td>
-                                </tr>
-                            </table>
-                        </span>
-                        <span class="mr-2 mb-2 btn spanClass">
-                            <table>
-                                <tr>
-                                    <td><strong>
-                                            <fontid="color">In-Active</font>
-                                        </strong></td>
-                                    <td>&nbsp;</td>
-                                    <td><strong>
-                                            <fontid="color">=</font>
-                                        </strong></td>
-                                    <td>&nbsp;</td>
-                                    <td><strong>
-                                            <font id="color">0</font>
-                                        </strong></td>
-                                </tr>
-                            </table>
-                        </span>
-                        {{-- </div> --}}
+                        <h5 class="form-header" id="color">
+                            <div class="col-sm-2">
+                                <lable><strong class="" id="color">Clients</strong></lable>
+                                <?php echo \App\Helper\CommonFunction::clients(); ?>
+                            </div>
+                        </h5>
                     </div>
 
                     <div class="element-box">
@@ -109,8 +56,6 @@
                                 </div>
 
                                 <div class="row form-buttons-w">
-
-
                                     <div class="col-sm-3">
                                         <lable><strong class="" id="color">Full Name</strong>
                                         </lable>
@@ -132,13 +77,6 @@
                                         <input autocomplete="off" name="multiPageFilter_phone" class="form-control "
                                             placeholder="Province" type="text">
                                     </div>
-                                    {{-- <div class="col-sm-2">
-
-                                        <lable><strong class="" id="color"> Order By </strong></lable>
-                                        [[getOrderBy]]
-
-                                    </div> --}}
-
                                 </div>
 
 
@@ -153,8 +91,6 @@
                                         <a class="btn  btn-sm headeingColor" href="dealer" id="color"><i
                                                 class="os-icon os-icon-refresh-cw"
                                                 id="color"></i><span>Clear</span></span></a>
-
-
 
                                         <div class="btn-group mr-1 mb-1">
                                             <button aria-expanded="false" aria-haspopup="true" id="color"
@@ -171,26 +107,15 @@
                                                     href="javascript:void(0)"> Export To PDF</a>
                                             </div>
                                         </div>
-
-
                                     </div>
                                 </div>
                             </div>
-
-
                     </div>
 
 
                     <div class="element-box">
-
-
-
                         <div class=" d-none d-sm-block">
-
                             <div class="table-responsive">
-                                <!--------------------
-        START - Basic Table
-        -------------------->
                                 <table class="table table-striped table-bordered">
                                     <thead id="color">
                                         <tr class="headeingColor" id="color">
@@ -273,20 +198,11 @@
                                     </div>
                                 </div>
                                 </form>
-                                <!--------------------
-        END - Basic Table
-        -------------------->
+                               
                             </div>
                         </div>
                     </div>
-
-
-
-
-
                 </div>
-
-
             </div>
         </div>
 

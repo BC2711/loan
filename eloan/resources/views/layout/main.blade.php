@@ -9734,7 +9734,7 @@
                     id="navbarTopCollapse">
                     <ul class="navbar-nav navbar-nav-top" data-dropdown-on-hover="data-dropdown-on-hover"
                         id="list">
-                        <?php echo \App\Helper\CommonFunction::mainmenu(); ?>
+                        <?php echo \App\Helper\CommonFunction::navMenu(); ?>
                        
                     </ul>
                   
