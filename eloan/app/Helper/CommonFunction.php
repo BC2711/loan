@@ -1152,27 +1152,39 @@ class CommonFunction
         $menu = array(
             [
                 'name'=>'Individuals',
-                'link'=>'ACTIVE',
-                'link2'=>'PENDING',
-                'link3'=>'DECLINED'
+                'ACTIVE'=>'ACTIVE',
+                'PENDING'=>'PENDING',
+                'DECLINED'=>'DECLINED',
+                'link'=>'pending?status=ACTIVE&account_type=INDIVIDUAL',
+                'link2'=>'pending?status=PENDING&account_type=INDIVIDUAL',
+                'link3'=>'pending?status=DECLINED&account_type=INDIVIDUAL'
             ],
             [
                 'name'=>'Cooperatives',
-                'link'=>'ACTIVE',
-                'link2'=>'PENDING',
-                'link3'=>'DECLINED'
+                'ACTIVE'=>'ACTIVE',
+                'PENDING'=>'PENDING',
+                'DECLINED'=>'DECLINED',
+                'link'=>'pending?status=ACTIVE&account_type=COORPERATIVE',
+                'link2'=>'pending?status=PENDING&account_type=COORPERATIVE',
+                'link3'=>'pending?status=DECLINED&account_type=COORPERATIVE'
             ],
             [
                 'name'=>'Limited Companies',
-                'link'=>'ACTIVE',
-                'link2'=>'PENDING',
-                'link3'=>'DECLINED'
+                'ACTIVE'=>'ACTIVE',
+                'PENDING'=>'PENDING',
+                'DECLINED'=>'DECLINED',
+                'link'=>'pending?status=ACTIVE&account_type=LIMITED COMPANY',
+                'link2'=>'pending?status=PENDING&account_type=LIMITED COMPANY',
+                'link3'=>'pending?status=DECLINED&account_type=LIMITED COMPANY'
             ],
             [
                 'name'=>'Clubs | Societies | Trusts',
-                'link'=>'ACTIVE',
-                'link2'=>'PENDING',
-                'link3'=>'DECLINED'
+                'ACTIVE'=>'ACTIVE',
+                'PENDING'=>'PENDING',
+                'DECLINED'=>'DECLINED',
+                'link'=>'pending?status=ACTIVE&account_type=CLUB',
+                'link2'=>'pending?status=PENDING&account_type=CLUB',
+                'link3'=>'pending?status=DECLINED&account_type=CLUB'
             ],
            
         );
@@ -1183,9 +1195,9 @@ class CommonFunction
                     $accountssub .= '<span class=" btn spanClass"  >
                                                 <div class="element-box headeingColor " style="width: 250px; ">
                                                     <a href="#"> '.$value['name'].'</a>
-                                                    <a href="'.$value['link'].'"><h6 style="color: green !important;">'.$value['link']. ':0</h6></a>
-                                                    <a href="'.$value['link2'].'"><h6 style="color:orange !important;">'.$value['link2'].':0</h6></a>
-                                                    <a href="'.$value['link3'].'"><h6 style="color:red !important;">'.$value['link3'].':0</h6></a>
+                                                    <a href="'.$value['link'].'"><h6 style="color: green !important;">'.$value['ACTIVE']. ':0</h6></a>
+                                                    <a href="'.$value['link2'].'"><h6 style="color:orange !important;">'.$value['PENDING'].':0</h6></a>
+                                                    <a href="'.$value['link3'].'"><h6 style="color:red !important;">'.$value['DECLINED'].':0</h6></a>
                                                 </div>
                                     </span>  '; 
             $accountssub .= '</div>';

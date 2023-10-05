@@ -51,6 +51,7 @@ Route::get('/individuals', [IndividualController::class, 'index'])->name('indivi
 
  Route::get('/request', [RequestController::class, 'index'])->name('request');
  Route::get('/approve', [RequestController::class, 'index'])->name('approve');
+ Route::get('/pending/{status, account_type}', [RequestController::class, 'pending'])->name('pending}');
 
 Route::get('/agents', function () {
     return view('account.agents');
