@@ -20,12 +20,13 @@ class ClientController extends Controller
    }
    public function index()
    {
-   return view('account.agent');
+      $cooperatives = Client::where('account_type','=','COOPERATIVE')->paginate(10);
+   return view('account.cooperative')->with('cooperatives', $cooperatives);
    }
 
    public function create()
    {
-    return view('account.createCooperative');
+    return view('account.cooperativeCreate');
    }
 
    public function store(request $request)

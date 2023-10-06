@@ -30,7 +30,7 @@
     color: black  !important;
   }
   h6{
-    color: white !important;
+    color: #323c58  !important;
   }
 </style>
 <body class="menu-position-top full-screen">

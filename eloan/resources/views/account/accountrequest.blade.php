@@ -35,7 +35,7 @@
                 <a href="home">Home</a>
             </li>
             <li class="breadcrumb-item">
-                <span>Accounts </span>
+                <a href="{{route('accounts')}}"><span>Accounts </span></a>
             </li>
             <li class="breadcrumb-item">
                 <span>Account Requests </span>

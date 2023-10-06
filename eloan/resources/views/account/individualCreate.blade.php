@@ -30,7 +30,7 @@
                                 <span><h6> Create Account</h6></span>
                             </div>
                             <div class="element-box">
-                                <div class="ppError">[[errorMsg]]</div>
+                                {{-- <div class="ppError">[[errorMsg]]</div> --}}
                               
                                 <form id="formValidate1" novalidate="true" action="{{route('store')}}" method="post"
                                     name="admsupperagent" autocomplete="off">
@@ -43,6 +43,9 @@
                                                 <input class="form-control" type="text" autocomplete="off"
                                                     id="first_name" name="first_name" value="{{old('first_name')}}" />
                                             </div>
+                                            @if ($errors->has('first_name'))
+                                            <span class="text-danger">{{ $errors->first('first_name') }}</span>
+                                        @endif
                                         </div>
                                         <div class="col-sm-4">
                                             <div class="form-group">
@@ -52,6 +55,9 @@
                                                     type="text"id="other_name" name="other_name">
                                                 <div class="help-block form-text with-errors form-control-feedback"></div>
                                             </div>
+                                            @if ($errors->has('other_name'))
+                                            <span class="text-danger">{{ $errors->first('other_name') }}</span>
+                                        @endif
                                         </div>
                                         <div class="col-sm-4">
                                             <div class="form-group">
@@ -61,6 +67,9 @@
                                                     value="{{old('last_name')}}" type="text">
                                                 <div class="help-block form-text with-errors form-control-feedback"></div>
                                             </div>
+                                            @if ($errors->has('last_name'))
+                                            <span class="text-danger">{{ $errors->first('last_name') }}</span>
+                                        @endif
                                         </div>
                                         <div class="col-sm-4">
                                             <div class="form-group">
@@ -68,6 +77,9 @@
                                                         class="danger">*</span></label><input class="form-control"
                                                     id="nrc" name="nrc" value="{{old('nrc')}}" type="text">
                                                 <div class="help-block form-text with-errors form-control-feedback"></div>
+                                                @if ($errors->has('nrc'))
+                                                <span class="text-danger">{{ $errors->first('nrc') }}</span>
+                                            @endif
                                             </div>
                                         </div>
                                         <div class="col-sm-4">
@@ -78,6 +90,9 @@
                                                     class="form-control"  type="text">
                                                 <div class="help-block form-text with-errors form-control-feedback"></div>
                                             </div>
+                                            @if ($errors->has('dob'))
+                                            <span class="text-danger">{{ $errors->first('dob') }}</span>
+                                        @endif
                                         </div>
                                         <div class="col-sm-4">
                                             <div class="form-group">
@@ -86,6 +101,9 @@
                                                     name="age" value="{{old('age')}}" class="form-control" type="text">
                                                 <div class="help-block form-text with-errors form-control-feedback"></div>
                                             </div>
+                                            @if ($errors->has('age'))
+                                            <span class="text-danger">{{ $errors->first('age') }}</span>
+                                        @endif
                                         </div>
                                        
                                         <div class="col-sm-4">
@@ -97,6 +115,9 @@
                                                 </select>
                                                 <div class="help-block form-text with-errors form-control-feedback"></div>
                                             </div>
+                                            @if ($errors->has('gender'))
+                                            <span class="text-danger">{{ $errors->first('gender') }}</span>
+                                        @endif
                                         </div>
                                         <div class="col-sm-4">
                                             <div class="form-group">
@@ -106,6 +127,9 @@
                                                     <option value="YES">YES</option>
                                                 </select>
                                                 <div class="help-block form-text with-errors form-control-feedback"></div>
+                                                @if ($errors->has('disability'))
+                                                <span class="text-danger">{{ $errors->first('disability') }}</span>
+                                            @endif
                                             </div>
                                         </div>
 
@@ -117,6 +141,9 @@
                                                     <?php echo App\Helper\CommonFunction::province()?>
                                                 </select>
                                                 <div class="help-block form-text with-errors form-control-feedback"></div>
+                                                @if ($errors->has('province'))
+                                                <span class="text-danger">{{ $errors->first('province') }}</span>
+                                            @endif
                                             </div>
                                         </div>
                                         <div class="col-sm-4">
@@ -128,6 +155,9 @@
                                                             <?php echo App\Helper\CommonFunction::province()?>
                                                         </select>
                                                 <div class="help-block form-text with-errors form-control-feedback"></div>
+                                                @if ($errors->has('district'))
+                                                <span class="text-danger">{{ $errors->first('district') }}</span>
+                                            @endif
                                             </div>
                                         </div>
                                         <div class="col-sm-4">
@@ -138,6 +168,9 @@
                                                     <?php echo App\Helper\CommonFunction::province()?>
                                                 </select>
                                                 <div class="help-block form-text with-errors form-control-feedback"></div>
+                                                @if ($errors->has('constituency'))
+                                                <span class="text-danger">{{ $errors->first('constituency') }}</span>
+                                            @endif
                                             </div>
                                         </div>
 
@@ -147,6 +180,9 @@
                                                 <input class="form-control"  id="phone_number" name="phone_number"
                                                     value="{{old('phone_number')}}" type="number">
                                                 <div class="help-block form-text with-errors form-control-feedback"></div>
+                                                @if ($errors->has('phone_number'))
+                                                <span class="text-danger">{{ $errors->first('phone_number') }}</span>
+                                            @endif
                                             </div>
                                         </div>                                     
 
@@ -155,6 +191,9 @@
                                                 <label for=""> Email </label><input
                                                     class="form-control" type="text" id="email" name="email" value="{{old('email')}}">
                                                 <div class="help-block form-text with-errors form-control-feedback"></div>
+                                                @if ($errors->has('email'))
+                                                <span class="text-danger">{{ $errors->first('email') }}</span>
+                                            @endif
                                             </div>
                                         </div>
                                         <div class="col-sm-4">
@@ -163,6 +202,9 @@
                                                     class="form-control" type="number" id="tpin" name="tpin"
                                                     value="{{old('tpin')}}">
                                                 <div class="help-block form-text with-errors form-control-feedback"></div>
+                                                @if ($errors->has('tpin'))
+                                                <span class="text-danger">{{ $errors->first('tpin') }}</span>
+                                            @endif
                                             </div>
                                         </div>
                                         <div class="col-sm-4">
@@ -171,6 +213,9 @@
                                                 <textarea name="physical_address" id="physical_address"  cols="2" rows="2" class="form-control">{{old('physical_address')}}</textarea>
                                                 <div class="help-block form-text with-errors form-control-feedback"></div>
                                             </div>
+                                            @if ($errors->has('physical_address'))
+                                            <span class="text-danger">{{ $errors->first('physical_address') }}</span>
+                                        @endif
                                         </div>
                                     </div>
 
@@ -182,8 +227,8 @@
                                     </div>
                                     <div class="form-buttons-w">
                                         <button class="btn btn-sm headeingColor  btnSize" name="add" value="Submit"
-                                            type="submit"> Submit</button>
-                                        <a class="btn btn-sm headeingColor  btnSize" id="color" href="{{route('individuals')}}"> Back</a>
+                                            type="submit"><h6>Submit</h6></button>
+                                        <a class="btn btn-sm headeingColor  btnSize" id="color" href="{{route('individuals')}}"><h6>Back</h6></a>
                                     </div>
                                 </form>
                             </div>

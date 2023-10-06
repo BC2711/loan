@@ -27,7 +27,7 @@
                <a href="{{route('clients')}}"><span>Client KYC</span></a> 
             </li>
             <li class="breadcrumb-item">
-                <span>Individuals</span>
+                <span>Cooperatives</span>
             </li>
         </ul>
         <!--------------------
@@ -50,7 +50,7 @@
                             <table>
                                 <tr>
                                     <td><strong>
-                                            <font id="color"> Individuals</font>
+                                            <font id="color"> Cooperatives</font>
                                         </strong></td>
                                     <td>&nbsp;</td>
                                     <td><strong>
@@ -150,9 +150,9 @@
                                         <button class="btn btn-sm  headeingColor" type="submit" id="color"><img
                                                 id="color" class="iconImage" src="/newcss/search.png"> Search</button>
 
-                                        <a class="btn  btn-sm headeingColor" href="{{route('create-individual')}}" id="color"><img
+                                        <a class="btn  btn-sm headeingColor" href="{{route('create-cooperative')}}" id="color"><img
                                                 class="iconImage" src="/newcss/add.png" id="color"> Add New
-                                            Individual</span></a>
+                                            Cooperative</span></a>
                                         <a class="btn  btn-sm headeingColor" href="dealer" id="color"><i
                                                 class="os-icon os-icon-refresh-cw"
                                                 id="color"></i><span>Clear</span></span></a>
@@ -194,6 +194,7 @@
                                 <!--------------------
         START - Basic Table
         -------------------->
+      
                                 <table class="table table-striped table-bordered">
                                     <thead id="color">
                                         <tr class="headeingColor" id="color">
@@ -201,53 +202,39 @@
                                                 Count
                                             </th>
                                             <th id="color">
-                                                Full Name
+                                                Cooperative Name
                                             </th>
                                             <th id="color">
-                                                Date of Birth
+                                                Contact Name
                                             </th>
 
                                             <th id="color">
-                                                Gender
+                                                Contact Number
                                             </th>
                                             <th id="color">
-                                                Disability
+                                                Business Tpin
                                             </th>
                                             <th class="text-left" id="color">
-                                                NRC
+                                                Type Of Business
                                             </th>
                                             <th class="text-left" id="color">
-                                                Email
+                                                Checker
                                             </th>
                                             <th class="text-center" id="color">
                                                 Phone Number
                                             </th>
                                             <th id="color">
-                                                Tpin
+                                                Status
                                             </th>
-                                            <th id="color">
-                                                Province
-                                            </th>
-                                            <th id="color">
-                                                District
-                                            </th>
-                                            <th id="color">
-                                                Consitituency
-                                            </th>
-                                            <th id="color">
-                                                Physical Address
-                                            </th>
-                                            <th id="color">
-                                               Status
-                                            </th>
+                                           
                                             <th id="color">
                                                 Action
                                             </th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        @if (!empty($individuals) && $individuals->count())
-                                        @foreach ($individuals as $item)
+                                        @if (!empty($cooperatives) && $cooperatives->count())
+                                        @foreach ($cooperatives as $item)
                                             <tr>
                                                 <td>1</td>
                                                 <td>{{ $item->name }}</td>
@@ -271,7 +258,7 @@
                                         @endforeach
                                     @else
                                         <tr>
-                                            <td colspan="14" class="text-center">No data available.</td>
+                                            <td colspan="15" class="text-center">No data available.</td>
                                         </tr>
                                     @endif
 
@@ -283,7 +270,7 @@
                                 <div class="table-records-pages">
                                     <ul class="ulMarginLeft">
                                         <li>
-                                            {{ $individuals->links() }}
+                                            {{ $cooperatives->links() }}
                                         </li>
                                         
                                     </ul>
