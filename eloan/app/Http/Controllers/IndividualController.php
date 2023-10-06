@@ -11,13 +11,13 @@ class IndividualController extends Controller
 {
     public function index()
     {
-        $individuals = client::query()->latest()->paginate(10);
+        $individuals = client::where('account_type','=','INDIVIDUAL')->latest()->paginate(10);
        return view('account.individual')->with('individuals',$individuals);
     }
 
     public function create()
     {
-        return view('account.createIndividual');
+        return view('account.individualCreate');
     }
 
     public function store(request $request)

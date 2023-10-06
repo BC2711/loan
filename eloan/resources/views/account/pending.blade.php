@@ -28,8 +28,8 @@
             </li>
         </ul>
         <!--------------------
-            END - Breadcrumbs
-            -------------------->
+                END - Breadcrumbs
+                -------------------->
 
         <div class="content-i">
             <div class="content-box">
@@ -145,11 +145,12 @@
                                 <div class="row form-buttons-w">
                                     <div class="col-sm-12">
                                         <button class="btn btn-sm  headeingColor" type="submit" id="color"><img
-                                                id="color" class="iconImage" src="../newcss/search.png"> Search</button>
+                                                id="color" class="iconImage" src="/newcss/search.png"> Search</button>
 
-                                        <a class="btn  btn-sm headeingColor" href="dealer?mode=create" id="color"><img
-                                                class="iconImage" src="../newcss/add.png" id="color"> Add New
-                                            Dealer</span></a>
+                                        <a class="btn  btn-sm headeingColor" href="{{ route('create-individual') }}"
+                                            id="color"><img class="iconImage" src="/newcss/add.png" id="color"> Add
+                                            New
+                                            Individual</span></a>
                                         <a class="btn  btn-sm headeingColor" href="dealer" id="color"><i
                                                 class="os-icon os-icon-refresh-cw"
                                                 id="color"></i><span>Clear</span></span></a>
@@ -160,15 +161,15 @@
                                             <button aria-expanded="false" aria-haspopup="true" id="color"
                                                 class="btn headeingColor dropdown-toggle" data-toggle="dropdown"
                                                 id="dropdownMenuButton1" type="button">
-                                                <img class="iconImage" src="../newcss/export.png" id="color"> Download
+                                                <img class="iconImage" src="/newcss/export.png" id="color"> Download
                                                 File</button>
                                             <div aria-labelledby="dropdownMenuButton1" class="dropdown-menu">
                                                 <a class="dropdown-item" id="color" onclick="exportFileCSV()"
                                                     href="javascript:void(0)"> Export To CSV</a>
                                                 <a class="dropdown-item" id="color" onclick="exportFile11Excel()"
                                                     href="javascript:void(0)"> Export To Excel</a>
-                                                <a class="dropdown-item" id="color" onclick="exportFilePDF()"
-                                                    href="javascript:void(0)"> Export To PDF</a>
+                                                <a class="dropdown-item" id="color" 
+                                                    href="{{route('pdf')}}"> Export To PDF</a>
                                             </div>
                                         </div>
 
@@ -189,8 +190,8 @@
 
                             <div class="table-responsive">
                                 <!--------------------
-        START - Basic Table
-        -------------------->
+            START - Basic Table
+            -------------------->
                                 <table class="table table-striped table-bordered">
                                     <thead id="color">
                                         <tr class="headeingColor" id="color">
@@ -240,45 +241,52 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        @foreach ($pending as $item)
-                                            
-                                        @endforeach
-                                        <!--[[logList]]-->
+                                        @if (!empty($pendings) && $pendings->count())
+                                            @foreach ($pendings as $item)
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>{{ $item->name }}</td>
+                                                    <td>{{ $item->dob }}</td>
+                                                    <td>{{ $item->gender }}</td>
+                                                    <td>{{ $item->disability }}</td>
+                                                    <td>{{ $item->nrc }}</td>
+                                                    <td>{{ $item->email }}</td>
+                                                    <td>{{ $item->phone_number }}</td>
+                                                    <td>{{ $item->tpin }}</td>
+                                                    <td>{{ $item->province }}</td>
+                                                    <td>{{ $item->district }}</td>
+                                                    <td>{{ $item->constituency }}</td>
+                                                    <td>{{ $item->physical_address }}</td>
+                                                    <td>
+                                                        <a href="">view</a> |
+                                                        <a href="">Aapprove</a>
+                                                    </td>
+                                                </tr>
+                                            @endforeach
+                                        @else
+                                            <tr>
+                                                <td colspan="14" class="text-center">No data available.</td>
+                                            </tr>
+                                        @endif
 
                                     </tbody>
                                 </table>
-
+                              
                                 <div class="controls-below-table">
 
                                     <div class="table-records-pages">
                                         <ul class="ulMarginLeft">
                                             <li>
-                                                <button class="paginationClass headeingColor" type="submit"
-                                                    id="color" name="idx_first">First</button>
+                                                {{ $pendings->links() }}
                                             </li>
-                                            <li>
-                                                <button class="paginationClass headeingColor" type="submit"
-                                                    id="color" name="idx_previous">Previous</button>
-                                            </li>
-                                            <li id="color">
-                                                <span class="current paginationClass7">Page: [[multiPage]]
-                                                    - Lines - [[multiRow]] - Transaction - [[multiIndex]]</span>
-                                            </li>
-                                            <li id="color">
-                                                <button class="paginationClass headeingColor" type="submit"
-                                                    id="color" name="idx_next">Next</button>
-                                            </li>
-                                            <li id="color">
-                                                <button class="paginationClass headeingColor" type="submit"
-                                                    id="color" name="idx_last">Last</button>
-                                            </li>
+                                            
                                         </ul>
                                     </div>
                                 </div>
                                 </form>
                                 <!--------------------
-        END - Basic Table
-        -------------------->
+            END - Basic Table
+            -------------------->
                             </div>
                         </div>
                     </div>

@@ -1155,36 +1155,36 @@ class CommonFunction
                 'ACTIVE'=>'ACTIVE',
                 'PENDING'=>'PENDING',
                 'DECLINED'=>'DECLINED',
-                'link'=>'pending/status=ACTIVE/account_type=INDIVIDUAL',
-                'link2'=>'pending/status=PENDING/account_type=INDIVIDUAL',
-                'link3'=>'pending/status=DECLINED/account_type=INDIVIDUAL'
+                'link'=>'pending/ACTIVE/account_type/INDIVIDUAL',
+                'link2'=>'pending/PENDING/account_type/INDIVIDUAL',
+                'link3'=>'pending/DECLINED/account_type/INDIVIDUAL'
             ],
             [
                 'name'=>'Cooperatives',
                 'ACTIVE'=>'ACTIVE',
                 'PENDING'=>'PENDING',
                 'DECLINED'=>'DECLINED',
-                'link'=>'pending?status=ACTIVE&account_type=COORPERATIVE',
-                'link2'=>'pending?status=PENDING&account_type=COORPERATIVE',
-                'link3'=>'pending?status=DECLINED&account_type=COORPERATIVE'
+                'link'=>'pending/ACTIVE/account_type/COORPERATIVE',
+                'link2'=>'pending/PENDING/account_type/COORPERATIVE',
+                'link3'=>'pending/DECLINED/account_type/COORPERATIVE'
             ],
             [
                 'name'=>'Limited Companies',
                 'ACTIVE'=>'ACTIVE',
                 'PENDING'=>'PENDING',
                 'DECLINED'=>'DECLINED',
-                'link'=>'pending?status=ACTIVE&account_type=LIMITED COMPANY',
-                'link2'=>'pending/status=PENDING/account_type=LIMITED COMPANY',
-                'link3'=>'pending?status=DECLINED&account_type=LIMITED COMPANY'
+                'link'=>'pending/ACTIVE/account_type/LIMITED COMPANY',
+                'link2'=>'pending/PENDING/account_type/LIMITED COMPANY',
+                'link3'=>'pending/DECLINED/account_type/LIMITED COMPANY'
             ],
             [
                 'name'=>'Clubs | Societies | Trusts',
                 'ACTIVE'=>'ACTIVE',
                 'PENDING'=>'PENDING',
                 'DECLINED'=>'DECLINED',
-                'link'=>'pending?status=ACTIVE&account_type=CLUB',
-                'link2'=>'pending?status=PENDING&account_type=CLUB',
-                'link3'=>'pending?status=DECLINED&account_type=CLUB'
+                'link'=>'pending/ACTIVE/account_type/CLUB',
+                'link2'=>'pending/PENDING/account_type/CLUB',
+                'link3'=>'pending/DECLINED/account_type/CLUB'
             ],
            
         );
@@ -1206,5 +1206,27 @@ class CommonFunction
         $accountssub .= '</div>';
        return $accountssub;
 
+    }
+
+    public static function province()
+    {
+        $province = '';
+        $prov = array(
+            'COPPERBELT'=>'Copperbelt',
+            'LUSAKA'=>'Lusaka',
+            'CENTRAL'=>'Central',
+            'EASTERN'=>'Eastern',
+            'MUCHINGA'=>'Muchinga',
+            'SOUTHERN'=>'Southern',
+            'NORTH-WESTERN'=>'North-Western',
+            'LUAPULA'=>'Luapula',
+            'WESTERN'=>'Western',
+            'NORTHERN'=>'Northern'
+          
+        );
+        foreach ($prov as $key => $value) {
+            $province .= '<option value="">'.$value.'</option>';
+        }
+        return $province;
     }
 }

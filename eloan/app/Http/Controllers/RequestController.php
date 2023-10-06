@@ -14,11 +14,14 @@ class RequestController extends Controller
     $requests = client::query()->latest()->paginate(10);
     return view('account.accountrequest')->with('requests', $requests);
   }
-   public function pending($status, $acoount_type)
+   public function pending(Request $request, $status, $acoount_type)
    {
-    $pendings = DB::table('clients')->where('status', '=', $status)->where('account_type','=',$acoount_type)->get();
-   
-    return view('account.pending',compact('pending', 'pendings'));
+
+    // dd($status, $acoount_type);
+    $pendings = DB::table('clients')->where('status', '=', $status)->where('account_type','=',$acoount_type)->paginate(10);
+    // dump($pendings);die;
+    // return view('account.pending',compact('pending', 'pendings'));
+    return view('account.pending')->with('pendings',$pendings);
 
    
    }

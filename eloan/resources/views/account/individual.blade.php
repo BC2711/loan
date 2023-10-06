@@ -235,43 +235,57 @@
                                                 Physical Address
                                             </th>
                                             <th id="color">
+                                               Status
+                                            </th>
+                                            <th id="color">
                                                 Action
                                             </th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <!--[[logList]]-->
+                                        @if (!empty($individuals) && $individuals->count())
+                                        @foreach ($individuals as $item)
+                                            <tr>
+                                                <td>1</td>
+                                                <td>{{ $item->name }}</td>
+                                                <td>{{ $item->dob }}</td>
+                                                <td>{{ $item->gender }}</td>
+                                                <td>{{ $item->disability }}</td>
+                                                <td>{{ $item->nrc }}</td>
+                                                <td>{{ $item->email }}</td>
+                                                <td>{{ $item->phone_number }}</td>
+                                                <td>{{ $item->tpin }}</td>
+                                                <td>{{ $item->province }}</td>
+                                                <td>{{ $item->district }}</td>
+                                                <td>{{ $item->constituency }}</td>
+                                                <td>{{ $item->physical_address }}</td>
+                                                <td>{{ $item->status }}</td>
+                                                <td>
+                                                    <a href="">view</a> |
+                                                    <a href="">Aapprove</a>
+                                                </td>
+                                            </tr>
+                                        @endforeach
+                                    @else
+                                        <tr>
+                                            <td colspan="14" class="text-center">No data available.</td>
+                                        </tr>
+                                    @endif
 
-                                    </tbody>
-                                </table>
+                                </tbody>
+                            </table>
+                          
+                            <div class="controls-below-table">
 
-                                <div class="controls-below-table">
-
-                                    <div class="table-records-pages">
-                                        <ul class="ulMarginLeft">
-                                            <li>
-                                                <button class="paginationClass headeingColor" type="submit"
-                                                    id="color" name="idx_first">First</button>
-                                            </li>
-                                            <li>
-                                                <button class="paginationClass headeingColor" type="submit"
-                                                    id="color" name="idx_previous">Previous</button>
-                                            </li>
-                                            <li id="color">
-                                                <span class="current paginationClass7">Page: [[multiPage]]
-                                                    - Lines - [[multiRow]] - Transaction - [[multiIndex]]</span>
-                                            </li>
-                                            <li id="color">
-                                                <button class="paginationClass headeingColor" type="submit"
-                                                    id="color" name="idx_next">Next</button>
-                                            </li>
-                                            <li id="color">
-                                                <button class="paginationClass headeingColor" type="submit"
-                                                    id="color" name="idx_last">Last</button>
-                                            </li>
-                                        </ul>
-                                    </div>
+                                <div class="table-records-pages">
+                                    <ul class="ulMarginLeft">
+                                        <li>
+                                            {{ $individuals->links() }}
+                                        </li>
+                                        
+                                    </ul>
                                 </div>
+                            </div>
                                 </form>
                                 <!--------------------
         END - Basic Table

@@ -5,6 +5,8 @@ use App\Http\Controllers\IndividualController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\RequestController;
+use App\Http\Controllers\PDFController;
+use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -51,7 +53,11 @@ Route::get('/individuals', [IndividualController::class, 'index'])->name('indivi
 
  Route::get('/request', [RequestController::class, 'index'])->name('request');
  Route::get('/approve', [RequestController::class, 'index'])->name('approve');
- Route::get('/pending/status/{status}/account_type/{account_type}', [RequestController::class, 'pending'])->name('pending}');
+ Route::get('/pending/{status}/account_type/{account_type}', [RequestController::class, 'pending'])->name('pending');
+
+
+ 
+Route::get('/pdf', [PDFController::class, 'Pdf'])->name('pdf');
 
 Route::get('/agents', function () {
     return view('account.agents');
@@ -117,9 +123,9 @@ Route::get('/agentoutlets', function () {
  * 
  */
 
- Route::get('/user', function () {
-    return view('management.user');
-});
+//  Route::get('/user', function () {
+//     return view('management.user');
+// });
 
 Route::get('/sms', function () {
     return view('management.sms');

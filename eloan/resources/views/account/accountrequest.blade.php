@@ -24,8 +24,8 @@
         }
 
         /* a {
-                text-decoration: none !important;
-            } */
+                    text-decoration: none !important;
+                } */
     </style>
     <div class="content-w">
 
@@ -43,8 +43,8 @@
 
         </ul>
         <!--------------------
-                    END - Breadcrumbs
-                    -------------------->
+                        END - Breadcrumbs
+                        -------------------->
 
         <div class="content-i">
             <div class="content-box">
@@ -57,6 +57,28 @@
                 <div class="element-wrapper">
                     <div class="element-box headeingColor">
                         <?php echo \App\Helper\CommonFunction::accountRequests(); ?>
+                        {{-- <div class="row">
+
+
+                            <div class="col-md-2 " style="margin-right:30px; ">
+                                <span class=" btn spanClass">
+                                    <div class="element-box headeingColor " style="width: 250px; ">
+                                        <a href="#">Individual</a>
+                                        <a href="{{route('pending',['status'=>'PENDING', 'account_type'=>'INDIVIDUAL'])}}">
+                                            <h6 style="color: green !important;">ACTIVE:0</h6>
+                                        </a>
+                                        <a href="link2">
+                                            <h6 style="color:orange !important;">PENDING:0</h6>
+                                        </a>
+                                        <a href="link3">
+                                            <h6 style="color:red !important;">DECLINED:0</h6>
+                                        </a>
+                                    </div>
+                                </span>
+                            </div>
+
+
+                        </div> --}}
                     </div>
                 </div>
             </div>

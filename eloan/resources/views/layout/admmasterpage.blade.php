@@ -11,6 +11,7 @@
     <link href="favicon.png" rel="shortcut icon">
     <link href="apple-touch-icon.png" rel="apple-touch-icon">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
     
     <link href=/newcss/bower_components/select2/dist/css/select2.min.css" rel="stylesheet">
     <link href="/newcss/bower_components/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
