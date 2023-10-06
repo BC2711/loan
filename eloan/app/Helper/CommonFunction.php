@@ -1155,9 +1155,9 @@ class CommonFunction
                 'ACTIVE'=>'ACTIVE',
                 'PENDING'=>'PENDING',
                 'DECLINED'=>'DECLINED',
-                'link'=>'pending?status=ACTIVE&account_type=INDIVIDUAL',
-                'link2'=>'pending?status=PENDING&account_type=INDIVIDUAL',
-                'link3'=>'pending?status=DECLINED&account_type=INDIVIDUAL'
+                'link'=>'pending?status=ACTIVE',
+                'link2'=>'pending/status=PENDING/account_type=INDIVIDUAL',
+                'link3'=>'pending/status=DECLINED/account_type=INDIVIDUAL'
             ],
             [
                 'name'=>'Cooperatives',
@@ -1174,7 +1174,7 @@ class CommonFunction
                 'PENDING'=>'PENDING',
                 'DECLINED'=>'DECLINED',
                 'link'=>'pending?status=ACTIVE&account_type=LIMITED COMPANY',
-                'link2'=>'pending?status=PENDING&account_type=LIMITED COMPANY',
+                'link2'=>'pending/status=PENDING/account_type=LIMITED COMPANY',
                 'link3'=>'pending?status=DECLINED&account_type=LIMITED COMPANY'
             ],
             [
