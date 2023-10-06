@@ -19,7 +19,6 @@ class RequestController extends Controller
     $pendings = DB::table('clients')->where('status', '=', $status)->where('account_type','=',$acoount_type)->get();
    
     return view('account.pending',compact('pending', 'pendings'));
-    // return view('account.individual')->with('individuals',$pendings);
 
    
    }

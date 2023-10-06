@@ -1155,7 +1155,7 @@ class CommonFunction
                 'ACTIVE'=>'ACTIVE',
                 'PENDING'=>'PENDING',
                 'DECLINED'=>'DECLINED',
-                'link'=>'pending?status=ACTIVE',
+                'link'=>'pending/status=ACTIVE/account_type=INDIVIDUAL',
                 'link2'=>'pending/status=PENDING/account_type=INDIVIDUAL',
                 'link3'=>'pending/status=DECLINED/account_type=INDIVIDUAL'
             ],
