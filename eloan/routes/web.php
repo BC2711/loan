@@ -6,6 +6,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\RequestController;
 use App\Http\Controllers\PDFController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Http\Request;
 
 /*
@@ -22,9 +23,7 @@ use Illuminate\Http\Request;
 Route::get('/', function () {
     return view('layout.login');
 });
-Route::get('/home', function () {
-    return view('dashboard');
-});
+Route::get('/home',[HomeController::class, 'index'])->name('home');
 
 Route::get('/', function () {
     return view('login.login');
@@ -33,29 +32,26 @@ Route::get('/', function () {
 Route::post('/login',[LoginController::class, 'login'])->name('login');
 Route::post('/logout',[LoginController::class, 'logout'])->name('logout');
 
-
-
-
 /**
  * Accounts
  */
-Route::get('/account-request', [RequestController::class, 'index'])->name('account-request');
+
 Route::get('/accounts', [ClientController::class, 'account'])->name('accounts');
 Route::get('/clients', [ClientController::class, 'client'])->name('clients');
+Route::get('/cooperative', [ClientController::class, 'index'])->name('cooperative');
+Route::get('/create-cooperative', [ClientController::class, 'create'])->name('create-cooperative');
+Route::get('/edit-cooperative', [ClientController::class, 'edit'])->name('edit-cooperative');
+Route::post('/updatecooperative', [ClientController::class, 'create'])->name('updatecooperative');
+Route::post('/storecooperative', [ClientController::class, 'store'])->name('storecooperative');
+
 Route::get('/individuals', [IndividualController::class, 'index'])->name('individuals');
- Route::get('/create-individual', [IndividualController::class, 'create'])->name('create-individual');
- Route::post('/store', [IndividualController::class, 'store'])->name('store');
- Route::get('/cooperative', [ClientController::class, 'index'])->name('cooperative');
- Route::get('/create-cooperative', [ClientController::class, 'create'])->name('create-cooperative');
- Route::get('/edit-cooperative', [ClientController::class, 'edit'])->name('edit-cooperative');
- Route::post('/updatecooperative', [ClientController::class, 'create'])->name('updatecooperative');
- Route::post('/storecooperative', [ClientController::class, 'store'])->name('storecooperative');
+Route::get('/create-individual', [IndividualController::class, 'create'])->name('create-individual');
+Route::post('/store', [IndividualController::class, 'store'])->name('store');
 
- Route::get('/request', [RequestController::class, 'index'])->name('request');
- Route::get('/approve', [RequestController::class, 'index'])->name('approve');
- Route::get('/pending/{status}/account_type/{account_type}', [RequestController::class, 'pending'])->name('pending');
-
-
+Route::get('/account-request', [RequestController::class, 'index'])->name('account-request');
+Route::get('/request', [RequestController::class, 'index'])->name('request');
+Route::get('/approve', [RequestController::class, 'index'])->name('approve');
+Route::get('/pending/{status}/account_type/{account_type}', [RequestController::class, 'pending'])->name('pending');
  
 Route::get('/pdf', [PDFController::class, 'Pdf'])->name('pdf');
 
